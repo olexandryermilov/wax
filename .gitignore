@@ -1,0 +1,10 @@
+# haskell
+*.cabal
+*~
+.stack-work/
+
+# idea
+*.iml
+.idea
+project
+target
