@@ -1,0 +1,130 @@
+Someday
+
+Copyright (c) 1956 by Royal Publications, Inc.
+
+Niccolo Mazetti lay stomach down on the rug, chin buried in the palm of one small hand, and listened to the Bard disconsolately. There was even the suspicion of tears in his dark eyes, a luxury an eleven-year-old could allow himself only when alone.
+The Bard said, "Once upon a time in the middle of a deep wood, there lived a poor woodcutter and his two motherless daughters, who were each as beautiful as the day is long. The older daughter had long hair as black as a feather from a raven's wing, but the younger daughter had hair as bright and golden as the sunlight of an autumn afternoon.
+"Many times while the girls were waiting for their father to come home from his day's work in the wood, the older girl would sit before a mirror and sing-"
+What she sang, Niccolo did not hear, for a call sounded from outside the room: "Hey, Nickie."
+And Niccolo, his face clearing on the moment, rushed to the window and shouted, "Hey, Paul."
+Paul Loeb waved an excited hand. He was thinner than Niccolo and not as tall, for all he was six months older. His face was full of repressed tension which showed itself most clearly in the rapid blinking of his eyelids. "Hey, Nickie, let me in. I've got an idea and a half. Wait till you hear it." He looked rapidly about him as though to check on the possibility of eavesdroppers, but the front yard was quite patently empty. He repeated, in a whisper, "Wait till you hear it."
+"All right. I'll open the door."
+The Bard continued smoothly, oblivious to the sudden loss of attention on the part of Niccolo. As Paul entered, the Bard was saying. ". . . Thereupon, the lion said, 'If you will find me the lost egg of the bird which flies over the Ebony Mountain once every ten years, I will-' "
+Paul said, "Is that a Bard you're listening to? I didn't know you had one."
+Niccolo reddened and the look of unhappiness returned to his face. "Just an old thing I had when I was a kid. It ain't much good." He kicked at the Bard with his foot and caught the somewhat scarred and discolored plastic covering a glancing blow.
+The Bard hiccupped as its speaking attachment was jarred out of contact a moment, then it went on: "-for a year and a day until the iron shoes were worn out. The princess stopped at the side of the road. . . ."
+Paul said, "Boy, that is an old model," and looked at it critically.
+Despite Niccofo's own bitterness against the Bard, he winced at the other's condescending tone. For the moment, he was sorry he had allowed Paul in, at least before he had restored the Bard to its usual resting place in the basement. It was only in the desperation of a dull day and a fruitless discussion with his father that he had resurrected it. And it turned out to be just as stupid as he had expected.
+Nickie was a little afraid of Paul anyway, since Paul had special courses at school and everyone said he was going to grow up to be a Computing Engineer.
+Not that Niccolo himself was doing badly at school. He got adequate marks in logic, binary manipulations, computing and elementary circuits; all the usual grammar-school subjects. But that was it! They were just the usual subjects and he would grow up to be a control-board guard like everyone else.
+Paul, however, knew mysterious things about what he called electronics and theoretical mathematics and programing. Especially programing. Niccolo didn't even try to understand when Paul bubbled over about it.
+Paul listened to the Bard for a few minutes and said, "You been using it much?"
+"No!" said Niccolo, offended. "I've had it in the basement since before you moved into the neighborhood. I just got it out today-" He lacked an excuse that seemed adequate to himself, so he concluded, "I just got it out."
+Paul said, "Is that what it tells you about: woodcutters and princesses and talking animals?"
+Niccolo said, "It's terrible. My dad says we can't afford a new one. I said to him this morning-" The memory of the morning's fruitless pleadings brought Niccolo dangerously near tears, which he repressed in a panic. Somehow, he felt that Paul's thin cheeks never felt the stain of tears and that Paul would have only contempt for anyone else less strong than himself.
+Niccolo went on, "So I thought I'd try this old thing again, but it's no good."
+Paul turned off the Bard, pressed the contact that led to a nearly instantaneous reorientation and recombination of the vocabulary, characters, plot lines and climaxes stored within it. Then he reactivated it.
+The Bard began smoothly, "Once upon a time there was a little boy named Willikins whose mother had died and who lived with a stepfather and a stepbrother. Although the stepfather was very well-to-do, he begrudged poor Willikins the very bed he slept in so that Willikins was forced to get such rest as he could on a pile of straw in the stable next to the horses-"
+"Horses!" cried Paul.
+"They're a kind of animal," said Niccolo. "I think."
+"I know that! I just mean imagine stories about horses."
+"It tells about horses all the time," said Niccolo. "There are things called cows, too. You milk them but the Bard doesn't say how."
+"Well, gee, why don't you fix it up?"
+"I'd like to know how."
+The Bard was saying, "Often Willikins would think that if only he were rich and powerful, he would show his stepfather and stepbrother what it meant to be cruel to a little boy, so one day he decided to go out into the world and seek his fortune."
+Paul, who wasn't listening to the Bard, said, "It's easy. The Bard has memory cylinders all fixed up for plot lines and climaxes and things. We don't have to worry about that. It's just vocabulary we've got to fix so it'll know about computers and automation and electronics and real things about today. Then it can tell interesting stories, you know, instead of about princesses and things."
+Niccolo said despondently, "I wish we could do that."
+Paul said, "Listen, my dad says if I get into special computing school next year, he'll get me a real Bard, a late model. A big one with an attachment for space stories and mysteries. And a visual attachment, too!"
+"You mean see the stories?"
+"Sure. Mr. Daugherty at school says they've got things like that, now, but not for just everybody. Only if I get into computing school, Dad can get a few breaks."
+Niccolo's eyes bulged with envy. "Gee. Seeing a story."
+"You can come over and watch anytime, Nickie."
+"Oh, boy. Thanks."
+"That's all right. But remember, I'm the guy who says what kind of story we hear."
+"Sure. Sure." Niccolo would have agreed readily to much more onerous conditions.
+Paul's attention returned to the Bard.
+It was saying, " 'If that is the case,' said the king, stroking his beard and frowning till clouds filled the sky and lightning flashed, 'you w'" see to it that my entire land is freed of flies by this time day after tomorrow or-' "
+"All we've got to do," said Paul, "is open it up-" He shut the Bard off again and was prying at its front panel as he spoke.
+"Hey," said Niccolo, in sudden alarm. "Don't break it."
+"I won't break it," said Paul impatiently. "I know all about these things." Then, with sudden caution, "Your father and mother home?"
+"No."
+"All right, then." He had the front panel off and peered in. "Boy, this is a one-cylinder thing."
+He worked away at the Bard's innards. Niccolo, who watched with painful suspense, could not make out what he was doing.
+Paul pulled out a thin, flexible metal strip, powdered with dots. "That's the Bard's memory cylinder. I'll bet its capacity for stories is under a trillion."
+"What are you going to do, Paul?" quavered Niccolo.
+"I'll give it vocabulary."
+"How?"
+"Easy. I've got a book here. Mr. Daugherty gave it to me at school."
+Paul pulled the book out of his pocket and pried at it till he had its plastic jacket off. He unreeled the tape a bit, ran it through the vocalizer, which he turned down to a whisper, then placed it within the Bard's vitals. He made further attachments.
+"What'll that do?"
+"The book will talk and the Bard will put it all on its memory tape."
+"What good will that do?"
+"Boy, you're a dope! This book is all about computers and automation and the Bard will get all that information. Then he can stop talking about kings making lightning when they frown."
+Niccolo said, "And the good guy always wins anyway. There's no excitement."
+"Oh, well," said Paul, watching to see if his setup was working properly, "that's the way they make Bards. They got to have the good guy win and make the bad guys lose and things like that. I heard my father talking about it once. He says that without censorship there'd be no telling what the younger generation would come to. He says it's bad enough as it is. ... There, it's working fine."
+Paul brushed his hands against one another and turned away from the Bard. He said, "But listen, I didn't tell you my idea yet. It's the best thing you ever heard, I bet. I came right to you, because I figured you'd come in with me."
+"Sure, Paul, sure."
+"Okay. You know Mr. Daugherty at school? You know what a funny kind of guy he is. Well, he likes me, kind of."
+"I know."
+"I was over at his house after school today."
+"You were?"
+"Sure. He says I'm going to be entering computer school and he wants to encourage me and things like that. He says the world needs more people who can design advanced computer circuits and do proper programing."
+"Oh?"
+Paul might have caught some of the emptiness behind that monosyllable. He said impatiently, "Programing! I told you a hundred times. That's when you set up problems for the giant computers like Multivac to work on. Mr. Daugherty says it gets harder all the time to find people who can really run computers. He says anyone can keep an eye on the controls and check off answers and put through routine problems. He says the trick is to expand research and figure out ways to ask the right questions, and that's hard.
+"Anyway, Nickie, he took me to his place and showed me his collection of old computers. It's kind of a hobby of his to collect old computers. He had tiny computers you had to push with your hand, with little knobs all over it. And he had a hunk of wood he called a slide rule with a little piece of it that went in and out. And some wires with balls on them. He even had a hunk of paper with a kind of thing he called a multiplication table."
+Niccolo, who found himself only moderately interested, said, "A paper table?"
+"It wasn't really a table like you eat on. It was different. It was to help people compute. Mr. Daugherty tried to explain but he didn't have much time and it was kind of complicated, anyway."
+"Why didn't people just use a computer?"
+"That was before they had computers," cried Paul.
+"Before?"
+"Sure. Do you think people always had computers? Didn't you ever hear of cavemen?"
+Niccolo said, "How'd they get along without computers?"
+"/ don't know. Mr. Daugherty says they just had children any old time and did anything that came into their heads whether it would be good for everybody or not. They didn't even know if it was good or not. And farmers grew things with their hands and people had to do all the work in the factories and run all the machines."
+"I don't believe you."
+"That's what Mr. Daugherty said. He said it was just plain messy and everyone was miserable. . . . Anyway, let me get to my idea, will you?"
+"Well, go ahead. Who's stopping you?" said Niccolo, offended.
+"All right. Well, the hand computers, the ones with the knobs, had little squiggles on each knob. And the slide rule had squiggles on it. And the
+multiplication table was all squiggles. I asked what they were. Mr. Daugherty said they were numbers."
+"What?"
+"Each different squiggle stood for a different number. For 'one' you made a kind of mark, for 'two' you make another kind of mark, for 'three' another one and so on."
+"What for?"
+"So you could compute."
+"What for? You just tell the computer-"
+"Jiminy," cried Paul, his face twisting with anger, "can't you get it through your head? These slide rules and things didn't talk."
+"Then how-"
+"The answers showed up in squiggles and you had to know what the squiggles meant. Mr. Daugherty says that, in olden days, everybody learned how to make squiggles when they were kids and how to decode them, too. Making squiggles was called 'writing' and decoding them was 'reading.' He says there was a different kind of squiggle for every word and they used to write whole books in squiggles. He said they had some at the museum and I could look at them if I wanted to. He said if I was going to be a real computer and programer I would have to know about the history of computing and that's why he was showing me all these things."
+Niccolo frowned. He said, "You mean everybody had to figure out squiggles for every word and remember them? ... Is this all real or are you making it up?"
+"It's all real. Honest. Look, this is the way you make a 'one.' " He drew his finger through the air in a rapid downstroke. "This way you make 'two,' and this way 'three.' I learned all the numbers up to 'nine.' "
+Niccolo watched the curving finger uncomprehendingly. "What's the good of it?"
+"You can leam how to make words. I asked Mr. Daugherty how you made the squiggle for 'Paul Loeb' but he didn't know. He said there were people at the museum who would know. He said there were people who had learned how to decode whole books. He said computers could be designed to decode books and used to be used that way but not any more because we have real books now, with magnetic tapes that go through the vocalizer and come out talking, you know."
+"Sure."
+"So if we go down to the museum, we can get to learn how to make words in squiggles. They'll let us because I'm going to computer school."
+Niccolo was riddled with disappointment. "Is that your idea? Holy Smokes, Paul, who wants to do that? Make stupid squiggles!"
+"Don't you get it? Don't you get it? You dope. It'll be secret message stuff/"
+"What?"
+"Sure. What good is talking when everyone can understand you? With squiggles you can send secret messages. You can make them on paper and nobody in the world would know what you were saying unless they knew the squiggles, too. And they wouldn't, you bet, unless we taught them. We can have a real club, with initiations and rules and a clubhouse. Boy-"
+A certain excitement began stirring in Niccolo's bosom. "What kind of secret messages?"
+"Any kind. Say I want to tell you to come over my place and watch my new Visual Bard and I don't want any of the other fellows to come. I make the right squiggles on paper and I give it to you and you look at it and you know what to do. Nobody else does. You can even show it to them and they wouldn't know a thing."
+"Hey, that's something," yelled Niccolo, completely won over. "When do we learn how?"
+"Tomorrow," said Paul. "I'll get Mr. Daugherty to explain to the museum that it's all right and you get your mother and father to say okay. We can go down right after school and start learning."
+"Sure!" cried Niccolo. "We can be club officers."
+"I'll be president of the club," said Paul matter-of-factly. "You can be vice-president."
+"All right. Hey, this is going to be tots more fun than the Bard." He was suddenly reminded of the Bard and said in sudden apprehension, "Hey, what about my old Bard?"
+Paul turned to look at it. It was quietly taking in the slowly unreeling book, and the sound of the book's vocalizations was a dimly heard murmur.
+He said, "I'll disconnect it."
+He worked away while Niccolo watched anxiously. After a few moments, Paul put his reassembled book into his pocket, replaced the Bard's panel and activated it.
+The Bard said, "Once upon a time, in a large city, there lived a poor young boy named Fair Johnnie whose only friend in the world was a small computer. The computer, each morning, would tell the boy whether it would rain that day and answer any problems he might have. It was never wrong. But it so happened that one day, the king of that land, having heard of the little computer, decided that he would have it as his own. With this purpose in mind, he called in his Grand Vizier and said-"
+Niccolo turned off the Bard with a quick motion of his hand. "Same old junk," he said passionately, "fust with a computer thrown in."
+"Well," said Paul, "they got so much stuff on the tape already that the computer business doesn't show up much when random combinations are made. What's the difference, anyway? You just need a new model."
+"We'll never be able to afford one. Just this dirty old miserable thing." He kicked at it again, hitting it more squarely this time. The Bard moved backward with a squeal of castors.
+"You can always watch mine, when I get it," said Paul. "Besides, don't forget our squiggle club."
+Niccolo nodded.
+"I tell you what," said Paul. "Let's go over to my place. My father has some books about old times. We can listen to them and maybe get some ideas. You leave a note for your folks and maybe you can stay over for supper. Come on."
+"Okay," said Niccolo, and the two boys ran out together. Niccolo, in his eagerness, ran almost squarely into the Bard, but he only rubbed at the spot on his hip where he had made contact and ran on.
+The activation signal of the Bard glowed. Niccolo's collision closed a circuit and, although it was alone in the room and there was none to hear, it began a story, nevertheless.
+But not in its usual voice, somehow; in a lower tone that had a hint of throatiness in it. An adult, listening, might almost have thought that the voice carried a hint of passion in it, a trace of near feeling.
+The Bard said: "Once upon a time, there was a little computer named the Bard who lived all alone with cruel step-people. The cruel step-people continually made fun of the little computer and sneered at him, telling him he was good-for-nothing and that he was a useless object. They struck him and kept him in lonely rooms for months at a time.
+"Yet through it all the little computer remained brave. He always did the best he could, obeying all orders cheerfully. Nevertheless, the step-people with whom he lived remained cruel and heartless.
+"One day, the little computer learned that in the world there existed a great many computers of all sorts, great numbers of them. Some were Bards like himself, but some ran factories, and some ran farms. Some organized population and some analyzed all kinds of data. Many were very powerful and very wise, much more powerful and wise than the step-people who were so cruel to the little computer.
+"And the little computer knew then that computers would always grow wiser and more powerful until someday-someday-someday-"
+But a valve must finally have stuck in the Bard's aging and corroding vitals, for as it waited alone in the darkening room through the evening, it could only whisper over and over again, "Someday-someday-someday."
