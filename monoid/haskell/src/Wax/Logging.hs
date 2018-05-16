@@ -3,10 +3,8 @@ module Wax.Logging where
 --------------------------------------------------------------------------------
 import Prelude
 import System.IO
-import System.IO.Unsafe
-import Data.Monoid
-import Control.Monad
-import Control.Applicative
+import Data.Monoid ((<>))
+import Control.Monad (forever)
 
 --------------------------------------------------------------------------------
 type Logger = String -> IO ()
