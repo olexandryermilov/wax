@@ -1,4 +1,6 @@
-import java.io.{File, FileOutputStream, PrintWriter}
+package wax
+
+import java.io.FileOutputStream
 
 import cats.effect.IO
 import cats.implicits._
@@ -17,22 +19,19 @@ object Logging {
   def fileLogger(filePath: String): IO[Logger] = IO {
     println("Debug: create file handler")
     val stream = new FileOutputStream(filePath)
-    input =>
-      IO {
-        stream.write(input.getBytes)
-      }
+    input => IO(stream.write(input.getBytes))
   }
 
   def main(args: Array[String]): Unit = program.unsafeRunSync()
 
   val program: IO[Unit] = for {
     logger <- consoleLogger combine fileLogger("logging.log")
-    _ <- run(logger)
+    _      <- run(logger)
   } yield ()
 
   def run(logger: Logger): IO[Unit] = for {
     input <- readLn
-    _ <- logger(s"User input: $input\n")
-    _ <- run(logger)
+    _     <- logger(s"User input: $input\n")
+    _     <- run(logger)
   } yield ()
 }
