@@ -24,6 +24,7 @@ main = consoleLogger <> fileLogger "/Users/borysb/logging.log"
   >>= run
 
 run :: Logger -> IO ()
-run logger = forever $ do
-  input <- getLine
-  logger $ "User input: " ++ input ++ "\n"
+run logger = forever $ logger . formatInput <$> getLine
+
+formatInput :: String -> String
+formatInput input = "User input: " <> input <> "\n"
