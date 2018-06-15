@@ -1,18 +1,16 @@
 package wax
 
 import java.io.File
-import java.nio.file.Paths
 import java.time
 import java.time.LocalTime
 
 import cats.Monoid
 import wax.util._
 
-import scala.concurrent.duration.Duration
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.{Await, ExecutionContext, Future}
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, Future}
 import scala.io.Source
-import scala.util.Try
 
 object MapReduce {
 
@@ -44,7 +42,7 @@ object MapReduce {
 object FileProcessor extends App {
   def process[T: Monoid](f: String => T)(path: File): T = MapReduce.mapReduce(readTokens(path))(f)
 
-  def processMany[T: Monoid](f: String => T)(paths: List[File]): T = MapReduce.mapReducePar(paths)(process(f))
+  def processMany[T: Monoid](f: String => T)(paths: List[File]): T = MapReduce.mapReduce(paths)(process(f))
 }
 
 object Appchik extends App {
@@ -92,10 +90,7 @@ object InvertedIndexBuilder extends App {
 //}
 
 object util {
-  def readTokens(file:File): List[String] = Try(Source.fromFile(file).getLines.flatMap(tokenize).toList).getOrElse {
-    println(file)
-    throw new RuntimeException("FUCK")
-  }
+  def readTokens(file:File): List[String] = Source.fromFile(file).getLines.flatMap(tokenize).toList
 
   def tokenize(str: String): List[String] =
     str.toLowerCase
@@ -108,10 +103,6 @@ object util {
     val start = LocalTime.now
     def date = LocalTime.now.toString
     def pr(s: String) = println(date + ". " + s)
-    val words = Source.fromResource("asimov.txt")
-      .getLines
-      .flatMap(tokenize)
-      .toList
 
     pr("MapReduce start")
 
@@ -125,11 +116,3 @@ object util {
   }
 
 }
-
-//class MapMonoid[T: Monoid] extends Monoid[Map[String, T]] {
-//  override def empty: Map[String, T] = ???
-//
-//  override def combine(x: Map[String, T],
-//                       y: Map[String, T]): Map[String, T] = ???
-//}
-
