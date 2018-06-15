@@ -8,7 +8,7 @@ import cats.Monoid
 import wax.util._
 
 import scala.concurrent.duration.Duration
-import scala.concurrent.ExecutionContext.global
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.{Await, ExecutionContext, Future}
 import scala.io.Source
 
@@ -41,7 +41,7 @@ object MapReduce {
 
 //Word frequency
 object WordFrequencyCalc extends App {
-  val words = Source.fromResource("asimov.txt")
+  val words = Source.fromResource("books/wells/Herbert George Wells - Complete Works - 2015.txt")
                     .getLines
                     .flatMap(tokenize)
                     .toList
@@ -56,9 +56,9 @@ object WordFrequencyCalc extends App {
   val res = runWithTiming {
     val resF = MapReduce.mapReducePar(words)(w => Map(w -> 1))(monoid)
     Await.result(resF, Duration.Inf)
-//    val res = MapReduce.mapReduce(words)(w => Map(w -> 1))(monoid)
+//      MapReduce.mapReduce(words)(w => Map(w -> 1))(monoid)
   }
-  print(res.toList.sortBy(_._2).reverse)
+//  print(res.toList.sortBy(_._2).reverse)
 }
 
 //Inverted index (3-rd interview quiz)
@@ -105,7 +105,7 @@ object util {
 
     pr("MapReduce start")
 
-    val res = a()
+    val res: T = a
 
     val end: LocalTime = LocalTime.now
     pr("MapReduce end. Printing...")
