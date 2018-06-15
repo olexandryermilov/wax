@@ -483,7 +483,7 @@ Waterclap
 	"By air." 
 	"Hell, no. They can't afford to waste air like that. It would take a thousand atmospheres to empty the chamber of its water, and filling the chamber with air at that density, even temporarily, is more air than they can afford to expend. Steam is what does it." 
 	"Of course. Yes." 
-	Javan said cheerfully, "You heat the water. No pressure in the world can stop water from turning to steam at a temperature of more than 374° C. And the steam forces the sea water out through a one-way valve." 
+	Javan said cheerfully, "You heat the water. No pressure in the world can stop water from turning to steam at a temperature of more than 374Â° C. And the steam forces the sea water out through a one-way valve." 
 	"Another weak point," said Demerest. "I suppose so. It's never failed yet. The water in the lock is being pushed out now. When hot steam starts bubbling out the valve, the process automatically stops and the lock is fun of overheated steam." 
 	"And then?"
 	"And then we have a whole ocean to cool it with. The temperature drops and the steam condenses. Once that happens, ordinary air can be let in at a pressure of one atmosphere and then the door opens." 
@@ -579,7 +579,7 @@ Waterclap
 	"Mr. Bergen, let's not play around. You know very well that Earth is committed to spending a fixed amount of money on expansion projects-on programs designed to expand the human habitat-and that it is not a terribly large amount. Earth's population is not going to lavish resources in an effort to expand either outer space or inner space if it thinks this will cut into the comfort and convenience of Earth's prime habitat, the land surface of the planet." Annette broke in. "You make it sound callous of Earthmen, Mr. Demerest, and that's unfair.. It's only human, isn't it, to want to be secure? Earth is overpopulated and it is only slowly reversing the havoc inflicted on the planet by the Mad Twentieth. Surely man's original home must come first, ahead of either Luna City or Ocean-Deep. Heavens, Ocean-Deep is almost home to me, but I can't want to see it flourish at the expense of Earth's land." 
 	"It's not an either-or, Mrs. Bergen," said Demerest earnestly. "If the ocean and outer space are firmly, honestly, and intelligently exploited, it can only redound to Earth's benefit. A small investment will be lost but a large one will redeem itself with profit." 
 	Bergen held up his hand. "Yes, I know. You don't have to argue with me on that point. You'd be trying to convert the converted. Come, let's eat. I tell you what. We'll eat here. If you'll stay with us overnight, or several days for that matter-you're quite welcome-there will be ample time to meet everybody. Perhaps you'd rather take it easy for a while, though." 
-	"Much rather," said Demerest. "Actually, I want to stay here…I would like to ask, by the way, why I met so few people when we went through the units." 
+	"Much rather," said Demerest. "Actually, I want to stay hereÂ…I would like to ask, by the way, why I met so few people when we went through the units." 
 	"No mystery," said Bergen genially. "At any given time, some fifteen of our men are asleep and perhaps fifteen more are watching films or playing chess or, if their wives are with them--" 
 	"Yes, John," said Annette. 
 	"--And it's customary not to disturb them. The quarters are constricted and what privacy a man can have is cherished. A few are out at sea; three right now, I think. That leaves a dozen or so at work in here and you met them." 
@@ -1359,7 +1359,7 @@ Stranger in Paradise
 	"It isn't all you, William. It's failure. We won't make it. You see how clumsily the robot handles himself, even though he's on Earth, only a thousand miles away, with the signal round trip only a tiny fraction of a second in time. On Mercury, there will be minutes of delay, minutes for which the Mercury Computer will have to allow. It's madness to think it will work." 
 	William said, "Don't resign, Anthony. You can't resign now. I suggest we have the robot sent to Mercury. I'm convinced he's ready." 
 	Anthony laughed loudly and insultingly. "You're crazy, William." 
-	"I'm not. You seem to think it will be harder on Mercury, but it won't be. It's harder on Earth. This robot is designed for one-third Earth-normal gravity, and he's working in Arizona at full gravity. He's designed for 400° C, and he's got 300° C. He's designed for vacuum and he's working in an atmospheric soup." 
+	"I'm not. You seem to think it will be harder on Mercury, but it won't be. It's harder on Earth. This robot is designed for one-third Earth-normal gravity, and he's working in Arizona at full gravity. He's designed for 400Â° C, and he's got 300Â° C. He's designed for vacuum and he's working in an atmospheric soup." 
 	"That robot can take the difference." 
 	"The metal structure can, I suppose, but what about the Computer right here? It doesn't work well with a robot that isn't in the environment he's designed for....Look, Anthony, if you want a computer that is as complex as a brain, you have to allow for idiosyncrasies....Come, let's make a deal. If you will push, with me, to have the robot sent to Mercury, that will take six months, and I will take a sabbatical for that period. You will be rid of me." 
 	"Who'll take care of the Mercury Computer?" 
@@ -1423,7 +1423,7 @@ Stranger in Paradise
 	"But already he's walking more surely than he ever did in Arizona. Don't you think so, William? Don't you think so?" Anthony was gripping William's shoulder, shaking it, eyes never leaving the screen. 
 	William said, "I'm sure of it, Anthony." 
 	The Sun burned down in a warm contrasting world of white and black, of white Sun against black sky and white rolling ground mottled with black shadow. The bright sweet smell of the Sun on every exposed square centimeter of metal contrasting with the creeping death-of-aroma on the other side. 
-	He lifted his hand and stared at it, counting the fingers. Hot-hot-hot­­­--turning, putting each finger, one by one, into the shadow of the others and the hot slowly dying in a change in tactility that made him feel the clean, comfortable vacuum. 
+	He lifted his hand and stared at it, counting the fingers. Hot-hot-hotÂ­Â­Â­--turning, putting each finger, one by one, into the shadow of the others and the hot slowly dying in a change in tactility that made him feel the clean, comfortable vacuum. 
 	Yet not entirely vacuum. He straightened and lifted both arms over his head, stretching them out, and the sensitive spots on either wrist felt the vapors-- the thin, faint touch of tin and lead rolling through the cloy of mercury. 
 	The thicker taste rose from his feet; the silicates of each variety, marked by the clear separate-and-together touch and tang of each metal ion. He moved one foot slowly through the crunchy, caked dust, and felt the changes like a soft, not quite random symphony. 
 	And over all the Sun. He looked up at it, large and fat and bright and hot, and heard its joy. He watched the slow rise of prominences around its rim and listened to the crackling sound of each; and to the other happy noises over the broad face. When he dimmed the background light, the red of the rising wisps of hydrogen showed in bursts of mellow contralto, and the deep bass of the spots amid the muted whistling of the wispy, moving faculae, and the occasional thin keening of a flare, the ping-pong ticking of gamma rays and cosmic particles, and over all in every direction the soft, fainting, and ever-renewed sigh of the Sun's substance rising and retreating forever in a cosmic wind which reached out and bathed him in glory. 
@@ -2435,7 +2435,7 @@ Old-fashioned
 	Estes muttered, "Good idea." He rose and moved to the control board, where he cut the gravity. 
 	Funarelli floated upward with a sigh and said, "Why can't they find the black hole, the idiots?" 
 	"You mean like we did? There's no other way. It's not doing enough." 
-	Funarelli said, "I still hurt, even with no gravity to fight…Oh well, if it keeps on hurting like this, it won't matter so much when it comes to pill-taking time. ...Is there any way we can make that black hole do more than it's doing?" 
+	Funarelli said, "I still hurt, even with no gravity to fightÂ…Oh well, if it keeps on hurting like this, it won't matter so much when it comes to pill-taking time. ...Is there any way we can make that black hole do more than it's doing?" 
 	Estes said grimly, "If one of those bits of gravel should take it into its head to drop into the hole, a burst of X rays would shoot out." 
 	"Would they detect that on Vesta?" 
 	Estes shook his head. "I doubt it. They're not looking for such a thing. They'd be sure to detect it on Earth, though. Some of the space stations keep the sky under constant surveillance for radiation changes. They'd pick up astonishingly small bursts." 

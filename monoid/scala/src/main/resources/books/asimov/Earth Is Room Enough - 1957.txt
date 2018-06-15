@@ -312,7 +312,7 @@ The Dead Past
 	The trouble was, he had to know. He couldn't leave things as they were now. He couldn't!
 	He said, "Is there a text on neutrinics, Uncle Ralph? I mean a clear and simple one. An elementary one."
 	Nimmo thought, his plump cheeks puffing out with a series of sighs. "You ask the damnedest questions. The only one I ever heard of was Sterbinski and somebody. I've never seen it, but I viewed something about it once. . . . Sterbinski and LaMarr, that's it."
-	"Is that the Sterbinski who invented the chronoscope?" i   "I think so. Proves the book ought to be good." •   "Is there a recent edition? Sterbinski died thirty years ago."
+	"Is that the Sterbinski who invented the chronoscope?" i   "I think so. Proves the book ought to be good." Â•   "Is there a recent edition? Sterbinski died thirty years ago."
 	Nimmo shrugged and said nothing.
 	"Can you find out?"
 	They sat in silence for a moment, while Nimmo shifted his bulk to the creaking tune of the chair he sat on. Then the science writer said, "Are you going to tell me what this is all about?"
@@ -981,7 +981,7 @@ Kid Stuff
 	"I intend to. This is scarcely my idea of a place to live. And you're coming with me."
 	"I am not. What the hell do you think you are, telling me what I'm going to do?"
 	"If you think that's a respectful way to speak to a representative of an older culture, I can't say much for your upbringing."
-	"You're not an older culture-" He wanted to add: You're just a figment of my imagination; but he had been a writer too long to be able to bring himself to commit the cliché.
+	"You're not an older culture-" He wanted to add: You're just a figment of my imagination; but he had been a writer too long to be able to bring himself to commit the clichÃ©.
 	"We insects," said the elf freezingly, "existed half a billion years before the first mammal was invented. We watched the dinosaurs come in and we watched them go out. As for you man-things-strictly newcomers."
 	For the first time, Prentiss noted that, from the spot on the elf's body where its limbs sprouted, a third vestigial pair existed as well. It increased the insecticity of the object and Prentiss' sense of indignation grew.
 	He said, "You needn't waste your company on social inferiors."
@@ -2143,7 +2143,7 @@ The Immortal Bard
 	"Didn't they like it here? I should think they'd have been fascinated by our modern science," said Robertson. He was beginning to enjoy the conversation.
 	"Oh, they were. They were. Especially Archimedes. I thought he'd go mad with joy at first after I explained a little of it in some Greek I'd boned up on, but no-no-"
 	"What was wrong?"
-	"Just a different culture. They couldn't get used to our way §i life. They got terribly lonely and frightened. I had to send them back."
+	"Just a different culture. They couldn't get used to our way Â§i life. They got terribly lonely and frightened. I had to send them back."
 	"That's too bad."
 	"Yes. Great minds, but not flexible minds. Not universal. So I tried Shakespeare."
 	"What?" yelled Robertson. This was getting closer to home.

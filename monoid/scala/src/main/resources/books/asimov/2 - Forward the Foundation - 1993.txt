@@ -52,7 +52,7 @@
 	"It seems to me," said Seldon, "that I have heard this argument before."
 	"And you'll hear it again. It doesn't seem to do me any good to explain this to you."
 	Seldon sighed, sat back in his chair, and regarded Amaryl with a smile. The younger man could be abrasive, but he took psychohistory seriously-and that repaid all.
-	Amaryl still had the mark of his early years as a heatsinker. He had the broad shoulders and the muscular build of one who had been used to hard physical labor. He had not allowed his body to turn flabby and that was a good thing, for it inspired Seldon to resist the impulse to spend all of his time at the desk as well. He did not have Amaryl’s sheer physical strength, but he still had his own talents as a Twister-for all that he had just turned forty and could not keep it up forever. But for now, he would continue. Thanks to his daily workouts, his waist was still trim, his legs and arms firm.
+	Amaryl still had the mark of his early years as a heatsinker. He had the broad shoulders and the muscular build of one who had been used to hard physical labor. He had not allowed his body to turn flabby and that was a good thing, for it inspired Seldon to resist the impulse to spend all of his time at the desk as well. He did not have AmarylÂ’s sheer physical strength, but he still had his own talents as a Twister-for all that he had just turned forty and could not keep it up forever. But for now, he would continue. Thanks to his daily workouts, his waist was still trim, his legs and arms firm.
 	He said, "This concern for Demerzel cannot be purely a matter of his being a friend of mine. You must have some other motive."
 	"There's no puzzle to that. As long as you're a friend of Demerzel, your position here at the University is secure and you can continue to work on psychohistorical research."
 	"There you are. So I do have a reason to be friends with him. It isn't beyond your understanding at all."
@@ -566,7 +566,7 @@
 	"You are wise to hesitate. There are many things that might be done that have side effects we do not want. You see, Hari, I don't fear leaving my post-if some successor could be found who would continue those principles that I have been using to keep the decline as slow as possible. On the other hand, if Joranum himself were to succeed me, then that, in my opinion, would be fatal."
 	"Then anything we can do to stop him would be suitable."
 	"Not entirely. The Empire can grow anarchic, even if Joranum is destroyed and I stay. I must not, then, do something that will destroy Joranum and allow me to stay-if that very deed promotes the Fall of the Empire. I have not yet been able to think of anything I might do that would surely destroy Joranum and just as surely avoid anarchy."
-	"Minimalism,” whispered Seldon.
+	"Minimalism,Â” whispered Seldon.
 	"Pardon me?"
 	"Dors explained that you would be bound by minimalism."
 	"And so I am."
@@ -949,7 +949,7 @@
 	"Hey," said Raych, finally catching his breath. "I can't say that on holovision. I can't let my father find out-"
 	"No, of course not," said Joranum quickly. "We couldn't allow that. We'll just use the words. We'll find some other Dahlite. Someone from each of the sectors, each in his own dialect, but always the same message: `I don't want no robot in charge of running the Empire.'"
 	Namarti said, "And what happens when Demerzel proves he's not a robot?"
-	"Really," said Joranum. "How will he do that? It would be impossible for him to do so. Psychologically impossible. What? The great Demerzel, the power behind the throne, the man who has twitched the strings attached to Cleon I all these years and those attached to Cleon’s father before him? Will he climb down now and whine to the public that he is, too, a human being? That would be almost as destructive to him as being a robot. G.D., we have the villain in a no-win situation and we owe it all to this fine young man here."
+	"Really," said Joranum. "How will he do that? It would be impossible for him to do so. Psychologically impossible. What? The great Demerzel, the power behind the throne, the man who has twitched the strings attached to Cleon I all these years and those attached to CleonÂ’s father before him? Will he climb down now and whine to the public that he is, too, a human being? That would be almost as destructive to him as being a robot. G.D., we have the villain in a no-win situation and we owe it all to this fine young man here."
 	Raych flushed.
 	Joranum said, "Raych is your name, isn't it? Once our party is in a position to do so, we won't forget. Dahl will be treated well and you will have a good position with us. You're going to be Dahl's sector leader someday, Raych, and you're not going to regret you've done this. Are you, now?"
 	"Not on your life," said Raych fervently.
@@ -1235,7 +1235,7 @@
 	"I can't, but I have the Prime Radiant, which I've been working on like a-a-"
 	"Try lamec. That's an animal-a beast of burden-we have on Helicon. It doesn't exist on Trantor."
 	"If the lamec works hard, then that is what my work on the Prime Radiant has been like."
-	He pressed the security keypad on his desk and a drawer unsealed and slid open noiselessly. He took out a dark opaque cube that Seldon scrutinized with interest. Seldon himself had worked out the Prime Radiant’s circuitry, but Amaryl had put it together-a clever man with his hands was Amaryl.
+	He pressed the security keypad on his desk and a drawer unsealed and slid open noiselessly. He took out a dark opaque cube that Seldon scrutinized with interest. Seldon himself had worked out the Prime RadiantÂ’s circuitry, but Amaryl had put it together-a clever man with his hands was Amaryl.
 	The room darkened and equations and relationships shimmered in the air. Numbers spread out beneath them, hovering just above the desk surface, as if suspended by invisible marionette strings.
 	Seldon said, "Wonderful. Someday, if we live long enough, we'll have the Prime Radiant produce a river of mathematical symbolism that will chart past and future history. In it we can find currents and rivulets and work out ways of changing them in order to make them follow other currents and rivulets that we would prefer."
 	"Yes," said Amaryl dryly, "if we can manage to live with the knowledge that the actions we take, which we will mean for the best, may turn out to be for the worst."
@@ -1855,7 +1855,7 @@
 	Namarti laughed. "Of course. I've known for a long time that you look upon me as your footstool, your way of climbing up to the Imperial throne."
 	"Would you expect anything else?"
 	"Not at all. I will do the planning, take the chances, and then, when all is quite done, you gather in the reward. It makes sense, doesn't it?"
-	"Yes, it does make sense, for the reward will be yours, too. Won't you become the First Minister? Won't you be able to count on the full support of a new Emperor, one who is filled with gratitude? Won't I be”-and his face twisted with irony as he spat out the words-"the new figurehead?"
+	"Yes, it does make sense, for the reward will be yours, too. Won't you become the First Minister? Won't you be able to count on the full support of a new Emperor, one who is filled with gratitude? Won't I beÂ”-and his face twisted with irony as he spat out the words-"the new figurehead?"
 	"Is that what you plan to be? A figurehead?"
 	"I plan to be the Emperor. I supplied advances of credit when you had none. I supplied the cadre when you had none. I supplied the respectability you needed to build a large organization here in Wye. I can still withdraw everything I've brought in."
 	"I don't think so."
@@ -2093,7 +2093,7 @@
 	"It is not your place. It is the Gardener First-Class who must greet these new people."
 	"So it is. But Gruber can't do it. He's a broken man."
 	"He must have an assistant of some sort. Or let the old Chief Gardener do it. He holds the office till the end of the year."
-	"The old Chief Gardener is too ill. Besides"-Seldon hesitated-”there are ringers among the gardeners. Trantorians. They're here, for some reason. I have the names of every one of them."
+	"The old Chief Gardener is too ill. Besides"-Seldon hesitated-Â”there are ringers among the gardeners. Trantorians. They're here, for some reason. I have the names of every one of them."
 	"Have them taken into custody, then. Every last one of them. It's simple. Why are you making it so complex?"
 	"Because we don't know why they're here. Something's up. I don't see what twelve gardeners can do, but- No, let me rephrase that. I can see a dozen things they can do, but I don't know which one of those things they've planned. We will, indeed, take them into custody, but I must know more about everything before it's done.
 	"We have to know enough to winkle out everyone in the conspiracy from top to bottom and we must know enough of what they're doing to be able to make the proper punishment stick. I don't want to get twelve men and women on what is essentially a misdemeanor charge. They'll plead desperation, the need for a job. They'll complain that it isn't fair for Trantorians to be excluded. They'll get plenty of sympathy and we'll be left looking like fools. We must give them a chance to convict themselves of more than that. Besides-"
@@ -2124,12 +2124,12 @@
 	Gruber muttered a weak welcome and Seldon jumped in.
 	He advanced with an easy stride, putting himself immediately before Gruber, and said, "Thank you, Gardener First-Class. Men and women, gardeners of the Emperor, you are to undertake an important task. You will be responsible for the beauty and health of the only open land on our great world of Trantor, capital of the Galactic Empire. You will see to it that if we don't have the endless vistas of open undomed worlds, we will have a small jewel here that will outshine anything else in the Empire.
 	"You will all be under Mandell Gruber, who will shortly become Chief Gardener. He will report to me, when necessary, and I will report to the Emperor. This means, as you can all see, that you will be only three levels removed from the Imperial presence and you will always be under his benign watch. I am certain that even now he is surveying us from the Small Palace, his personal home, which is the building you see to the right-the one with the opal-layered dome-and that he is pleased with what he sees.
-	"Before you start work, of course, you will all undertake a course of training that will make you entirely familiar with the grounds and its needs. You will-”"
+	"Before you start work, of course, you will all undertake a course of training that will make you entirely familiar with the grounds and its needs. You will-Â”"
 	He had, by this time, moved, almost stealthily, to a point directly in front of Raych, who still remained motionless, unblinking.
 	Seldon tried not to look unnaturally benign and then a slight frown crossed his face. The person directly behind Raych looked familiar. He might have gone unrecognized if Seldon had not studied his hologram. Wasn't that Gleb Andorin of Wye? Raych's patron in Wye, in fact? What was he doing here?
 	Andorin must have noticed Seldon's sudden regard, for he muttered something between scarcely opened lips and Raych's right arm, moving forward from behind his back, plucked a blaster out of the wide pocket of his green doublet. So did Andorin.
 	Seldon felt himself going into near-shock. How could blasters have been allowed onto the grounds? Confused, he barely heard the cries of "'Treason!" and the sudden noise of running and shouting.
-	All that really occupied Seldon's mind was Raych's blaster pointing directly at him and Raych looking at him without any sign of recognition. Seldon’s mind filled with horror as he realized that his son was going to shoot and that he himself was only seconds from death.
+	All that really occupied Seldon's mind was Raych's blaster pointing directly at him and Raych looking at him without any sign of recognition. SeldonÂ’s mind filled with horror as he realized that his son was going to shoot and that he himself was only seconds from death.
 	25
 	A blaster, despite its name, does not "blast" in the proper sense of the term. It vaporizes and blows out an interior and-if anything-causes an implosion. There is a soft sighing sound, leaving what appears to be a "blasted" object.
 	Hari Seldon did not expect to hear that sound. He expected only death. It was, therefore, with surprise that he heard the distinctive soft sighing sound and he blinked rapidly as he looked down at himself, slackjawed.
@@ -2238,8 +2238,8 @@
 	Manella said, "What's going to happen now, First Minister?"
 	"I'll tell you what I think. The Entun Dynasty is finished. Cleon's son will not succeed. I don't think he wants to. He fears assassination in his turn and I don't blame him one bit. It would be much better for him to retire to one of the family estates on some Outer World and live a quiet Because he is a member of the Imperial House, he will untie allowed to do this. You and I may be less fortunate."
 	Manella frowned. "In what way, sir?"
-	Seldon cleared his throat. "It is possible to argue that because you killed Gleb Andorin, he dropped his blaster, which became available to Mandell Gruber, who used it to kill Cleon. Therefore you bear a strong share of the responsibility of the crime and it may even be said that it was all prearranged.”
-	“But that’s ridiculous. I am a member of the security establishment, fulfilling my duties-doing what I was ordered to do."
+	Seldon cleared his throat. "It is possible to argue that because you killed Gleb Andorin, he dropped his blaster, which became available to Mandell Gruber, who used it to kill Cleon. Therefore you bear a strong share of the responsibility of the crime and it may even be said that it was all prearranged.Â”
+	Â“But thatÂ’s ridiculous. I am a member of the security establishment, fulfilling my duties-doing what I was ordered to do."
 	Seldon smiled sadly. "You're arguing rationally and rationality is not going to be in fashion for a while. What's going to happen now, in the absence of a legitimate successor to the Imperial throne, is that we are bound to have a military government."
 	(In later years, when Manella came to understand the workings of psychohistory, she wondered if Seldon had used the technique to work out what was going to happen, for the military rule certainly came to pass. At the time, however, he made no mention of his fledgling theory.)
 	"If we do have a military government," he went on, "then it will be necessary for them to establish a firm rule at once, crush any signs of disaffection, act vigorously and cruelly, even in defiance of rationality and justice. If they accuse you, Miss Dubanqua, of being part of a plot to kill the Emperor, you will be slaughtered, not as an act of justice but as a way of cowing the people of Trantor.
@@ -2263,7 +2263,7 @@
 	And it was as he said. Seldon resigned gracefully from the post he had held for ten years. He was given a fulsome letter of appreciation for His services by the just-formed military government, a junta led by certain members of the Imperial Guard and the armed forces. He returned to Streeling University and Manella Dubanqua, relieved of her own post as security officer, went with Seldon and his family.
 	4
 	Raych came in, blowing on his hands. "I'm all for deliberate variety in the weather. You don't want things under a dome to always be the same.  Today though, they made it just a little too cold and worked up a wind, besides. I think it's about time someone complained to weather control."
-	“I don't know that it's weather control's fault," said Seldon. "It's getting harder to control things in general."
+	Â“I don't know that it's weather control's fault," said Seldon. "It's getting harder to control things in general."
 	"I know. Deterioration." Raych brushed his thick black mustache with the back of his hand. He did that often, as though he had never quite managed to get over the few months during which he had been mustacheless in Wye. He had also put on a little weight around the middle and, overall, had come to seem very comfortable and middleclass. Even his Dahl accent had faded somewhat.
 	He took off his light coverall and said, "And how's the old birthday boy?"
 	"Resenting it. Wait, wait, my son. One of these days, you'll be celebrating your fortieth birthday. We'll see how funny you'll think that is."
@@ -3179,7 +3179,7 @@
 	"I do think it," said Dors stubbornly, "and I can find evidence for it."
 	Elar said, "I don't know how to say this without offense, Dr. Venabili, but if a person is ingenious enough and intent enough on proving something, he or she can find all the evidence he or she wants-or, at least, something he or she believes is evidence."
 	"Do you think I'm paranoid?"
-	"I think that in your concern for the Maestro-something in which I’m with you all the way-you're, shall we say, overheated."
+	"I think that in your concern for the Maestro-something in which IÂ’m with you all the way-you're, shall we say, overheated."
 	Dors paused and considered Elar's statement. "At least you're right that a person with sufficient ingenuity can find evidence anywhere. I can build a case against you, for instance."
 	Elar's eyes widened as he stared at her in total astonishment. "Against me? I would like to hear what case you can possibly have against me."
 	"Very well. You shall. The birthday party was your idea, wasn't it?"
@@ -3488,7 +3488,7 @@
 	"Surely a fairytale."
 	"Surely. And incomplete, at that. But the similarity with Wanda is astonishing."
 	Raych said, "Dad, what are you planning?"
-	"I'm not sure, Raych. I need to know the genome and I have to find others like Wanda. I have a notion that youngsters are born-not often but occasionally-with such mental abilities, but that, in general, it merely gets them in trouble and they learn to mask it. And as they grow tip, their ability, their talent, is buried deep within their minds-sort of an unconscious act of self-preservation. Surely in the Empire or even just among Trantor's forty billion, there must be more of that sort, like Wanda, and if I know the genome I want, I can test those I think may be so.”
+	"I'm not sure, Raych. I need to know the genome and I have to find others like Wanda. I have a notion that youngsters are born-not often but occasionally-with such mental abilities, but that, in general, it merely gets them in trouble and they learn to mask it. And as they grow tip, their ability, their talent, is buried deep within their minds-sort of an unconscious act of self-preservation. Surely in the Empire or even just among Trantor's forty billion, there must be more of that sort, like Wanda, and if I know the genome I want, I can test those I think may be so.Â”
 	"And what would you do with them if you found them, Dad?"
 	"I have the notion that they are what I need for the further development of psychohistory."
 	Raych said, "And Wanda is the first of the type you know about and you intend to make a psychohistorian out of her?"
@@ -3520,7 +3520,7 @@
 	"Twelve. She'll soon be thirteen."
 	"In that case, I'll need permission from her parents."
 	Seldon cleared his throat. "That may be difficult to get. I'm her grandfather. Wouldn't my permission be enough?"
-	"For me, certainly. But, you know, we're talking about the law. I don’t wish to lose my license to practice."
+	"For me, certainly. But, you know, we're talking about the law. I donÂ’t wish to lose my license to practice."
 	It was necessary for Seldon to approach Raych again. This, too, was difficult, as he protested once more that he and his wife, Manella, wanted Wanda to live a normal life of a normal girl. What if her genome did turn out to be abnormal? Would she be whisked away to be prodded and probed like a laboratory specimen? Would Hari, in his fanatical devotion to his Psychohistory Project, press Wanda into a life of all work and no play, shutting her off from other young people her age? But Seldon was insistent.
 	"Trust me, Raych. I would never do anything to harm Wanda. But this must be done. I need to know Wanda's genome. If it is as I suspect it is, we may be on the verge of altering the course of psychohistory, of the future of the Galaxy itself!"
 	And so Raych was persuaded and somehow he obtained Manella's consent, as well. And together, the three adults took Wanda to Dr. Endelecki's office.
@@ -3618,7 +3618,7 @@
 	Zenow sighed again. "If you are right, we live in worse times than the Empire has ever seen. But what has this to do with your desire for more office space and additional staff here in the Library?"
 	"If the Empire falls apart, the Galactic Library may not escape the general carnage."
 	"Oh, but it must," said Zenow earnestly. "There have been bad times before and it has always been understood that the Galactic Library on Trantor, as the repository of all human knowledge, must remain inviolate. And so it will be in the future."
-	"It may not be. You said yourself that the junta violated its neutrality.”
+	"It may not be. You said yourself that the junta violated its neutrality.Â”
 	"Not seriously."
 	"It might be more serious next time and we can't allow this repository of all human knowledge to be damaged."
 	"How will your increased presence here prevent that?"
@@ -3688,7 +3688,7 @@
 	"Well, we will find others like Wanda. We will have one Foundation that will consist largely of physical scientists, who will preserve the knowledge of humanity and serve as the nucleus for the Second Empire. And there will be a Second Foundation of psychohistorians only-mentalists, mind-touching psychohistorians-who will be able to work on psychohistory in a multiminded way, advancing it far more quickly than individual thinkers ever could. They will serve as a group who will introduce fine adjustments as time goes on, you see. Ever in the background, watching. They will be the Empire's guardians."
 	"Wonderful!" said Amaryl weakly. "Wonderful! You see how I've chosen the right time to die? There's nothing left for me to do."
 	"Don't say that, Yugo."
-	"Don't make such a fuss over it, Hari. I'm too tired to do anything. Thank you-thank you-for telling me"-his voice was weakening-”about the revolution. It makes me-happy-happy-hap-"
+	"Don't make such a fuss over it, Hari. I'm too tired to do anything. Thank you-thank you-for telling me"-his voice was weakening-Â”about the revolution. It makes me-happy-happy-hap-"
 	And those were Yugo Amaryl's last words.
 	Seldon bent over the bed. Tears stung his eyes and rolled down his cheeks.
 	Another old friend gone. Demerzel, Cleon, Dors, now Yugo . . . leaving him emptier and lonelier as he grew old.
@@ -3893,7 +3893,7 @@
 	"No. I will not stop. Somehow or other, I will keep going."
 	"I tell you what, Dad. If you're really going to be so stubborn, then take psychohistory with you. Start it again on Santanni. There may be enough credits-and enthusiasm-to support it there."
 	"And the men and women who have been working for me so faithfully?"
-	"Oh bull, Dad. They've been leaving you because you can't pay them. You hang around here for the rest of your life and you'll be alone. -Oh, come on, Dad. Do you think I like to talk to you this way? It's because no one has wanted to-because no one has had the heart to-that you're in your present predicament. Let's be honest with each other now. When ~. „u walk the streets of Trantor and you're attacked for no reason other than that you're Hari Seldon, don't you think it's time for a little bit of truth?"
+	"Oh bull, Dad. They've been leaving you because you can't pay them. You hang around here for the rest of your life and you'll be alone. -Oh, come on, Dad. Do you think I like to talk to you this way? It's because no one has wanted to-because no one has had the heart to-that you're in your present predicament. Let's be honest with each other now. When ~. Â„u walk the streets of Trantor and you're attacked for no reason other than that you're Hari Seldon, don't you think it's time for a little bit of truth?"
 	"Never mind the truth. I have no intention of leaving Trantor."
 	Raych shook his head. "I was sure you'd be stubborn, Dad. You've got two months to change your mind. Think about it, will you?"
 	15
@@ -4227,7 +4227,7 @@
 	"So, you're not goin' to make it easy, are you, old man?" snorted the boy who appeared to be the group's ringleader. "Why, me and my buddies, we'll take you out in two seconds flat. We'll-" All of a sudden, the ringleader was down, the victim of a perfectly placed Twist-kick to his abdomen. The two ruffians who were still standing quickly dropped to a crouch in preparation for attack. But Palver was quicker. They, too, were felled almost before they knew what hit them.
 	And then it was over-almost as soon as it started. Seldon stood off to the side, leaning heavily on his cane, shaking at the thought of his narrow escape. Palver, panting slightly from exertion, surveyed the scene. The three attackers were out cold on the deserted walkway under the darkening dome.
 	"Come on, let's get out of here quickly!" Palver urged again, only this time it was not the attackers they would be fleeing.
-	"Stettin, we can't leave," protested Seldon. He gestured toward the unconscious would-be muggers. "They're really nothing more than children. They may be dying. How can we just walk away? It's inhumane-that’s what it is-and humanity is exactly what I've been working all these years to protect." Seldon struck the ground with his cane for emphasis and his eyes gleamed with conviction.
+	"Stettin, we can't leave," protested Seldon. He gestured toward the unconscious would-be muggers. "They're really nothing more than children. They may be dying. How can we just walk away? It's inhumane-thatÂ’s what it is-and humanity is exactly what I've been working all these years to protect." Seldon struck the ground with his cane for emphasis and his eyes gleamed with conviction.
 	"Nonsense," retorted Palver. "What's inhumane is the way muggers like that prey on innocent citizens like you. Do you think they'd have given you a second thought? They'd just as soon stick a knife in your gut to steal your last credit-and then kick you as they ran! They'll come to soon enough and slink away to lick their wounds. Or someone will find them and call the central office.
 	"But, Hari, you must think. After what happened last time, you stand to lose everything if you're linked to another beating. Please, Hari, we must run!" With this, Palver grabbed Seldon's arm and Seldon after a List backward glance, allowed himself to be led away.
 	As the footsteps of the rapidly departing Seldon and Palver diminished in the distance, another figure emerged from his hiding place behind some trees. Chuckling to himself, the sullen-eyed youth muttered,
@@ -4295,7 +4295,7 @@
 	Hari Seldon jerked back in his chair as if struck.
 	"Further," Acarnio continued, "I must advise you of a two-week temporary suspension of all Library privileges-effective immediately. The Board has called that special meeting, Professor Seldon. In two weeks' time we will notify you whether or not we've decided that our association with you must be terminated."
 	Here, Acarnio stopped speaking and, placing his palms on the glossy, spotless surface of his desk, stood up. "That is all, Professor Seldon-for now."
-	Hari Seldon stood as well, although his upward movement was not as smooth, nor as quick, as Tryma Acarnio’s..
+	Hari Seldon stood as well, although his upward movement was not as smooth, nor as quick, as Tryma AcarnioÂ’s..
 	"May I be permitted to address the Board?" asked Seldon. "Perhaps if I were able to explain to them the vital importance of psychohistory and the Encyclopedia-"
 	"I'm afraid not, Professor," said Acarnio softly and Seldon caught a brief glimmer of the man Las Zenow had told him about. But, just as quickly, the icy bureaucrat was back as Acarnio guided Seldon to the door.
 	As the portals slid open, Acarnio said, "Two weeks, Professor Seldon. Till then." Hari stepped through to his waiting skitter and the doors slid shut.

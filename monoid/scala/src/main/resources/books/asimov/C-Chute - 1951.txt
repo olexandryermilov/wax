@@ -252,7 +252,7 @@ Porter turned and walked unsteadily away.
 Stuart said, lightly, "Another failure. One act of heroism still ready to be knocked down to the highest bidder with nothing offered yet."
 Polyorketes spoke up and his harsh voice roughed the words. "You keep on talking, Mr. Big Mouth. You just keep banging that empty barrel. Pretty soon, we'll kick your teeth in. There's one boy I think would be willing to do it now, eh, Mr. Porter?"
 Porter's look at Stuart confirmed the truth of Polyorketes' remarks, but he said nothing.
-i i Stuart said, "Then what about you, Polyorketes? You're the barehand man with guts. Want me to help you into a suit?" • "I'll ask you when I want help." 1 "What about you, Leblanc?"
+i i Stuart said, "Then what about you, Polyorketes? You're the barehand man with guts. Want me to help you into a suit?" Â• "I'll ask you when I want help." 1 "What about you, Leblanc?"
 The young man shrank away.
 "Not even to get back to Margaret?"
 But Leblanc could only shake his head.
@@ -355,7 +355,7 @@ Slowly, he unhooked his spare oxygen cylinder. There was only an inner lock betw
 He lifted himself above the lock, forcing his bent back against the inner surface of the interlock area. It made breathing difficult. The spare oxygen cylinder dangled at a queer angle. He held its metal-mesh hose and straightened it, forcing it against the inner lock so that vibration thudded. Again- again-
 It would have to attract the attention of the Kloros. They would have to investigate.
 He would have no way of telling when they were about to do so. Ordinarily, they would first let air into the interlock to force the outer lock shut.
-• But now the outer lock was on the central screw, well away from its rim. Air would suck about it ineffectually, dragging out into space.
+Â• But now the outer lock was on the central screw, well away from its rim. Air would suck about it ineffectually, dragging out into space.
 Mullen kept on thumping. Would the Kloros look at the air-gauge, note that it scarcely lifted from zero, or would they take its proper working for granted?
 Porter said, "He's been gone an hour and a half."
 "I know," said Stuart.
@@ -364,7 +364,7 @@ Porter was bothered. His philosophy of life had always been simple-take care of 
 He said, "Do you suppose they've caught him?"
 "If they had, we'd hear about it," replied Stuart, briefly.
 Porter felt, with a miserable twinge, that there was little interest on the part of the others in speaking to him. He could understand it; he had not exactly earned their respect. For the moment, a torrent of self-excuse poured
-• through his mind. The others had been frightened, too. A man had a right to be afraid. No one likes to die. At least, he hadn't broken like Aristides Polyorketes. He hadn't wept like Leblanc. He- But there was Mullen, out there on the hull.
+Â• through his mind. The others had been frightened, too. A man had a right to be afraid. No one likes to die. At least, he hadn't broken like Aristides Polyorketes. He hadn't wept like Leblanc. He- But there was Mullen, out there on the hull.
 "Listen," he cried, "why did he do it?" They turned to look at him, not understanding, but Porter didn't care. It bothered him to the point where it had to come out. "I want to know why Mullen is risking his life."
 "The man," said Windham, "is a patriot-"
 "No, none of that!" Porter was almost hysterical. "That little fellow has no emotions at all. He just has reasons and I want to know what those reasons are, because-"

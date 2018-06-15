@@ -25,7 +25,7 @@ IN TIME
 EMPEROR
 
 WILLIAM F. WU
-Copyright © 1994
+Copyright Â© 1994
 
 Databank by Matt Elson
 
@@ -1172,7 +1172,7 @@ The Mojave Center. An aerial view of the Center, including the Governor's Buildi
 
 MC robots merged. Four of the MC Governor's six independent component robots are shown here. After capturing them in the remote past, R. Hunter merged and deactivated the robots temporarily.
 
-Governor's Building. The bank of elevators in the "Transition Plane" level. The "90°" label indicates the direction relative to North one is facing (in this case East: ninety degrees from North).
+Governor's Building. The bank of elevators in the "Transition Plane" level. The "90Â°" label indicates the direction relative to North one is facing (in this case East: ninety degrees from North).
 
 R. Hunter's hand. Here we see the versatility of R. Hunter's manual extremity. Clockwise from top left: as a normal human hand; extended and upturned to be used as a crowbar or pry; as an awl, which can be used as a pick or as a weapon; and as a flathead screwdriver.
 
@@ -2360,7 +2360,7 @@ Steve ran toward MC 5, but he could see that Ishihara nearly had a hand on the c
 Steve collided bodily with Ishihara and clung to him. "Stop! I order you to stop moving. Let go of Jane."
 Ishihara neither released Jane's wrist nor spoke. He grabbed the firmly-tied sash of Steve's robe with his free hand and pulled. Steve lost his grip, stumbled, and fell to the ground. He understood that some First Law imperative had overrode his instructions to Ishihara.
 Steve glanced over at Hunter. MC 5 had turned to flee, but Hunter snatched him up off the ground and held him high, kicking and flailing. Steve scrambled to his feet.
-"Stop struggling," Steve ordered MC 5 in English. «Keep quiet and don't try to get away."
+"Stop struggling," Steve ordered MC 5 in English. Â«Keep quiet and don't try to get away."
 The small robot obeyed. Hunter set him on his feet again, but held one arm firmly in his grasp. He turned toward Jane.
 Wayne had halted in front of Hunter, seeing that he was too late to get MC 5.  Ishihara still held Jane's wrist tightly as she struggled against him. Marcia had stopped, uncertain what she should do.
 "Steve!"  Jane pleaded.
@@ -2384,7 +2384,7 @@ Startled,  Steve looked at him in amazement. Always before, Hunter had offered a
 Polo nudged Hunter with his elbow.
 "I have no explanation," said Hunter in Mongol.
 The khan glared at him, then turned to Steve. "Speak."
-Steve swallowed. He had no idea what to say, either. "I, uh…"
+Steve swallowed. He had no idea what to say, either. "I, uhÂ…"
 "May I speak?" Marcia spoke softly.
 "Speak,"  said Kublai Khan, turning to her with a piercing gaze.
 "We seek evil spirits that tried to infiltrate the great khan's court."

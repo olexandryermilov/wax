@@ -1691,7 +1691,7 @@ Until now. The men of the Cruiser John had found one and were bathed for the res
 The men converted their ship into an underground bubble of Earth-type surroundings. They could not lift off the surface, nor could they drive a communicating beam through hyperspace, but all else was salvageable. To make up for inefficiencies in the cycling system, they could even tap the planet's own water and air supply, within limits; provided, of course, they subtracted the ammonia. 
 They organized exploring parties since their suits were in excellent condition and it passed the time. The planet was harmless; no animal life; sparse plant life everywhere. Blue, always blue; ammoniated chlorophyll; ammoniated protein. 
 They set up laboratories, analyzed the plant components, studied microscopic sections, compiled vast volumes of findings. They tried growing native plants in ammonia-free atmosphere and failed. They made themselves into geologists and studied the planet's crust; astronomers, and studied the spectrum of the planet's sun. 
-Barrère would say sometimes, "Eventually, the Corps will reach this planet again and we'll leave a legacy of knowledge for them. It's a unique planet after all. There might not be another Earth-type with ammonia in all the Milky Way." 
+BarrÃ¨re would say sometimes, "Eventually, the Corps will reach this planet again and we'll leave a legacy of knowledge for them. It's a unique planet after all. There might not be another Earth-type with ammonia in all the Milky Way." 
 "Great," said Sandropoulos bitterly. "What luck for us." 
 Sandropoulos worked out the thermodynamics of the situation. " A metastable system," he said. "The ammonia disappears steadily through geochemical oxidation that forms nitrogen; the plants utilize nitrogen and re-form ammonia, adapting themselves to the presence of ammonia. If the rate of plant formation of ammonia dropped two per cent, a declining spiral would set in. Plant life would wither, reducing the ammonia still further, and so on." 
 "You mean if we killed enough plant life," said Vlassov, "we could wipe out the ammonia." 
@@ -1704,7 +1704,7 @@ Vlassov shook his head. "It wouldn't do anyway. If our bacteria survived, it wou
 Sandropoulos said, "Bacteria won't help us. We need the plants; they carry the oxygen-manufacturing systems." 
 "We could make some ourselves," said Petersen. "We could electrolyze water." 
 "How long will our equipment last? If we could only get our plants going, it would be like electrolyzing water forever, little by little, but year after year, till the planet gave up." 
-Barrère said, "Let's treat the soil then. It's rotten with ammonium salts. We'll bake the salts out and replace the ammonia-free soil." 
+BarrÃ¨re said, "Let's treat the soil then. It's rotten with ammonium salts. We'll bake the salts out and replace the ammonia-free soil." 
 "And what about the atmosphere?" asked Chou. "In ammonia-free soil, they may catch hold despite the atmosphere. They almost make it as is." 
 They worked like longshoremen, but with no real end in view. None really thought it would work, and there was no future for themselves, personally, even if it did work. But working passed the days. 
 The next growing season, they had their ammonia-free soil, but Earth plants still grew only feebly. They even placed domes over several shoots and pumped ammonia-free air within. It helped slightly but not enough. They adjusted the chemical composition of the soil in every possible fashion. There was no reward. 

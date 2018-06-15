@@ -5,7 +5,7 @@ ROBOTS AND ALIENS
 Maverick
 By Bruce Bethke
  
-Copyright © 1990 by Byron Preiss Visual Publications
+Copyright Â© 1990 by Byron Preiss Visual Publications
  
  
 For John Sladek, Roderick, and Clifford,
@@ -361,7 +361,7 @@ The scanning robots seemed to accept his authority. Eyes, the robot in charge of
 ?Next, I used the solar spectrographic information and atmospheric data supplied by Nose, along with our knowledge of Learning Machine #1?s physical structure, to compute the albedo?? 
 Basalom interrupted via hyperwave. Explain albedo. 
 ??That is, the optical wavelength reflectivity of its skin. Allowing a 15-percent variance for self-directed changes in surface texture, I still was unable to identify any objects which showed a high probability of being either part or all of the learning machine. 
-?Finally, based on the knowledge that the ?cells? that compose the learning machine are actually polyhedrons with microplanar surfaces, I scanned for moiré patterns in the ultraviolet range. Aside from the aeroshell in which the learning machine landed, I found nothing to match my search profile. ? 
+?Finally, based on the knowledge that the ?cells? that compose the learning machine are actually polyhedrons with microplanar surfaces, I scanned for moirÃ© patterns in the ultraviolet range. Aside from the aeroshell in which the learning machine landed, I found nothing to match my search profile. ? 
 Good job, Eyes. The squat little robot did not acknowledge Basalom?s compliment. 
 Dr. Anastasi nodded thoughtfully. ?I see. Next?? 
 Ears, the robot in charge of monitoring the microwave through hyperwave portion of the spectrum, began reporting in an identical monotonous voice. ?While I have been able to locate the transponder on the aeroshell, I have not received any signals from Learning Machine #1 ?s built-in hyperwave transponder. Nor have I been able to detect any leakage of the kind that should be associated with the operation of the learning machine. ? 

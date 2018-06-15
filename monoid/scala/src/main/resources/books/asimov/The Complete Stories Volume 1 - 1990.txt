@@ -330,7 +330,7 @@ with the authors, who were biophysicists), making the language taut and meaningf
 "But you don't get recognition, Uncle Ralph," protested young Foster, who was getting ready to start his college career and was rather starry-eyed
 * about it. "You could be a terrific researcher."
 "I get recognition," said Nimmo. "Don't think for a minute I don't. Sure,
-• a biochemist or a strato-meteorologist won't give me the time of day, but they pay me well enough. Just find out what happens when some first-class ; chemist finds the Commission has cut his year's allowance for science writing. He'll fight harder for enough funds to afford me, or someone like me, , than to get a recording ionograph."
+Â• a biochemist or a strato-meteorologist won't give me the time of day, but they pay me well enough. Just find out what happens when some first-class ; chemist finds the Commission has cut his year's allowance for science writing. He'll fight harder for enough funds to afford me, or someone like me, , than to get a recording ionograph."
 He grinned broadly and Foster grinned back. Actually, he was proud of his paunchy, round-faced, stub-fingered uncle, whose vanity made him brush his fringe of hair futilery over the desert on his pate and made him dress like an unmade haystack because such negligence was his trademark. Ashamed, but proud, too.
 And now Foster entered his uncle's cluttered apartment in no mood at all for grinning. He was nine years older now and so was Uncle Ralph. For nine more years, papers in every branch of science had come to him for polishing and a little of each had crept into his capacious mind.
 Nimmo was eating seedless grapes, popping them into his mouth one at a time. He tossed a bunch to Foster who caught them by a hair, then bent to retrieve individual grapes that had torn loose and fallen to the floor.
@@ -366,7 +366,7 @@ He told himself angrily: So they're not doing much work in the field. Does that 
 The trouble was, he had to know. He couldn't leave things as they were now. He couldn 't!
 He said, "Is there a text on neutrinics, Uncle Ralph? I mean a clear and simple one. An elementary one."
 Nimmo thought, his plump cheeks puffing out with a series of sighs. "You ask the damnedest questions. The only one I ever heard of was Sterbinski and somebody. I've never seen it, but I viewed something about it once. . . . Sterbinski and LaMarr, that's it."
-"Is that the Sterbinski who invented the chronoscope?" i   "I think so. Proves the book ought to be good." •   "Is there a recent edition? Sterbinski died thirty years ago."
+"Is that the Sterbinski who invented the chronoscope?" i   "I think so. Proves the book ought to be good." Â•   "Is there a recent edition? Sterbinski died thirty years ago."
 Nimmo shrugged and said nothing.
 "Can you find out?"
 They sat in silence for a moment, while Nimmo shifted his bulk to the creaking tune of the chair he sat on. Then the science writer said, "Are you going to tell me what this is all about?"
@@ -495,7 +495,7 @@ Foster took a deep breath. "A century and a quarter. That's the most."
 "But the monthly bulletin the Commission puts out deals with ancient history almost entirely." The historian laughed shakily. "You must be wrong. The government has data as far back as 3000 B.C."
 "When did you switch to believing them?" demanded Foster, scornfully. "You began this business by proving they were lying; that no historian had made use of the chronoscope. Don't you see why now? No historian, except one interested in contemporary history, could. No chronoscope can possibly see back in time further than 1920 under any conditions."
 1 "You're wrong. You don't know everything," said Potterley.
-"The truth won't bend itself to your convenience either. Face it. The IJ&vernment's part in this is to perpetuate a hoax." •f'Why?"
+"The truth won't bend itself to your convenience either. Face it. The IJ&vernment's part in this is to perpetuate a hoax." Â•f'Why?"
 "I don't know why."
 Potterley's snubby nose was twitching. His eyes were bulging. He pleaded, "It's only theory, Dr. Foster. Build a chronoscope. Build one and try."
 Foster caught Potterley's shoulders in a sudden, fierce grip. "Do you think I haven't? Do you think I would tell you this before I had checked it every way I knew? I have built one. It's all around you. Look!"
@@ -536,12 +536,12 @@ The historian was neatly dressed as ever. He lifted his hand in a gesture that w
 Potterley said, "I waited till five, till you were . . . May I come in?"
 Foster nodded.
 Potterley said, "I suppose I ought to apologize for my behavior. I was dreadfully disappointed; not quite master of myself. Still, it was inexcusable."
-"I accept your apology," said Foster. "Is that all?" £: "My wife called you, I think." .,,  "Yes, she has."
+"I accept your apology," said Foster. "Is that all?" Â£: "My wife called you, I think." .,,  "Yes, she has."
 +   "She has been quite hysterical. She told me she had but I couldn't be quite sure-"
 "Could you tell me-would you be so kind as to tell me what she wanted?"
 "She wanted a chronoscope. She said she had some money of her own. She was willing to pay." ...  "Did you-make any commitments?"
 "I said I wasn't in the manufacturing business."
-*  "Good," breathed Potterley, his chest expanding with a sigh of relief. ''Please don't take any calls from her. She's not-quite-" ;!•.• "Look, Dr. Potterfey," said Foster, "I'm not getting into any domestic quarrels, but you'd better be prepared for something. Chronoscopes can be built by anybody Given a few simple parts that can be bought through some etherics sales center, it can be built in the home workshop. The video part, anyway." !   "But no one else will think of it beside you, will they? No one has."
+*  "Good," breathed Potterley, his chest expanding with a sigh of relief. ''Please don't take any calls from her. She's not-quite-" ;!Â•.Â• "Look, Dr. Potterfey," said Foster, "I'm not getting into any domestic quarrels, but you'd better be prepared for something. Chronoscopes can be built by anybody Given a few simple parts that can be bought through some etherics sales center, it can be built in the home workshop. The video part, anyway." !   "But no one else will think of it beside you, will they? No one has."
 "I don't intend to keep it secret." ';   "But you can't publish. It's illegal research."
 "That doesn't matter any more, Dr. Potterley. If I lose my grants, I lose them. If the university is displeased, I'll resign. It just doesn't matter." ;   "But you can't do that!"
 "Till now," said Foster, "you didn't mind my risking loss of grants and position. Why do you turn so tender about it now? Now let me explain something to you. When you first came to me, I believed in organized and directed research; the situation as it existed, in other words. I considered you an intellectual anarchist, Dr. Potterley, and dangerous. But, for one reason or another, I've been an anarchist myself for months now and I have achieved great things.
@@ -637,7 +637,7 @@ Araman gknced at him coldly. "We know all about it, Dr. Foster. The safety-depos
 "Anyway," said Nimmo, "I decided the net must be closing around him and, after I took care of a few items, I came down to tell him to get off this thing he's doing. It's not worth his career."
 "Does that mean you know what he's doing?" asked Araman.
 "He never told me," said Nimmo, "but I'm a science writer with a hell of a lot of experience. I know which side of an atom is electronified. The boy, Foster, specializes in pseudo-gravitic optics and coached me on the stuff himself. He got me to get him a textbook on neutrinics and I kind of ship-viewed it myself before handing it over. I can put the two together. He asked me to get him certain pieces of physical equipment, and that was evidence, too. Stop me if I'm wrong, but my nephew has built a semipor-table, low-power chronoscope. Yes, or-yes?"
-"Yes." Araman reached thoughtfully for a cigarette and paid no attention to Dr. Potterley (watching silently, as though all were a dream) who shied away, gasping, from the white cylinder. "Another mistake for me. I ought to resign. I should have put tabs on you, too, Nimmo, instead of concentrating too hard on Potterley and Foster. I didn't have much time of course and you've ended up safely here, but that doesn't excuse me. You're under arrest, Nimmo." '•>• "What for?" demanded the science writer.
+"Yes." Araman reached thoughtfully for a cigarette and paid no attention to Dr. Potterley (watching silently, as though all were a dream) who shied away, gasping, from the white cylinder. "Another mistake for me. I ought to resign. I should have put tabs on you, too, Nimmo, instead of concentrating too hard on Potterley and Foster. I didn't have much time of course and you've ended up safely here, but that doesn't excuse me. You're under arrest, Nimmo." 'Â•>Â• "What for?" demanded the science writer.
 "Unauthorized research."
 "I wasn't doing any. I can't, not being a registered scientist. And even if I did, it's not a criminal offense."
 Foster said savagely, "No use, Uncle Ralph. This bureaucrat is making his own laws."
@@ -774,17 +774,17 @@ and fewer votes. Then, at last, they built Multivac and it can tell from just I 
 Matthew frowned and said, "No, it's not nice. I don't want a machine
 telling me how I would have voted just because some joker in Milwaukee
 says he's against higher tariffs. Maybe I want to vote cockeyed just for the
-•i pleasure of it. Maybe I don't want to vote. Maybe-"
+Â•i pleasure of it. Maybe I don't want to vote. Maybe-"
 (      But Linda had wriggled from his knee and was beating a retreat.
 She met her mother at the door. Her mother, who was still wearing her coat and had not even had time to remove her hat, said breathlessly, "Run , along, Linda. Don't get in Mother's way."
 Then she said to Matthew, as she lifted her hat from her head and patted her hair back into place, "I've been at Agatha's."
 Matthew stared at her censoriously and did not even dignify that piece of information with a grunt as he groped for his newspaper. Sarah said, as she unbuttoned her coat, "Guess what she said?"
-•.    Matthew flattened out his newspaper for reading purposes with a sharp
-• crackle and said, "Don't much care."
+Â•.    Matthew flattened out his newspaper for reading purposes with a sharp
+Â• crackle and said, "Don't much care."
 Sarah said, "Now, Father-" But she had no time for anger. The news i had to be told and Matthew was the only recipient handy, so she went on,
 "Agatha's Joe is a policeman, you know, and he says a whole truckload of
 secret service men came into Bloomington last night."
-•     "They're not after me."
+Â•     "They're not after me."
 "Don't you see, Father? Secret service agents, and it's almost election (time. In Bloomington."
 "Maybe they're after a bank robber."
 "There hasn't been a bank robbery in town in ages. . . . Father, you're hopeless."
@@ -1774,7 +1774,7 @@ Etheriel, his vortices quivering, stood before the glory of a six-winged
 cherub.	,
 The cherub said, "If I understand you, your particular universe r"as been
 dismantled." 111 "Exactly."
-1 "Well, surely, now, you don't expect me to set it up again?" "'*• "I don't expect you to do anything," said Etheriel, "except to arrange an appointment for me with the Chief."
+1 "Well, surely, now, you don't expect me to set it up again?" "'*Â• "I don't expect you to do anything," said Etheriel, "except to arrange an appointment for me with the Chief."
 The cherub gestured his respect instantly at hearing the word. Two wing-tips covered his feet, two his eyes and two his mouth. He restored hi tnself to normal and said, "The Chief is quite busy. There are a myriad score of matters for him to decide."
 "Who denies that? I merely point out that if matters stand as *ney are now, there will have been a universe in which Satan will have won *he final victory."
 "Satan?"
@@ -2079,7 +2079,7 @@ was seated at his wife's sickbed, weeping uncontrollably, when his wife, musteri
 " 'I cannot,' she cried. 'I must tell, or my soul will never know peace. I have been unfaithful to you, Abner. In this very house, not one month ago-'
 " 'Hush, dear,' soothed Abner. 'I know all about it. Why else have I poisoned you?' "
 Trask tried desperately to maintain equanimity but did not entirely succeed. He suppressed a chuckle imperfectly.
-¥   Meyerhof said, "So that's funny, too. Adultery. Murder. All funny." , "Well, now," said Trask, "books have been written analyzing humor." : "True enough," said Meyerhof, "and I've read a number of them. What's more, I've read most of them to Multivac. Still, the people who write the books are just guessing. Some of them say we laugh because we feel superior to the people in the joke. Some say it is because of a suddenly realized incongruity, or a sudden relief from tension, or a sudden reinterpretation of events. Is there any simple reason? Different people laugh at different jokes. No joke is universal. Some people don't laugh at any joke. Yet what may be most important is that man is the only animal with a true sense of humor: the only animal that laughs."
+Â¥   Meyerhof said, "So that's funny, too. Adultery. Murder. All funny." , "Well, now," said Trask, "books have been written analyzing humor." : "True enough," said Meyerhof, "and I've read a number of them. What's more, I've read most of them to Multivac. Still, the people who write the books are just guessing. Some of them say we laugh because we feel superior to the people in the joke. Some say it is because of a suddenly realized incongruity, or a sudden relief from tension, or a sudden reinterpretation of events. Is there any simple reason? Different people laugh at different jokes. No joke is universal. Some people don't laugh at any joke. Yet what may be most important is that man is the only animal with a true sense of humor: the only animal that laughs."
 Trask said suddenly, "I understand. You're trying to analyze humor. That's why you're transmitting a series of jokes to Multivac."
 "Who told you I was doing that? . . . Never mind, it was Whistler. I remember, now. He surprised me at it. Well, what about it?"
 "Nothing at all."
@@ -2171,7 +2171,7 @@ Scott Robertson, the school's young English instructor, adjusted his glasses and
 "Oh, they were. They were. Especially Archimedes. I thought he'd go mad with joy at first after I explained a little of it in some Greek I'd boned up on, but no-no-"
 "What was wrong?"
 Copyright (c) 195? by Palmer Publications, Inc.
-"Just a different culture. They couldn't get used to our way §i life. They got terribly lonely and frightened. I had to send them back." ja
+"Just a different culture. They couldn't get used to our way Â§i life. They got terribly lonely and frightened. I had to send them back." ja
 "That's too bad."
 "Yes. Great minds, but not flexible minds. Not universal. So I tried Shakespeare."
 "What?" yelled Robertson. This was getting closer to home.
@@ -2659,7 +2659,7 @@ Of course, Reading Day had been different. Partly, there was the simple fact of 
 And then not so much depended upon it. There were no recruiters just ahead, waiting and jostling for the lists and scores on the coming Olympics. A boy or girl who goes through the Reading Day is just someone who has ten more years of undifferentiated living upon Earth's crawling surface; just someone who returns to his family with one new ability.
 By the time Education Day caine, ten years later, George wasn't even sure of most of the details of his own Reading Day.
 
-•Most clearly of all, he remembered it to be a dismal September day with a mild rain falling. (September for Reading Day; November for Education
+Â•Most clearly of all, he remembered it to be a dismal September day with a mild rain falling. (September for Reading Day; November for Education
 
 Day; May for Olympics. They made nursery rhymes out of it.) George had
 dressed by the wall lights, with his parents far more excited than he himself was. His father was a Registered Pipe Fitter and had found his occupation on earth. This fact had always been a humiliation to him, although, of course, as anyone could see plainly, most of each generation must stay on Earth in the nature of things.
@@ -3098,7 +3098,7 @@ The audience was in bedlam.
 George wondered how the contestants could work in such pandemo
 nium, then wondered if that were not even a good thing. A first-class technician should work best under pressure.
 Seventeen rose from his place as his board went red-rimmed to signify completion. Four was only two seconds behind him. Another, then another.
-Trevelyan was still working, the nîinor constituents of his alloy bar still unreported. With nearly all contestants standing, Trevelyan finally rose, also. Then, tailing off, Five rose, and received an ironic cheer.
+Trevelyan was still working, the nÃ®inor constituents of his alloy bar still unreported. With nearly all contestants standing, Trevelyan finally rose, also. Then, tailing off, Five rose, and received an ironic cheer.
 It wasn't over. Official announcements were naturally delayed. Time elapsed was something, but accuracy was just as important. And not all diagnoses were of equal difficulty. A dozen factors had to be weighed.
 Finally, the announcer's voice sounded, "Wmner in the time of four minutes and twelve seconds, diagnosis correct, analysis correct within an average of zero point seven parts per hundred thousand, Contestant Number-Seventeen, Henry Anton Schmidt of-"
 What followed was drowned in the screaming. Number Eight was next and then Four, whose good time was spoiled by a five part in ten thousand error in the niobium figure. Twelve was never mentioned. He was an also-ran.
@@ -3288,7 +3288,7 @@ The Novian said, "What is this? I don't seem to penetrate."
 Ingenescu said, "He is an object of study, Honorable. He has value to me and I humor him."
 "What kind of value?"
 "It's difficult to explain; a matter of my profession."
-The Novian laughed shortly. "Well, to each his profession." He nodded to an invisible person or persons outside plate range. "There's a young man here, a protégé of Ingenescu or some such thing, who will explain to us how to Educate without tapes." He snapped his fingers, and another glass of pale liqueur appeared in his hand. "Well, young man?"
+The Novian laughed shortly. "Well, to each his profession." He nodded to an invisible person or persons outside plate range. "There's a young man here, a protÃ©gÃ© of Ingenescu or some such thing, who will explain to us how to Educate without tapes." He snapped his fingers, and another glass of pale liqueur appeared in his hand. "Well, young man?"
 The faces on the plate were multiple now. Men and women, both, crammed in for a view of George, their faces molded into various shades of amusement and curiosity.
 George tried to look disdainful. They were all, in their own ways, Novians as well as the Earthman, "studying" him as though he were a bug on a pin. Ingenescu was sitting in a corner, now, watching him owl-eyed.
 Fools, he thought tensely, one and all. But they would have to understand. He would make them understand.
@@ -3530,7 +3530,7 @@ He said, "Now square roots are all fine. I can't do them myself and I don't unde
 In a far corner, Technician Aub listened with painful attention. He was no longer a Technician, of course, having been relieved of his duties and assigned to the project, with a fine-sounding title and good pay. But, of course, the social distinction remained and the highly placed scientific leaders could never bring themselves to admit him to their ranks on a footing of
 ('equality. Nor, to do Aub justice, did he, himself, wish it. He was as uncomfortable with them as they with him.
 <"   The general was saying, "Our goal is a simple one, gentlemen; the re-
-• placement of the computer. A ship that can navigate space without a com-
+Â• placement of the computer. A ship that can navigate space without a com-
 I puter on board can be constructed in one fifth the time and at one tenth the
 expense of a computer-laden ship. We could build fleets five times, ten
 times, as great as Deneb could if we could but eliminate the computer.
@@ -3869,7 +3869,7 @@ Urth blinked. "First, I want to make it perfectly plain that the important thing
 Mandel, scowling still, said querulously, "What the devil are you talking about, Urth?"
 "The man who scanned the paper probably looked at what he was scanning. I doubt that he had the time or presence of mind to read it, and if he did, I doubt if he could remember it-consciously. However, there is the Psychic Probe. If he even glanced at the paper, what impinged on his retina could be Probed."
 There was an uneasy stir.
-Urth said at once, "No need to be afraid of the Probe. Proper handling is safe, particularly if a man offers himself voluntarily. When damage is done, it is usually because of unnecessary resistance, a kind of mental tearing, you know. So if the guilty man will voluntarily confess, place himself in my hands-•"
+Urth said at once, "No need to be afraid of the Probe. Proper handling is safe, particularly if a man offers himself voluntarily. When damage is done, it is usually because of unnecessary resistance, a kind of mental tearing, you know. So if the guilty man will voluntarily confess, place himself in my hands-Â•"
 Talliaferro laughed. The sudden noise rang out sharply in the dim quiet of the room. The psychology was so transparent and artless.
 Wendell Urth looked almost bewildered at the reaction and stared ear-
 nestly at Talliaferro over his glasses. He said, "I have enough influence with the police to keep the Probing entirely confidential."
@@ -4109,7 +4109,7 @@ I wasn't saying anything. I was just standing there holding my breath and also h
 Sure enough, at the word "pollute" she came in for a closer look. She wasn't much on education, that girl, but she could read "ten thousand credits" faster than any college graduate in the Solar System.
 She said, "Max! For me?"
 "All for you, baby," I said, "I told you I had a little business to do. I wanted to surprise you."
-"Oh, Max, that's sweet of you. I didn't really mind. I was joking. Now you come right here to me." She took off her coat. fi    "What about your date?" I said. £    "I said I was joking," she said. "    "I'm coming," I said faintly. i', "With every single one of those credits now," she said roguishly.
+"Oh, Max, that's sweet of you. I didn't really mind. I was joking. Now you come right here to me." She took off her coat. fi    "What about your date?" I said. Â£    "I said I was joking," she said. "    "I'm coming," I said faintly. i', "With every single one of those credits now," she said roguishly.
 "With every single one," I said.
 ,    I broke contact, stepped out of the booth, and now, finally, I was set- ..set-
 I heard my name called. "Max! Max!" Someone was running toward me. "Rog Crinton said I would find you here. Mamma's all right after all, so I got special passage on the Space Eater and what's this about ten thousand credits?"
@@ -4591,7 +4591,7 @@ Zebatinsky said, "What do I do? Just tell everyone to spell my name with an S?"
 "How can I tell? Maybe never. Maybe tomorrow."
 "But you saw the future. You claim you see it."
 J    "Not as in a crystal ball. No, no, Dr. Zebatinsky. All I get out of my 'computer is a set of coded figures. I can recite probabilities to you, but I saw no pictures."
-•    Zebatinsky turned and walked rapidly out of the place. Fifty dollars to change a letter! Fifty dollars for Sebatinsky! Lord, what a name! Worse than Zebatinsky.
+Â•    Zebatinsky turned and walked rapidly out of the place. Fifty dollars to change a letter! Fifty dollars for Sebatinsky! Lord, what a name! Worse than Zebatinsky.
 It took another month before he could make up his mind to see a lawyer, and then he finally went.
 He told himself he could always change the name back. Give it a chance, he told himself. Hell, there was no law against it.
 Henry Brand looked through the folder page by page, with the practiced eye of one who had been in Security for fourteen years. He didn't have to read every word. Anything peculiar would have leaped off the paper and punched him in the eye.
@@ -5234,7 +5234,7 @@ Miss Fellowes, who had been peering in, looking at the totally undistinguished s
 Hoskins said, "Professor, your permit to investigate matters in Stasis will be permanently voided. I am sorry."
 "But wait-"
 "I am sorry. You have violated one of the stringent rules."
-"I will appeal to the International Association-•"
+"I will appeal to the International Association-Â•"
 "Appeal away. In a case like this, you will find I can't be overruled." He turned away deliberately, leaving the professor still protesting and said
 to Miss Fellowes (his face still white with anger), "Would you care to have
 lunch with me, Miss Fellowes?"
@@ -6601,7 +6601,7 @@ Grant hunched over the wheel and said, "As important as any one man can be. I gr
 The inspector let him have his say out. When no more came, he said, "Would you say he was queer, mentally? Erratic, you know."
 "When a person is a genius, you wouldn't expect him to be normal, would you?"
 "Maybe not. But just how abnormal was this particular genius?"
-"He never talked, particularly. Sometimes, he wouldn't work." •   "Stayed at home and went fishing instead?"
+"He never talked, particularly. Sometimes, he wouldn't work." Â•   "Stayed at home and went fishing instead?"
 "No. He came to the labs all right; but he would just sit at his desk. Sometimes that would go on for weeks. Wouldn't answer you, or even look at you, when you spoke to him."
 "Did he ever actually leave work altogether?"
 "Before now, you mean? Never!"
@@ -6622,12 +6622,12 @@ Darrity said quietly, "Dr. Elwood Ralson?" "What do you want?" The voice was a s
 "Dr. Ralson," said Grant, "I've been sent here to ask you to come back to
 work."
 Ralson looked at the scientist and there was a momentary glint of something other than fear in his eyes. He said, "Hello, Grant." He got off his cot. "Listen, I've been trying to have them put me into a padded cell. Can't you make them do that for me? You know me, Grant, I wouldn't ask for something I didn't feel was necessary. Help me. I can't stand the hard walls. It makes me want to ... bash-" He brought the flat of his palm thudding down against the hard, dull-gray concrete behind his cot.
-•i Darrity looked thoughtful. He brought out his penknife and unbent the Reaming blade. Carefully, he scraped at his thumbnail, and said, "Would you like to see a doctor?"
+Â•i Darrity looked thoughtful. He brought out his penknife and unbent the Reaming blade. Carefully, he scraped at his thumbnail, and said, "Would you like to see a doctor?"
 i> But Ralson didn't answer that. He followed the gleam of metal and his lips parted and grew wet. His breath became ragged and harsh. :j   He said, "Put that away!" ,, Darrity paused. "Put what away?"
 "The knife. Don't hold it in front of me. I can't stand looking at it." j   Darrity said, "Why not?" He held it out. "Anything wrong with it? It's a good knife."
 Ralson lunged. Darrity stepped back and his left hand came down on the other's wrist. He lifted the knife high in the air. "What's the matter, Ralson? What are you after?"
 Grant cried a protest but Darrity waved him away. I   Darrity said, "What do you want, Ralson?"
-<•,. Ralson tried to reach upward, and bent under the other's appalling grip. ;He gasped, "Give me the knife."
+<Â•,. Ralson tried to reach upward, and bent under the other's appalling grip. ;He gasped, "Give me the knife."
 "Why, Ralson? What do you want to do with it?" 1    "Please. I've got to-" He was pleading. "I've got to stop living."
 "You want to die?" i    "No. But I must."
 Darrity shoved. Ralson flailed backward and tumbled into his cot, so that it squeaked noisily. Slowly, Darrity bent the blade of his penknife into its sheath and put it away. Ralson covered his face. His shoulders were shaking but otherwise he did not move.
@@ -6702,7 +6702,7 @@ For the first time, Ralson smiled. It was not a pleasant smile. His nostrils wer
 "I'd be glad to listen to whatever you would like to tell me."
 Ralson drew a deep breath. "I've known something for a year now, that very few people know. Maybe it's something no live person knows. Do you know that human cultural advances come in spurts? Over a space of two generations in a city containing thirty thousand free men, enough literary and artistic genius of the first rank arose to supply a nation of millions for a century under ordinary circumstances. I'm referring to the Athens of Pericles.
 "There are other examples. There is the Florence of the Medicis, the England of Elizabeth, the Spain of the Cordovan Emirs. There was the spasm of social reformers among the Israelites of the Eighth and Seventh centuries before Christ. Do you know what I mean?"
-•r Blaustein nodded. "I see that history is a subject that interests you." ' "Why not? I suppose there's nothing that says I must restrict myself to nuclear cross-sections and wave mechanics."
+Â•r Blaustein nodded. "I see that history is a subject that interests you." ' "Why not? I suppose there's nothing that says I must restrict myself to nuclear cross-sections and wave mechanics."
 "Nothing at all. Please proceed."
 "At first, I thought I could learn more of the true inwardness of historical cycles by consulting a specialist. I had some conferences with a professional historian. A waste of time!"
 "What was his name; this professional historian?"
@@ -6858,7 +6858,7 @@ Ralson said, "I'll try to help them."
 "But you'll try not to, no?"
 "I'll try not to, Doctor." His lip quivered. "I'll have to be watched."
 Blaustein climbed the stairs and presented his pass to the guard in the lobby. He had already been inspected at the outer gate, but he, his pass, and its signature were now scrutinized once again. After a moment, the guard retired to his little booth and made a phone call. The answer satisfied him. Blaustein took a seat and, in half a minute, was up again, shaking hands with Dr. Grant.
-'•* "The President of the United States would have trouble getting in here, no?" said Blaustein.
+'Â•* "The President of the United States would have trouble getting in here, no?" said Blaustein.
 The lanky physicist smiled. "You're right, if he came without warning." v They took an elevator which traveled twelve floors. The office to which Grant led the way had windows in three directions. It was sound-proofed and air-conditioned. Its walnut furniture was in a state of high polish.
 Blaustein said, "My goodness. It is like the office of the chairman of a board of directors. Science is becoming big business."
 Grant looked embarrassed. "Yes, I know, but government money flows easily and it is difficult to persuade a congressman that your work is important unless he can see, smell, and touch the surface shine."
@@ -6886,14 +6886,14 @@ be a good enough idea that they should not go home. Offices like these could be 
 "It is easy to see that he could easily compensate to himself for this failure to be accepted by his social milieu by taking refuge in the thought that other human beings are inferior to himself. Which is, of course, true, as far as mentality is concerned. There are, of course, many, many facets to the human personality and in not all of them is he superior. No one is. Others, then, who are more prone to see merely what is inferior, just as he himself is, would not accept his affected pre-eminence of position. They would think him queer, even laughable, which would make it even more important to Ralson to prove how miserable and inferior the human species was. How could he better do that than to show that mankind was simply a form of bacteria to other superior creatures which experiment upon them. And then his impulses to suicide would be a wild desire to break away completely from being a man at all; to stop this identification with the miserable species he has created in his mind. You see?"
 Grant nodded. "Poor guy."
 "Yes, it is a pity. Had he been properly taken care of in childhood- Well, it is best for Dr. Ralson that he have no contact with any of the other men here. He is too sick to be trusted with them. You, yourself, must arrange to be the only man who will see him or speak to him. Dr. Ralson has agreed to that. He apparently thinks you are not as stupid as some of the others."
-•5! Grant smiled faintly. "That is agreeable to me."
+Â•5! Grant smiled faintly. "That is agreeable to me."
 Vi   "You will, of course, be careful. I would not discuss anything with him but his work. If he should volunteer information about his theories, which I doubt, confine yourself to something non-committal, and leave. And at all times, keep away anything that is sharp and pointed. Do not let him reach a window. Try to have his hands kept in view. You understand. I leave my patient in your care, Dr. Grant." "I will do my best, Dr. Blaustein."
 For two months, Ralson lived in a comer of Grant's office, and Grant lived with him. Gridwork had been built up before the windows, wooden furniture was removed and upholstered sofas brought in. Ralson did his thinking on the couch and his calculating on a desk pad atop a hassock.
 The "Do Not Enter" was a permanent fixture outside the office. Meals were left outside. The adjoining men's room was marked off for private use and the door between it and the office removed. Grant switched to an electric razor. He made certain that Ralson took sleeping pills each night and waited till the other slept before sleeping himself.
 And always reports were brought to Ralson. He read them while Grant watched and tried to seem not to watch.
 Then Ralson would let them drop and stare at the ceiling, with one hand shading his eyes.
 "Anything?" asked Grant. 1    Ralson shook his head from side to side.
-';   Grant said, "Look, I'll clear the building during the swing shift. It's important that you see some of the experimental jigs we've been setting 1 UP •" ,   They did so, wandering through the lighted, empty buildings like drifting
+';   Grant said, "Look, I'll clear the building during the swing shift. It's important that you see some of the experimental jigs we've been setting 1 UP Â•" ,   They did so, wandering through the lighted, empty buildings like drifting
 * ghosts, hand in hand. Always hand in hand. Grant's grip was tight. But after
 each trip, Ralson would still shake his head from side to side. 1     Half a dozen times he would begin writing; each time there would be a ; few scrawls and then he would kick the hassock over on its side.
 Until, finally, he began writing once again and covered half a page rapidly. Automatically, Grant approached. Ralson looked up, covering the sheet of paper with a trembling hand. He said, "Call Blaustein." "What?"
@@ -6946,7 +6946,7 @@ Lowe, who, in the absence of Ralson, would readily have been rated the best nucl
 "Sure."
 "And could you start construction anyway?"
 "I'll get the shop started. But I tell you frankly that I'm pessimistic."
-"I know. So am I." • i >",i, ...
+"I know. So am I." Â• i >",i, ...
 The thing grew. Hal Ross, Senior Mechanic, was put in charge of the actual construction, and he stopped sleeping. At any hour of the day or night, he could be found at it, scratching his bald head.
 He asked questions only once, "What is it, Dr. Lowe? Never saw anything like it? What's it supposed to do?"
 Lowe said, "You know where you are, Ross. You know we don't ask questions here. Don't ask again."
@@ -7017,8 +7017,8 @@ Blaustein said, "Ralson is dead." i, "What'"
 He hurried off with Blaustein.
 The Federal men had already taken over. Unobtrusively, they barred the doorway to Ross's office. Outside there were the milling crowd discussing the answer to Alamogordo that they had just witnessed. Inside, unknown to them, was the death of the answerer. The G-man barrier divided to allow Grant and Blaustein to enter. It closed behind them again.
 For a moment, Grant raised the sheet. He said, "He looks peaceful." i    "I would say-happy," said Blaustein.
-• Darrity said, colorlessly, "The suicide weapon was my own knife. It was !my negligence; it will be reported as such."
-•    "No, no," said Blaustein, "that would be useless. He was my patient and I am responsible. In any case, he would not have lived another week. Since he invented the projector, he was a dying man."
+Â• Darrity said, colorlessly, "The suicide weapon was my own knife. It was !my negligence; it will be reported as such."
+Â•    "No, no," said Blaustein, "that would be useless. He was my patient and I am responsible. In any case, he would not have lived another week. Since he invented the projector, he was a dying man."
 Grant said, "How much of this has to be placed in the Federal files? Can't we forget all about his madness?"
 "I'm afraid not, Dr. Grant," said Darrity.
 "I have told him the whole story," said Blaustein, sadly.
@@ -7041,7 +7041,7 @@ Darrity said, "There has been another suicide. No, no, none of the scientists. N
 "But who was he?" cried Grant.
 "Hal Ross. The guy who actually built the projector. The guy whose office this is."
 Blaustein walked to the window. The evening sky was darkening into starriness.
-••,,,   He said, "The man knew nothing about Ralson's views. He had never spoken to Ralson, Mr. Darrity tells me. Scientists are probably resistant as a whole. They must be or they are quickly driven out of the profession. Ralson was an exception, a penicillin-sensitive who insisted on remaining. You see what happened to him. But what about the others; those who have remained in walks of life where there is no constant weeding out of the sensitive ones. How much of humanity is penicillin-resistant?"
+Â•Â•,,,   He said, "The man knew nothing about Ralson's views. He had never spoken to Ralson, Mr. Darrity tells me. Scientists are probably resistant as a whole. They must be or they are quickly driven out of the profession. Ralson was an exception, a penicillin-sensitive who insisted on remaining. You see what happened to him. But what about the others; those who have remained in walks of life where there is no constant weeding out of the sensitive ones. How much of humanity is penicillin-resistant?"
 "You believe Ralson?" asked Grant in horror.
 "I don't really know."
 Blaustein looked at the stars.
@@ -7299,7 +7299,7 @@ Porter turned and walked unsteadily away.
 Stuart said, lightly, "Another failure. One act of heroism still ready to be knocked down to the highest bidder with nothing offered yet."
 Polyorketes spoke up and his harsh voice roughed the words. "You keep on talking, Mr. Big Mouth. You just keep banging that empty barrel. Pretty soon, we'll kick your teeth in. There's one boy I think would be willing to do it now, eh, Mr. Porter?"
 Porter's look at Stuart confirmed the truth of Polyorketes' remarks, but he said nothing.
-i i Stuart said, "Then what about you, Polyorketes? You're the barehand man with guts. Want me to help you into a suit?" • "I'll ask you when I want help." 1 "What about you, Leblanc?"
+i i Stuart said, "Then what about you, Polyorketes? You're the barehand man with guts. Want me to help you into a suit?" Â• "I'll ask you when I want help." 1 "What about you, Leblanc?"
 The young man shrank away.
 "Not even to get back to Margaret?"
 But Leblanc could only shake his head.
@@ -7402,7 +7402,7 @@ Slowly, he unhooked his spare oxygen cylinder. There was only an inner lock betw
 He lifted himself above the lock, forcing his bent back against the inner surface of the interlock area. It made breathing difficult. The spare oxygen cylinder dangled at a queer angle. He held its metal-mesh hose and straightened it, forcing it against the inner lock so that vibration thudded. Again- again-
 It would have to attract the attention of the Kloros. They would have to investigate.
 He would have no way of telling when they were about to do so. Ordinarily, they would first let air into the interlock to force the outer lock shut.
-• But now the outer lock was on the central screw, well away from its rim. Air would suck about it ineffectually, dragging out into space.
+Â• But now the outer lock was on the central screw, well away from its rim. Air would suck about it ineffectually, dragging out into space.
 Mullen kept on thumping. Would the Kloros look at the air-gauge, note that it scarcely lifted from zero, or would they take its proper working for granted?
 Porter said, "He's been gone an hour and a half."
 "I know," said Stuart.
@@ -7411,7 +7411,7 @@ Porter was bothered. His philosophy of life had always been simple-take care of 
 He said, "Do you suppose they've caught him?"
 "If they had, we'd hear about it," replied Stuart, briefly.
 Porter felt, with a miserable twinge, that there was little interest on the part of the others in speaking to him. He could understand it; he had not exactly earned their respect. For the moment, a torrent of self-excuse poured
-• through his mind. The others had been frightened, too. A man had a right to be afraid. No one likes to die. At least, he hadn't broken like Aristides Polyorketes. He hadn't wept like Leblanc. He- But there was Mullen, out there on the hull.
+Â• through his mind. The others had been frightened, too. A man had a right to be afraid. No one likes to die. At least, he hadn't broken like Aristides Polyorketes. He hadn't wept like Leblanc. He- But there was Mullen, out there on the hull.
 "Listen," he cried, "why did he do it?" They turned to look at him, not understanding, but Porter didn't care. It bothered him to the point where it had to come out. "I want to know why Mullen is risking his life."
 "The man," said Windham, "is a patriot-"
 "No, none of that!" Porter was almost hysterical. "That little fellow has no emotions at all. He just has reasons and I want to know what those reasons are, because-"
@@ -7726,7 +7726,7 @@ Devoire considered, "What about the human beings on the planet?"
 "On Chu Hsi? Euthanasia-except for the few who escaped in time. Painless I suppose. The Diaboli are not needlessly cruel, merely efficient."
 Altmayer waited. Devoire's fist clenched and unclenched.
 Altmayer said, "Publish this news. Spread it out on the interstellar subetheric web. Broadcast the documents to the reception centers on the various worlds. You can do it, and when you do, the all-Galactic conference will fall apart."
-•i Devoire's chair tilted forward. He stood up. "Where's your proof?" a "Will you do it?" <> ,"I want to see your proof." I Altmayer smiled, "Come with me."
+Â•i Devoire's chair tilted forward. He stood up. "Where's your proof?" a "Will you do it?" <> ,"I want to see your proof." I Altmayer smiled, "Come with me."
 They were waiting for him when he came back to the furnished room he was living in. He didn't notice them at first. He was completely unaware of the small vehicle that followed him at a slow pace and a prudent distance. He walked with his head bent, calculating the length of time it would take for Devoire to put the information through the reaches of space; how long it would take for the receiving stations on Vega and Santanni and Centaurus to blast out the news; how long it would take to spread it over the entire Galaxy. And in this way he passed, unheeding, between the two plain-clothes men who flanked the entrance of the rooming house.
 It was only when he opened the door to his own room that he stopped and turned to leave but the plain-clothes men were behind him now. He made no attempt at violent escape. He entered the room instead and sat down, feeling so old. He thought feverishly, I need only hold them off an hour and ten minutes.
 The man who occupied the darkness reached up and flicked the switch that allowed the wall lights to operate. In the soft wall glow, the man's round face and balding gray-fringed head were startlingly clear.
@@ -7812,7 +7812,7 @@ Livvy did her best to indicate what she saw by a little unobtrusive gesture of h
 Finally she pulled him closer and whispered, "Don't you see what's printed on his box?"
 She looked again as she said it, and there was no mistake. It was not very prominent, but the light caught it slantingly and it was a slightly more glistening area on a black background. In flowing script it said, "What If."
 The little man was smiling again. He nodded his head rapidly and pointed to the words and then to himself several times over.
-Norman said in an aside, "Must be his name." '••' Liwy replied, "Oh, how could that be anybody's name?"
+Norman said in an aside, "Must be his name." 'Â•Â•' Liwy replied, "Oh, how could that be anybody's name?"
 Norman put his paper aside. "I'll show you." He leaned over and said, "Mr. If?"
 The little man looked at him eagerly.
 "Do you have the time, Mr. If?"
@@ -8149,7 +8149,7 @@ One of the others leaned in and punched the proper instructions on the control p
 I could hear the thrumming of the cars when we were still ten yards from the garage.
 Usually they quieted down if I entered the garage. This time they didn't. I think they knew that strangers were about, and once the faces of Gellhorn and the others were visible they got noisier. Each motor was a warm rumble, and each motor was knocking irregularly until the place rattled.
 The lights went up automatically as we stepped inside. Gellhorn didn't seem bothered by the car noise, but the three men with him looked surprised and uncomfortable. They had the look of the hired thug about them, a look that was not compounded of physical features so much as of a certain wariness of eye and hang-dogness of face. I knew the type and I wasn't worried.
-it One of them said, "Damn it, they're burning gas." •I? "My cars always do," I replied stiffly.
+it One of them said, "Damn it, they're burning gas." Â•I? "My cars always do," I replied stiffly.
 "Not tonight," said Gellhorn. "Turn them off."
 "It's not that easy, Mr. Gellhorn," I said. 4  "Get started!" he said.
 I stood there. He had his fist gun pointed at me steadily. I said, "I told you, Mr. Gellhom, that my cars have been well-treated while they've been at the Farm. They're used to being treated that way, and they resent anything else."
@@ -8193,7 +8193,7 @@ I said, "This is a rebuilt job."
 "So?" he said caustically. "It's a sample of my work. I picked up a dis-
 Ifcfrded chassis, found a brain I could use and spliced me a private bus. What
 "fit?"
->• I tore at the repair panel, forcing it aside.
+>Â• I tore at the repair panel, forcing it aside.
 He said, "What the hell. Get away from that." The side of his palm came down numbingly on my left shoulder.
 I struggled with him. "I don't want to do this bus any harm. What kind of a person do you think I am? I just want to take a look at some of the motor connections."
 It didn't take much of a look. I was boiling when I turned to him. I said, "You're a hound and a bastard. You had no right installing this motor yourself. Why didn't you get a robotics man?"
@@ -8305,7 +8305,7 @@ Casey did not deign a direct response. He said to Polen, "You know what Winthrop
 "Why Beelzebub?" asked Polen.
 "It amounts to a pun," said Winthrop. "The ancient Hebrews used it as
 one of their many terms of derision for alien gods. It comes from Ba'al, meaning lord and zevuv, meaning fly. The lord of flies."
-Casey said, "Come on, Winthrop, don't say you don't believe in Beelzebub." •:,t   "I believe in the existence of evil," said Winthrop, stiffly.
+Casey said, "Come on, Winthrop, don't say you don't believe in Beelzebub." Â•:,t   "I believe in the existence of evil," said Winthrop, stiffly.
 "I mean Beelzebub. Alive. Horns. Hooves. A sort of competition deity." 1 "Not at all." Winthrop grew stiffer. "Evil is a short-term affair. In the end it must lose-"
 Polen changed the subject with a jar. He said, "I'll be doing graduate work for Venner, by the way. I talked with him day before yesterday, and he'll take me on."
 "No! That's wonderful." Winthrop glowed and leaped to the subject-change instantly. He held out a hand with which to pump Polen's. He was always conscientiously eager to rejoice in another's good fortune. Casey often pointed that out.
@@ -8428,7 +8428,7 @@ Cliff had the key to the laboratory and I looked over his shoulder when he opene
 Cliff and I walked up on either side of Junior. I think we were planning to grab it if it made a sudden move. But then we stopped because Junior just wasn't doing anything. Mary Ann was looking at it, too. In fact, she ran her middle finger along its top and then looked at the finger tip and twiddled it against her thumb to get rid of the dust.
 % I said, "Mary Ann, don't you go near it. Stay at the other end of the room." if. She said, "It's just as dirty there."
 She'd never been in our lab before, and of course she didn't realize that a laboratory wasn't the same thing as a baby's bedroom, if you know what I mean. The janitor comes in twice a day and all he does is empty the waste-baskets. About once a week, he comes in with a dirty mop, makes mud on the floor, and shoves it around a little.
-Cliff said, "The telephone isn't where I left it." !! I said, "How do you know?" •'*'•'• "Because I left it there." He pointed. "And now it's here."
+Cliff said, "The telephone isn't where I left it." !! I said, "How do you know?" Â•'*'Â•'Â• "Because I left it there." He pointed. "And now it's here."
 If he were right, the telephone had moved closer to Junior. I swallowed and said, "Maybe you don't remember right." I tried to laugh without sounding very natural and said, "Where's the screw driver?"
 "What are you going to do?"
 "Just take a look inside. For laughs."

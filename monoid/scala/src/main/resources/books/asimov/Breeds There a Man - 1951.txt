@@ -65,7 +65,7 @@ Grant hunched over the wheel and said, "As important as any one man can be. I gr
 The inspector let him have his say out. When no more came, he said, "Would you say he was queer, mentally? Erratic, you know."
 "When a person is a genius, you wouldn't expect him to be normal, would you?"
 "Maybe not. But just how abnormal was this particular genius?"
-"He never talked, particularly. Sometimes, he wouldn't work." •   "Stayed at home and went fishing instead?"
+"He never talked, particularly. Sometimes, he wouldn't work." Â•   "Stayed at home and went fishing instead?"
 "No. He came to the labs all right; but he would just sit at his desk. Sometimes that would go on for weeks. Wouldn't answer you, or even look at you, when you spoke to him."
 "Did he ever actually leave work altogether?"
 "Before now, you mean? Never!"
@@ -86,12 +86,12 @@ Darrity said quietly, "Dr. Elwood Ralson?" "What do you want?" The voice was a s
 "Dr. Ralson," said Grant, "I've been sent here to ask you to come back to
 work."
 Ralson looked at the scientist and there was a momentary glint of something other than fear in his eyes. He said, "Hello, Grant." He got off his cot. "Listen, I've been trying to have them put me into a padded cell. Can't you make them do that for me? You know me, Grant, I wouldn't ask for something I didn't feel was necessary. Help me. I can't stand the hard walls. It makes me want to ... bash-" He brought the flat of his palm thudding down against the hard, dull-gray concrete behind his cot.
-•i Darrity looked thoughtful. He brought out his penknife and unbent the Reaming blade. Carefully, he scraped at his thumbnail, and said, "Would you like to see a doctor?"
+Â•i Darrity looked thoughtful. He brought out his penknife and unbent the Reaming blade. Carefully, he scraped at his thumbnail, and said, "Would you like to see a doctor?"
 i> But Ralson didn't answer that. He followed the gleam of metal and his lips parted and grew wet. His breath became ragged and harsh. :j   He said, "Put that away!" ,, Darrity paused. "Put what away?"
 "The knife. Don't hold it in front of me. I can't stand looking at it." j   Darrity said, "Why not?" He held it out. "Anything wrong with it? It's a good knife."
 Ralson lunged. Darrity stepped back and his left hand came down on the other's wrist. He lifted the knife high in the air. "What's the matter, Ralson? What are you after?"
 Grant cried a protest but Darrity waved him away. I   Darrity said, "What do you want, Ralson?"
-<•,. Ralson tried to reach upward, and bent under the other's appalling grip. ;He gasped, "Give me the knife."
+<Â•,. Ralson tried to reach upward, and bent under the other's appalling grip. ;He gasped, "Give me the knife."
 "Why, Ralson? What do you want to do with it?" 1    "Please. I've got to-" He was pleading. "I've got to stop living."
 "You want to die?" i    "No. But I must."
 Darrity shoved. Ralson flailed backward and tumbled into his cot, so that it squeaked noisily. Slowly, Darrity bent the blade of his penknife into its sheath and put it away. Ralson covered his face. His shoulders were shaking but otherwise he did not move.
@@ -166,7 +166,7 @@ For the first time, Ralson smiled. It was not a pleasant smile. His nostrils wer
 "I'd be glad to listen to whatever you would like to tell me."
 Ralson drew a deep breath. "I've known something for a year now, that very few people know. Maybe it's something no live person knows. Do you know that human cultural advances come in spurts? Over a space of two generations in a city containing thirty thousand free men, enough literary and artistic genius of the first rank arose to supply a nation of millions for a century under ordinary circumstances. I'm referring to the Athens of Pericles.
 "There are other examples. There is the Florence of the Medicis, the England of Elizabeth, the Spain of the Cordovan Emirs. There was the spasm of social reformers among the Israelites of the Eighth and Seventh centuries before Christ. Do you know what I mean?"
-•r Blaustein nodded. "I see that history is a subject that interests you." ' "Why not? I suppose there's nothing that says I must restrict myself to nuclear cross-sections and wave mechanics."
+Â•r Blaustein nodded. "I see that history is a subject that interests you." ' "Why not? I suppose there's nothing that says I must restrict myself to nuclear cross-sections and wave mechanics."
 "Nothing at all. Please proceed."
 "At first, I thought I could learn more of the true inwardness of historical cycles by consulting a specialist. I had some conferences with a professional historian. A waste of time!"
 "What was his name; this professional historian?"
@@ -322,7 +322,7 @@ Ralson said, "I'll try to help them."
 "But you'll try not to, no?"
 "I'll try not to, Doctor." His lip quivered. "I'll have to be watched."
 Blaustein climbed the stairs and presented his pass to the guard in the lobby. He had already been inspected at the outer gate, but he, his pass, and its signature were now scrutinized once again. After a moment, the guard retired to his little booth and made a phone call. The answer satisfied him. Blaustein took a seat and, in half a minute, was up again, shaking hands with Dr. Grant.
-'•* "The President of the United States would have trouble getting in here, no?" said Blaustein.
+'Â•* "The President of the United States would have trouble getting in here, no?" said Blaustein.
 The lanky physicist smiled. "You're right, if he came without warning." v They took an elevator which traveled twelve floors. The office to which Grant led the way had windows in three directions. It was sound-proofed and air-conditioned. Its walnut furniture was in a state of high polish.
 Blaustein said, "My goodness. It is like the office of the chairman of a board of directors. Science is becoming big business."
 Grant looked embarrassed. "Yes, I know, but government money flows easily and it is difficult to persuade a congressman that your work is important unless he can see, smell, and touch the surface shine."
@@ -350,14 +350,14 @@ be a good enough idea that they should not go home. Offices like these could be 
 "It is easy to see that he could easily compensate to himself for this failure to be accepted by his social milieu by taking refuge in the thought that other human beings are inferior to himself. Which is, of course, true, as far as mentality is concerned. There are, of course, many, many facets to the human personality and in not all of them is he superior. No one is. Others, then, who are more prone to see merely what is inferior, just as he himself is, would not accept his affected pre-eminence of position. They would think him queer, even laughable, which would make it even more important to Ralson to prove how miserable and inferior the human species was. How could he better do that than to show that mankind was simply a form of bacteria to other superior creatures which experiment upon them. And then his impulses to suicide would be a wild desire to break away completely from being a man at all; to stop this identification with the miserable species he has created in his mind. You see?"
 Grant nodded. "Poor guy."
 "Yes, it is a pity. Had he been properly taken care of in childhood- Well, it is best for Dr. Ralson that he have no contact with any of the other men here. He is too sick to be trusted with them. You, yourself, must arrange to be the only man who will see him or speak to him. Dr. Ralson has agreed to that. He apparently thinks you are not as stupid as some of the others."
-•5! Grant smiled faintly. "That is agreeable to me."
+Â•5! Grant smiled faintly. "That is agreeable to me."
 Vi   "You will, of course, be careful. I would not discuss anything with him but his work. If he should volunteer information about his theories, which I doubt, confine yourself to something non-committal, and leave. And at all times, keep away anything that is sharp and pointed. Do not let him reach a window. Try to have his hands kept in view. You understand. I leave my patient in your care, Dr. Grant." "I will do my best, Dr. Blaustein."
 For two months, Ralson lived in a comer of Grant's office, and Grant lived with him. Gridwork had been built up before the windows, wooden furniture was removed and upholstered sofas brought in. Ralson did his thinking on the couch and his calculating on a desk pad atop a hassock.
 The "Do Not Enter" was a permanent fixture outside the office. Meals were left outside. The adjoining men's room was marked off for private use and the door between it and the office removed. Grant switched to an electric razor. He made certain that Ralson took sleeping pills each night and waited till the other slept before sleeping himself.
 And always reports were brought to Ralson. He read them while Grant watched and tried to seem not to watch.
 Then Ralson would let them drop and stare at the ceiling, with one hand shading his eyes.
 "Anything?" asked Grant. 1    Ralson shook his head from side to side.
-';   Grant said, "Look, I'll clear the building during the swing shift. It's important that you see some of the experimental jigs we've been setting 1 UP •" ,   They did so, wandering through the lighted, empty buildings like drifting
+';   Grant said, "Look, I'll clear the building during the swing shift. It's important that you see some of the experimental jigs we've been setting 1 UP Â•" ,   They did so, wandering through the lighted, empty buildings like drifting
 * ghosts, hand in hand. Always hand in hand. Grant's grip was tight. But after
 each trip, Ralson would still shake his head from side to side. 1     Half a dozen times he would begin writing; each time there would be a ; few scrawls and then he would kick the hassock over on its side.
 Until, finally, he began writing once again and covered half a page rapidly. Automatically, Grant approached. Ralson looked up, covering the sheet of paper with a trembling hand. He said, "Call Blaustein." "What?"
@@ -410,7 +410,7 @@ Lowe, who, in the absence of Ralson, would readily have been rated the best nucl
 "Sure."
 "And could you start construction anyway?"
 "I'll get the shop started. But I tell you frankly that I'm pessimistic."
-"I know. So am I." • i >",i, ...
+"I know. So am I." Â• i >",i, ...
 The thing grew. Hal Ross, Senior Mechanic, was put in charge of the actual construction, and he stopped sleeping. At any hour of the day or night, he could be found at it, scratching his bald head.
 He asked questions only once, "What is it, Dr. Lowe? Never saw anything like it? What's it supposed to do?"
 Lowe said, "You know where you are, Ross. You know we don't ask questions here. Don't ask again."
@@ -481,8 +481,8 @@ Blaustein said, "Ralson is dead." i, "What'"
 He hurried off with Blaustein.
 The Federal men had already taken over. Unobtrusively, they barred the doorway to Ross's office. Outside there were the milling crowd discussing the answer to Alamogordo that they had just witnessed. Inside, unknown to them, was the death of the answerer. The G-man barrier divided to allow Grant and Blaustein to enter. It closed behind them again.
 For a moment, Grant raised the sheet. He said, "He looks peaceful." i    "I would say-happy," said Blaustein.
-• Darrity said, colorlessly, "The suicide weapon was my own knife. It was !my negligence; it will be reported as such."
-•    "No, no," said Blaustein, "that would be useless. He was my patient and I am responsible. In any case, he would not have lived another week. Since he invented the projector, he was a dying man."
+Â• Darrity said, colorlessly, "The suicide weapon was my own knife. It was !my negligence; it will be reported as such."
+Â•    "No, no," said Blaustein, "that would be useless. He was my patient and I am responsible. In any case, he would not have lived another week. Since he invented the projector, he was a dying man."
 Grant said, "How much of this has to be placed in the Federal files? Can't we forget all about his madness?"
 "I'm afraid not, Dr. Grant," said Darrity.
 "I have told him the whole story," said Blaustein, sadly.

@@ -288,7 +288,7 @@ Sally
 	I could hear the thrumming of the cars when we were still ten yards from the garage.
 	Usually they quieted down if I entered the garage. This time they didn't. I think they knew that strangers were about, and once the faces of Gellhorn and the others were visible they got noisier. Each motor was a warm rumble, and each motor was knocking irregularly until the place rattled.
 	The lights went up automatically as we stepped inside. Gellhorn didn't seem bothered by the car noise, but the three men with him looked surprised and uncomfortable. They had the look of the hired thug about them, a look that was not compounded of physical features so much as of a certain wariness of eye and hang-dogness of face. I knew the type and I wasn't worried.
-	it One of them said, "Damn it, they're burning gas." •I? "My cars always do," I replied stiffly.
+	it One of them said, "Damn it, they're burning gas." Â•I? "My cars always do," I replied stiffly.
 	"Not tonight," said Gellhorn. "Turn them off."
 	"It's not that easy, Mr. Gellhorn," I said. 4  "Get started!" he said.
 	I stood there. He had his fist gun pointed at me steadily. I said, "I told you, Mr. Gellhom, that my cars have been well-treated while they've been at the Farm. They're used to being treated that way, and they resent anything else."
@@ -1375,7 +1375,7 @@ Stranger in Paradise
 	"It isn't all you, William. It's failure. We won't make it. You see how clumsily the robot handles himself, even though he's on Earth, only a thousand miles away, with the signal round trip only a tiny fraction of a second in time. On Mercury, there will be minutes of delay, minutes for which the Mercury Computer will have to allow. It's madness to think it will work." 
 	William said, "Don't resign, Anthony. You can't resign now. I suggest we have the robot sent to Mercury. I'm convinced he's ready." 
 	Anthony laughed loudly and insultingly. "You're crazy, William." 
-	"I'm not. You seem to think it will be harder on Mercury, but it won't be. It's harder on Earth. This robot is designed for one-third Earth-normal gravity, and he's working in Arizona at full gravity. He's designed for 400° C, and he's got 300° C. He's designed for vacuum and he's working in an atmospheric soup." 
+	"I'm not. You seem to think it will be harder on Mercury, but it won't be. It's harder on Earth. This robot is designed for one-third Earth-normal gravity, and he's working in Arizona at full gravity. He's designed for 400Â° C, and he's got 300Â° C. He's designed for vacuum and he's working in an atmospheric soup." 
 	"That robot can take the difference." 
 	"The metal structure can, I suppose, but what about the Computer right here? It doesn't work well with a robot that isn't in the environment he's designed for....Look, Anthony, if you want a computer that is as complex as a brain, you have to allow for idiosyncrasies....Come, let's make a deal. If you will push, with me, to have the robot sent to Mercury, that will take six months, and I will take a sabbatical for that period. You will be rid of me." 
 	"Who'll take care of the Mercury Computer?" 

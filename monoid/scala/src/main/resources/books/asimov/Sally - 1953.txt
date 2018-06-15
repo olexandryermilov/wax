@@ -160,7 +160,7 @@ One of the others leaned in and punched the proper instructions on the control p
 I could hear the thrumming of the cars when we were still ten yards from the garage.
 Usually they quieted down if I entered the garage. This time they didn't. I think they knew that strangers were about, and once the faces of Gellhorn and the others were visible they got noisier. Each motor was a warm rumble, and each motor was knocking irregularly until the place rattled.
 The lights went up automatically as we stepped inside. Gellhorn didn't seem bothered by the car noise, but the three men with him looked surprised and uncomfortable. They had the look of the hired thug about them, a look that was not compounded of physical features so much as of a certain wariness of eye and hang-dogness of face. I knew the type and I wasn't worried.
-it One of them said, "Damn it, they're burning gas." •I? "My cars always do," I replied stiffly.
+it One of them said, "Damn it, they're burning gas." Â•I? "My cars always do," I replied stiffly.
 "Not tonight," said Gellhorn. "Turn them off."
 "It's not that easy, Mr. Gellhorn," I said. 4  "Get started!" he said.
 I stood there. He had his fist gun pointed at me steadily. I said, "I told you, Mr. Gellhom, that my cars have been well-treated while they've been at the Farm. They're used to being treated that way, and they resent anything else."
@@ -204,7 +204,7 @@ I said, "This is a rebuilt job."
 "So?" he said caustically. "It's a sample of my work. I picked up a dis-
 Ifcfrded chassis, found a brain I could use and spliced me a private bus. What
 "fit?"
->• I tore at the repair panel, forcing it aside.
+>Â• I tore at the repair panel, forcing it aside.
 He said, "What the hell. Get away from that." The side of his palm came down numbingly on my left shoulder.
 I struggled with him. "I don't want to do this bus any harm. What kind of a person do you think I am? I just want to take a look at some of the motor connections."
 It didn't take much of a look. I was boiling when I turned to him. I said, "You're a hound and a bastard. You had no right installing this motor yourself. Why didn't you get a robotics man?"
