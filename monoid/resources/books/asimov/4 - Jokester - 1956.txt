@@ -1,0 +1,186 @@
+Jokester
+
+Copyright (c) 1956 by Royal Publications, Inc.
+
+Noel Meyerhof consulted the list he had prepared and chose which item was to be first. As usual, he relied mainly on intuition.
+He was dwarfed by the machine he faced, though only the smallest portion of the latter was in view. That didn't matter. He spoke with the offhand confidence of one who thoroughly knew he was master.
+"Johnson," he said, "came home unexpectedly from a business trip to find his wife in the arms of his best friend. He staggered back and said, 'Max! I'm married to the lady so I have to. But why you?' " 1     Meyerhof thought: Okay, let that trickle down into its guts and gurgle about a bit.
+And a voice behind him said, "Hey."
+Meyerhof erased the sound of that monosyllable and put the circuit he was using into neutral. He whirled and said, "I'm working. Don't you knock?"
+He did not smile as he customarily did in greeting Timothy Whistler, a senior analyst with whom he dealt as often as with any. He frowned as he would have for an interruption by a stranger, wrinkling his thin face into a distortion that seemed to extend to his hair, rumpling it more than ever.
+Whistler shrugged. He wore his white lab coat with his fists pressing down within its pockets and creasing it into tense vertical lines. "I knocked. You didn't answer. The operations signal wasn't on."
+Meyerhof grunted. It wasn't at that. He'd been thinking about this new project too intensively and he was forgetting little details.
+And yet he could scarcely blame himself for that. This thing was important.
+He didn't know why it was, of course. Grand Masters rarely did. That's what made them Grand Masters; the fact that they were beyond reason. How else could the human mind keep up with that ten-mile-long lump of solidified reason that men called Multivac, the most complex computer ever built?
+Meyerhof said, "I am working. Is there something important on your mind?"
+"Nothing that can't be postponed. There are a few holes in the answer on the hyperspatial-" Whistler did a double take and his face took on a rueful look of uncertainty. "Working?"
+"Yes. What about it?"
+"But-" He looked about, staring into the crannies of the shallow room that faced the banks upon banks of relays that formed a small portion of Multivac. "There isn't anyone here at that."
+"Who said there was, or should be?"
+"You were telling one of your jokes, weren't you?"
+"And?"
+Whistler forced a smile. "Don't tell me you were telling a joke to Multivac?"
+Meyerhof stiffened. "Why not?"
+"Were you?"
+"Yes."
+"Why?"
+Meyerhof stared the other down. "I don't have to account to you. Or to anyone."
+"Good Lord, of course not. I was curious, that's all. ... But then, if you're working, I'll leave." He looked about once more, frowning.
+"Do so," said Meyerhof. His eyes followed the other out and then he activated the operations signal with a savage punch of his finger.
+He strode the length of the room and back, getting himself in hand. Damn Whistler! Damn them all! Because he didn't bother to hold those technicians, analysts and mechanics at the proper social distance, because he treated them as though they, too, were creative artists, they took these liberties.
+He thought grimly: They can't even tell jokes decently.
+And instantly that brought him back to the task in hand. He sat down again. Devil take them all.
+He threw the proper Multivac circuit back into operation and said, "The ship's steward stopped at the rail of the ship during a particularly rough ocean crossing and gazed compassionately at the man whose slumped position over the rail and whose intensity of gaze toward the depths betokened all too well the ravages of seasickness.
+"Gentry, the steward patted the man's shoulder. 'Cheer up, sir,' he murmured. 'I know it seems bad, but really, you know, nobody ever dies of seasickness.'
+"The afflicted gentleman lifted his greenish, tortured face to his comforter and gasped in hoarse accents, 'Don't say that, man. For Heaven's sake, don't say that. It's only the hope of dying that's keeping me alive.' "
+Timothy Whistler, a bit preoccupied, nevertheless smiled and nodded as he passed the secretary's desk. She smiled back at him.
+Here, he thought, was an archaic item in this computer-ridden world of the twenty-first century, a human secretary. But then perhaps it was natural that such an institution should survive here in the very citadel of computerdom; in the gigantic world corporation that handled Multivac. With Multivac filling the horizons, lesser computers for trivial tasks would have been in poor taste.
+Whistler stepped into Abram Trask's office. That government official paused in his careful task of lighting a pipe; his dark eyes flicked in Whistler's direction and his beaked nose stood out sharply and prominently against the rectangle of window behind him.
+"Ah, there, Whistler. Sit down. Sit down."
+Whistler did so. "I think we've got a problem, Trask."
+Trask half-smiled. "Not a technical one, I hope. I'm just an innocent politician." (It was one of his favorite phrases.)
+"It involves Meyerhof."
+Trask sat down instantly and looked acutely miserable. "Are you sure?" t "Reasonably sure."
+Whistler understood the other's sudden unhappiness well. Trask was the government official in charge of the Division of Computers and Automation of the Department of the Interior. He was expected to deal with matters of policy involving the human satellites of Multivac, just as those technically trained satellites were expected to deal with Multivac itself.
+But a Grand Master was more than just a satellite. More, even, than just a human.
+Early in the history of Multivac, it had become apparent that the bottleneck was the questioning procedure. Multivac could answer the problem of humanity, all the problems, if-if it were asked meaningful questions. But as knowledge accumulated at an ever-faster rate, it became ever more difficult to locate those meaningful questions.
+Reason alone wouldn't do. What was needed was a rare type of intuition; the same faculty of mind (only much more intensified) that made a grand master at chess. A mind was needed of the sort that could see through the quadrillions of chess patterns to find the one best move, and do it in a matter of minutes.
+Trask moved restlessly. "What's Meyerhof been doing?"
+"He's introduced a line of questioning that I find disturbing."
+"Oh, come on, Whistler. Is that all? You can't stop a Grand Master from going through any line of questioning he chooses. Neither you nor I are equipped to judge the worth of his questions. You know that. I know you know that."
+"I do. Of course. But I also know Meyerhof. Have you ever met him socially?"
+"Good Lord, no. Does anyone meet any Grand Master socially?"
+"Don't take that attitude, Trask. They're human and they're to be pitied. Have you ever thought what it must be like to be a Grand Master; to know there are only some twelve like you in the world; to know that only one or two come up per generation; that the world depends on you; that a thousand mathematicians, logicians, psychologists and physical scientists wait on you?"
+Trask shrugged and muttered, "Good Lord, I'd feel king of the world."
+"I don't think you would," said the senior analyst impatiently. "They feel kings of nothing. They have no equal to talk to, no sensation of belonging. Listen, Meyerhof never misses a chance to get together with the boys. He isn't married, naturally; he doesn't drink; he has no natural social touch-yet he forces himself into company because he must. And do you know what he does when he gets together with us, and that's at least once a week?"
+"I haven't the least idea," said the government man. "This is all new to me."
+"He's a jokester."
+"What?"
+"He tells jokes. Good ones. He's terrific. He can take any story, however old and dull, and make it sound good. It's the way he tells it. He has a flair."
+"I see. Well, good."
+"Or bad. These jokes are important to him." Whistler put both elbows on Trask's desk, bit at a thumbnail and stared into the air. "He's different, he knows he's different and these jokes are the one way he feels he can get the rest of us ordinary schmoes to accept him. We laugh, we howl, we clap him on the back and even forget he's a Grand Master. It's the only hold he has on the rest of us."
+"This is all interesting. I didn't know you were such a psychologist. Still, where does this lead?"
+"Just this. What do you suppose happens if Meyerhof runs out of jokes?"
+"What?" The government man stared blankly.
+"If he starts repeating himself? If his audience starts laughing less heartily, or stops laughing altogether? It's his only hold on our approval. Without it, he'll be alone and then what would happen to him? After all, Trask, he's one of the dozen men mankind can't do without. We can't let anything happen to him. I don't mean just physical things. We can't even let him get too unhappy. Who knows how that might affect his intuition?"
+"Well, has he started repeating himself?"
+"Not as far as I know, but I think he thinks he has."
+"Why do you say that?"
+"Because I've heard him telling jokes to Multivac."
+"Oh, no."
+"Accidentally! I walked in on him and he threw me out. He was savage. He's usually good-natured enough, and I consider it a bad sign that he was so upset at the intrusion. But the fact remains that he was telling a joke to Multivac, and I'm convinced it was one of a series."
+"But why?"
+Whistler shrugged and rubbed a hand fiercely across his chin. "I have a thought about that. I think he's trying to build up a store of jokes in Mul-tivac's memory banks in order to get back new variations. You see what I mean? He's planning a mechanical jokester, so that he can have an infinite number of jokes at hand and never fear running out."
+"Good Lord!"
+"Objectively, there may be nothing wrong with that, but I consider it a bad sign when a Grand Master starts using Multivac for his personal problems. Any Grand Master has a certain inherent mental instability and he should be watched. Meyerhof may be approaching a borderline beyond which we lose a Grand Master."
+Trask said blankly, "What are you suggesting I do?"
+"You can check me. I'm too close to him to judge well, maybe, and judging humans isn't my particular talent, anyway. You're a politician; it's more your talent."
+"Judging humans, perhaps, not Grand Masters."
+"They're human, too. Besides, who else is to do it?"
+The fingers of Trask's hand struck his desk in rapid succession over and over like a slow and muted roll of drums.
+"I suppose I'll have to," he said.
+Meyerhof said to Multivac, "The ardent swain, picking a bouquet of wildflowers for his loved one, was disconcerted to find himself, suddenly, in the same field with a large bull of unfriendly appearance which, gazing at him steadily, pawed the ground in a threatening manner. The young man, spying a farmer on the other side of a fairly distant fence, shouted, 'Hey, mister, is that bull safe?' The farmer surveyed the situation with critical eye, spat to one side and called back, 'He's safe as anything.' He spat again, and added, 'Can't say the same about you, though." "
+Meyerhof was about to pass on to the next when the summons came.
+It wasn't really a summons. No one could summon a Grand Master. It was only a message that Division Head Trask would like very much to see Grand Master Meyerhof if Grand Master Meyerhof could spare him the time.
+Meyerhof might, with impunity, have tossed the message to one side and continued with whatever he was doing. He was not subject to discipline.
+On the other hand, were he to do that, they would continue to bother him-oh, very respectfully, but they would continue to bother him.
+So he neutralized the pertinent circuits of Multivac and locked them into place. He put the freeze signal on his office so that no one would dare enter in his absence and left for Trask's office.
+Trask coughed and felt a bit intimidated by the sullen fierceness of the other's look. He said, "We have not had occasion to know one another, Grand Master, to my great regret."
+"I have reported to you," said Meyerhof stiffly.
+Trask wondered what lay behind those keen, wild eyes. It was difficult for him to imagine Meyerhof with his thin face, his dark, straight hair, his intense air, even unbending long enough to tell funny stories.
+He said, "Reports are not social acquaintance. I-I have been given to understand you have a marvelous fund of anecdotes."
+"I am a jokester, sir. That's the phrase people use. A jokester."
+"They haven't used the phrase to me, Grand Master. They have said-"
+"The hell with them! I don't care what they've said. See here, Trask, do you want to hear a joke?" He leaned forward across the desk, his eyes narrowed.
+"By all means. Certainly," said Trask, with an effort at heartiness.
+"All right. Here's the joke: Mrs. Jones stared at the fortune card that had emerged from the weighing machine in response to her husband's penny. She said, 'It says here, George, that you're suave, intelligent, farseeing, industrious and attractive to women.' With that, she turned the card over and added, 'And they have your weight wrong, too.' "
+Trask laughed. It was almost impossible not to. Although the punch line was predictable, the surprising facility with which Meyerhof had produced just the tone of contemptuous disdain in the woman's voice, and the cleverness with which he had contorted the lines of his face to suit that tone carried the politician helplessly into laughter.
+Meyerhof said sharply, "Why is that funny?"
+Trask sobered. "I beg your pardon."
+"I said, why is that funny? Why do you laugh?"
+"Well," said Trask, trying to be reasonable, "the last line put every thing that preceded in a new light. The unexpectedness-"
+"The point is," said Meyerhof, "that I have pictured a husband being humiliated by his wife; a marriage that is such a failure that the wife is convinced that her husband lacks any virtue. Yet you laugh at that. If you were the husband, would you find it funny?"
+He waited a moment in thought, then said, "Try this one, Trask: Abner
+was seated at his wife's sickbed, weeping uncontrollably, when his wife, mustering the dregs of her strength, drew herself up to one elbow.
+" 'Abner,' she whispered, 'Abner, I cannot go to my Maker without confessing my misdeed.'
+" 'Not now,' muttered the stricken husband. 'Not now, my dear. Lie back and rest.'
+" 'I cannot,' she cried. 'I must tell, or my soul will never know peace. I have been unfaithful to you, Abner. In this very house, not one month ago-'
+" 'Hush, dear,' soothed Abner. 'I know all about it. Why else have I poisoned you?' "
+Trask tried desperately to maintain equanimity but did not entirely succeed. He suppressed a chuckle imperfectly.
+¥   Meyerhof said, "So that's funny, too. Adultery. Murder. All funny." , "Well, now," said Trask, "books have been written analyzing humor." : "True enough," said Meyerhof, "and I've read a number of them. What's more, I've read most of them to Multivac. Still, the people who write the books are just guessing. Some of them say we laugh because we feel superior to the people in the joke. Some say it is because of a suddenly realized incongruity, or a sudden relief from tension, or a sudden reinterpretation of events. Is there any simple reason? Different people laugh at different jokes. No joke is universal. Some people don't laugh at any joke. Yet what may be most important is that man is the only animal with a true sense of humor: the only animal that laughs."
+Trask said suddenly, "I understand. You're trying to analyze humor. That's why you're transmitting a series of jokes to Multivac."
+"Who told you I was doing that? . . . Never mind, it was Whistler. I remember, now. He surprised me at it. Well, what about it?"
+"Nothing at all."
+"You don't dispute my right to add anything I wish to Multivac's general fund of knowledge, or to ask any question I wish?"
+"No, not at all," said Trask hastily. "As a matter of fact, I have no doubt that this will open the way to new analyses of great interest to psychologists."
+"Hmp. Maybe. Just the same there's something plaguing me that's more important than just the general analysis of humor. There's a specific question I have to ask. Two of them, really."
+"Oh? What's that?" Trask wondered if the other would answer. There would be no way of compelling him if he chose not to.
+But Meyerhof said, "The first question is this: Where do all these jokes come from?"
+"What?"
+"Who makes them up? Listen! About a month ago, I spent an evening swapping jokes. As usual, I told most of them and, as usual, the fools
+laughed. Maybe they really thought the jokes were funny and maybe they were just humoring me. In any case, one creature took the liberty of slapping me on the back and saying, 'Meyerhof, you know more jokes than any ten people I know.'
+"I'm sure he was right, but it gave rise to a thought. I don't know how many hundreds, or perhaps thousands, of jokes I've told at one time or another in my life, yet the fact is I never made up one. Not one. I'd only repeated them. My only contribution was to tell them. To begin with, I'd either heard them or read them. And the source of my hearing or reading didn't make up the jokes, either. I never met anyone who ever claimed to have constructed a joke. It's always 'I heard a good one the other day,' and 'Heard any good ones lately?'
+"All the jokes are old! That's why jokes exhibit such a social lag. They still deal with seasickness, for instance, when that's easily prevented these days and never experienced. Or they'll deal with fortune-giving weighing machines, like the joke I told you, when such machines are found only in antique shops. Well, then, who makes up the jokes?"
+Trask said, "Is that what you're trying to find out?" It was on the tip of Trask's tongue to add: Good Lord, who cares? He forced that impulse down. A Grand Master's questions were always meaningful.
+"Of course that's what I'm trying to find out. Think of it this way. It's not just that jokes happen to be old. They must be old to be enjoyed. It's essential that a joke not be original. There's one variety of humor that is, or can be, original and that's the pun. I've heard puns that were obviously made up on the spur of the moment. I have made some up myself. But no one laughs at such puns. You're not supposed to. You groan. The better the pun, the louder the groan. Original humor is not laugh-provoking. Why?"
+"I'm sure I don't know."
+"All right. Let's find out. Having given Multivac all the information I thought advisable on the general topic of humor, I am now feeding it selected jokes."
+Trask found himself intrigued. "Selected how?" he asked.
+"I don't know," said Meyerhof. "They felt like the right ones. I'm Grand Master, you know."
+"Oh, agreed. Agreed."
+"From those jokes and the general philosophy of humor, my first request will be for Multivac to trace the origin of the jokes, if it can. Since Whistler is in on this and since he has seen fit to report it to you, have him down in Analysis day after tomorrow. I think he'll have a bit of work to do."
+"Certainly. May I attend, too?"
+Meyerhof shrugged. Trask's attendance was obviously a matter of indifference to him.
+'' Meyerhof had selected the last in the series with particular care. What that care consisted of, he could not have said, but he had revolved a dozen possibilities in his mind, and over and over again had tested each for some indefinable quality of meaningfulness.
+He said, "Ug, the caveman, observed his mate running to him in tears, her leopard-skin skirt in disorder. 'Ug,' she cried, distraught, 'do something quickly. A saber-toothed tiger has entered Mother's cave. Do something!' Ug grunted, picked up his well-gnawed buffalo bone and said, 'Why do anything? Who the hell cares what happens to a saber-toothed tiger?' "
+It was then that Meyerhof asked his two questions and leaned back, closing his eyes. He was done.
+"I saw absolutely nothing wrong," said Trask to Whistler. "He told me what he was doing readily enough and it was odd but legitimate."
+"What he claimed he was doing," said Whistler.
+"Even so, I can't stop a Grand Master on opinion alone. He seemed queer but, after all, Grand Masters are supposed to seem queer. I didn't think him insane."
+"Using Multivac to find the source of jokes?" muttered the senior analyst in discontent. "That's not insane?"
+"How can we tell?" asked Trask irritably. "Science has advanced to the point where the only meaningful questions left are the ridiculous ones. The sensible ones have been thought of, asked and answered long ago."
+"It's no use. I'm bothered."
+"Maybe, but there's no choice now, Whistler. We'll see Meyerhof and you can do the necessary analysis of Multivac's response, if any. As for me, my only job is to handle the red tape. Good Lord, I don't even know what a senior analyst such as yourself is supposed to do, except analyze, and that doesn't help me any."
+Whistler said, "It's simple enough. A Grand Master like Meyerhof asks questions and Multivac automatically formulates it into quantities and operations. The necessary machinery for converting words to symbols is what makes up most of the bulk of Multivac. Multivac then gives the answer in quantities and operations, but it doesn't translate that back into words except in the most simple and routine cases. If it were designed to solve the general retranslation problem, its bulk would have to be quadrupled at least."
+"I see. Then it's your job to translate these symbols into words?"
+"My job and that of other analysts. We use smaller, specially designed computers whenever necessary." Whistler smiled grimly. "Like the Delphic priestess of ancient Greece, Multivac gives oracular and obscure answers. Only we have translators, you see."
+They had arrived. Meyerhof was waiting.
+Whistler said briskly, "What circuits did you use, Grand Master?" Meyerhof told him and Whistler went to work.
+Trask tried to follow what was happening, but none of it made sense. The government official watched a spool unreel with a pattern of dots in endless incomprehensibility. Grand Master Meyerhof stood indifferently to one side while Whistler surveyed the pattern as it emerged. The analyst had put on headphones and a mouthpiece and at intervals murmured a series of instructions which, at some far-off place, guided assistants through electronic contortions in other computers.
+Occasionally, Whistler listened, then punched combinations on a complex keyboard marked with symbols that looked vaguely mathematical but weren't.
+A good deal more than an hour's time elapsed.
+The frown on Whistler's face grew deeper. Once, he looked up at the two others and began, "This is unbel-" and turned back to his work.
+Finally, he said hoarsely, "I can give you an unofficial answer." His eyes were red-rimmed. "The official answer awaits complete analysis. Do you want it unofficial?"
+"Go ahead," said Meyerhof.
+Trask nodded.
+Whistler darted a hangdog glance at the Grand Master. "Ask a foolish question-" he said. Then, gruffly, "Multivac says, extraterrestrial origin."
+"What are you saying?" demanded Trask.
+"Don't you hear me? The jokes we laugh at were not made up by any man. Multivac has analyzed all data given it and the one answer that best fits that data is that some extraterrestrial intelligence has composed the jokes, all of them, and placed them in selected human minds at selected times and places in such a way that no man is conscious of having made one up. All subsequent jokes are minor variations and adaptations of these grand originals."
+Meyerhof broke in, face flushed with the kind of triumph only a Grand Master can know who once again has asked the right question. "All comedy writers," he said, "work by twisting old jokes to new purposes. That's well known. The answer fits."
+"But why?" asked Trask. "Why make up the jokes?"
+"Multivac says," said Whistler, "that the only purpose that fits all the data is that the jokes are intended to study human psychology. We study rat psychology by making the rats solve mazes. The rats don't know why and wouldn't even if they were aware of what was going on, which they're not. These outer intelligences study man's psychology by noting individual reactions to carefully selected anecdotes. Each man reacts differently. . . . Presumably, these outer intelligences are to us as we are to rats." He shuddered.
+Trask, eyes staring, said, "The Grand Master said man is the only animal
+with a sense of humor. It would seem then that the sense of humor is foisted upon us from without."
+Meyerhof added excitedly, "And for possible humor created from within, we have no laughter. Puns, I mean."
+Whistler said, "Presumably, the extraterrestrials cancel out reactions to spontaneous jokes to avoid confusion."
+Trask said in sudden agony of spirit, "Come on, now, Good Lord, do either of you believe this?"
+The senior analyst looked at him coldly. "Multivac says so. It's all that can be said so far. It has pointed out the real jokesters of the universe, and if we want to know more, the matter will have to be followed up." He added in a whisper, "If anyone dares follow it up."
+Grand Master Meyerhof said suddenly, "I asked two questions, you know. So far only the first has been answered. I think Multivac has enough data to answer the second."
+Whistler shrugged. He seemed a half-broken man. "When a Grand Master thinks there is enough data," he said, "I'll make book on it. What is your second question?"
+"I asked this. What will be the effect on the human race of discovering the answer to my first question?"
+"Why did you ask that?" demanded Trask.
+"Just a feeling that it had to be asked," said Meyerhof.
+Trask said, "Insane. It's all insane," and turned away. Even he himself felt how strangely he and Whistler had changed sides. Now it was Trask crying insanity.
+Trask closed his eyes. He might cry insanity all he wished, but no man in fifty years had doubted the combination of a Grand Master and Multivac and found his doubts verified.
+Whistler worked silently, teeth clenched. He put Multivac and its subsidiary machines through their paces again. Another hour passed and he laughed harshly. "A raving nightmare!"
+"What's the answer?" asked Meyerhof. "I want Multivac's remarks, not yours."
+"All right. Take it. Multivac states that, once even a single human discovers the truth of this method of psychological analysis of the human mind, it will become useless as an objective technique to those extraterrestrial powers now using it."
+"You mean there won't be any more jokes handed out to humanity?" asked Trask faintly. "Or what do you mean?"
+"No more jokes," said Whistler, "now! Multivac says now! The experiment is ended now! A new technique will have to be introduced."
+They stared at each other. The minutes passed.
+Meyerhof said slowly, "Multivac is right."
+Whistler said haggardly, "I know."
+Even Trask said in a whisper, "Yes. It must be."
+It was Meyerhof who put his finger on the proof of it, Meyerhof the accomplished jokester. He said, "It's over, you know, all over. I've been trying for five minutes now and I can't think of one single joke, not one! And if I read one in a book, I wouldn't laugh. I know."
+"The gift of humor is gone," said Trask drearily. "No man will ever laugh again."
+And they remained there, staring, feeling the world shrink down to the dimensions of an experimental rat cage-with the maze removed and something, something about to be put in its place.
