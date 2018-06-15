@@ -1,6 +1,7 @@
 package wax
 
 import java.io.File
+import java.nio.file.Paths
 import java.time
 import java.time.LocalTime
 
@@ -11,6 +12,7 @@ import scala.concurrent.duration.Duration
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.{Await, ExecutionContext, Future}
 import scala.io.Source
+import scala.util.Try
 
 object MapReduce {
 
@@ -18,7 +20,7 @@ object MapReduce {
     m.map(map).foldLeft(Monoid.empty)(Monoid.combine[T])
   }
 
-  def mapReducePar[A, T: Monoid](m: List[A])(map: A => T): Future[T] = {
+  def mapReducePar[A, T: Monoid](m: List[A])(map: A => T): T = {
     def reduce(m: List[Future[T]]): Future[T] = m match {
       case Nil => Future.successful(Monoid.empty)
       case h :: Nil => h
@@ -34,37 +36,41 @@ object MapReduce {
         }.toList
         reduce(nl)
     }
-    reduce(m.map(map).map(Future.successful))
+    Await.result(reduce(m.map(map).map(Future.successful)), Duration.Inf)
   }
 
 }
 
-//Word frequency
-object WordFrequencyCalc extends App {
-  val words = Source.fromResource("books/wells/Herbert George Wells - Complete Works - 2015.txt")
-                    .getLines
-                    .flatMap(tokenize)
-                    .toList
+object FileProcessor extends App {
+  def process[T: Monoid](f: String => T)(path: File): T = MapReduce.mapReduce(readTokens(path))(f)
 
-  private val monoid = new Monoid[Map[String, Int]] {
+  def processMany[T: Monoid](f: String => T)(paths: List[File]): T = MapReduce.mapReducePar(paths)(process(f))
+}
+
+object Appchik extends App {
+  implicit val monoid = new Monoid[Map[String, Int]] {
     override def empty: Map[String, Int] = Map.empty
 
     override def combine(x: Map[String, Int],
                          y: Map[String, Int]): Map[String, Int] =
       x ++ y.map { case (key, value) => key -> (value + x.getOrElse(key, 0)) }
   }
-  val res = runWithTiming {
-    val resF = MapReduce.mapReducePar(words)(w => Map(w -> 1))(monoid)
-    Await.result(resF, Duration.Inf)
-//      MapReduce.mapReduce(words)(w => Map(w -> 1))(monoid)
+
+  val files = new File(this.getClass.getClassLoader.getResource("books").toURI)
+    .listFiles()
+    .flatMap(_.listFiles())
+    .toList
+
+  runWithTiming {
+    FileProcessor.processMany(str => Map(str -> 1))(files)
   }
-//  print(res.toList.sortBy(_._2).reverse)
 }
 
 //Inverted index (3-rd interview quiz)
 object InvertedIndexBuilder extends App {
+
   //load a bunch of files
-  val fileToToken = new File("inverted_index").listFiles().toList.flatMap(f => tokenizeFile(f).map(t => f.getName -> t))
+  val fileToToken = new File("inverted_index").listFiles().toList.flatMap(f => readTokens(f).map(t => f.getName -> t))
   val monoid = new Monoid[Map[String, Set[String]]] {
     override def empty: Map[String, Set[String]] = Map.empty
 
@@ -73,8 +79,8 @@ object InvertedIndexBuilder extends App {
       x ++ y.map { case (key, value) => key -> (value ++ x.getOrElse(key, Set.empty)) }
   }
   runWithTiming{
-//    MapReduce.mapReduce(fileToToken){ case (f,t) => Map(t -> Set(f)) }(monoid)
-    Await.result(MapReduce.mapReducePar(fileToToken){ case (f,t) => Map(t -> Set(f)) }(monoid), Duration.Inf)
+    MapReduce.mapReduce(fileToToken){ case (f,t) => Map(t -> Set(f)) }(monoid)
+//    Await.result(MapReduce.mapReducePar(fileToToken){ case (f,t) => Map(t -> Set(f)) }(monoid), Duration.Inf)
   }
 }
 
@@ -86,7 +92,11 @@ object InvertedIndexBuilder extends App {
 //}
 
 object util {
-  def tokenizeFile(file:File): List[String] = Source.fromFile(file).getLines().flatMap(tokenize).toList
+  def readTokens(file:File): List[String] = Try(Source.fromFile(file).getLines.flatMap(tokenize).toList).getOrElse {
+    println(file)
+    throw new RuntimeException("FUCK")
+  }
+
   def tokenize(str: String): List[String] =
     str.toLowerCase
       .replace("\n", " ")
