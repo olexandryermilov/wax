@@ -2221,7 +2221,7 @@ She relaxed. "I don't see how it can be anything but robots."
 PELORAT also said "Robots!" in almost exactly Trevize's tone when he was told of them. Then he smiled slightly. "You were right, Golan, and I was wrong to doubt you."
 "I don't remember your doubting me, Janov."
 "Oh well, old man, I didn't think I ought to express it. I just thought, in my heart, that it was a mistake to leave Aurora while there was a chance we might interview some surviving robot. But then it's clear you knew there would be a richer supply of robots here."
-"Not at all, Janov. I didn't know. I merely chanced it. Bliss tells me their mental fields seem to imply they are fully functioning, and it seems to me they can't very well be fully functioning without human beings about for care and maintenance. However, she can't spot anything human so we're still looking. »
+"Not at all, Janov. I didn't know. I merely chanced it. Bliss tells me their mental fields seem to imply they are fully functioning, and it seems to me they can't very well be fully functioning without human beings about for care and maintenance. However, she can't spot anything human so we're still looking. Â»
 Pelorat studied the viewscreen thoughtfully. "It seems to be all forest, doesn't it?"
 "Mostly forest. But there are clear patches that may be grasslands. The thing is that I see no cities, or any lights at night, or anything but thermal radiation at any time."
 "So no human beings after all?"
@@ -3339,7 +3339,7 @@ BLISS said, in a worried tone, "Fallow is convinced we're going to take her back
 "Tell her it's not Solaria. Look, I'll give you one or two reference bookfilms with graphic illustrations. Show her close-ups of a number of different inhabited worlds and explain that there are millions of them. You'll have time for it. I don't know how long Janov and I will have to wander around, once we pick a likely target and land."
 "You and Janov?"
 "Yes. Fallom can't come with us, even if I wanted her to, which I would only want if I were a madman. This world requires space suits, Bliss. There's no breathable air. And we don't have a space suit that would fit Fallom. So she and you stay on the ship."
-«Why IT'
+Â«Why IT'
 Trevize's lips stretched into a humorless smile. "I admit," he said, "I would feel safer if you were along, but we can't leave Fallom on this ship alone. She can do damage even if she doesn't mean to. I must have Janov with me because he might be able to make out whatever archaic writing they have here. That means you will have to stay with Fallom. I should think you would want to."
 Bliss looked uncertain.
 Trevize said, "Look. You wanted Fallom along, when I didn't. I'm convinced she'll be nothing but trouble. So-her presence introduces constraints, and you'll have to adjust yourself to that. She's here, so you'll have to be here, too. That's the way it is."
@@ -3909,7 +3909,7 @@ The lights in the pilot-room dimmed and went out.
 "No- Little specks of light, maybe. I'm not sure."
 "I see them, too. Now I'll throw in the telescopic lam."
 And there was light! Clearly visible. Irregular patches of it.
-"It's inhabited," said Trevize. "It may be the only inhabited portion of the pest-„
+"It's inhabited," said Trevize. "It may be the only inhabited portion of the pest-Â„
 "What do we do?"-
 "We wait for daytime. That gives us a few hours in which we can rest."
 "Might they not attack us?"

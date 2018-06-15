@@ -35,7 +35,7 @@ MIRAGE
 
 MARK W. TIEDEMANN
 
-Copyright © 2000
+Copyright Â© 2000
 
 
 
@@ -331,7 +331,7 @@ Mia waited less than a second for Bogard to prioritize the instruction.
 	"Yes, Mia?"
 	"Status."
 	"Both targets apprehended and subdued. Returning to your position."
-	"Good…hurry…I'm…"
+	"GoodÂ…hurryÂ…I'mÂ…"
 	She had never passed out before, and it came as a surprise and a frustration and a peculiar anger that she was losing control so fast. 
 	The transport robot asked again, "Ma'am, do you require assistance? Ma'am...?" 
 
@@ -513,7 +513,7 @@ Ariel Burgess gazed at the tri-D image projected above her desk, a vague dread d
 	"I sympathize, Mr. Udal, but what do want me to do?" 
 	Udal relaxed and smiled, his teeth brilliant in their Auroran perfection. The change was startling. "I understand you will be sitting in on the upcoming trade talks Senator Clar Eliton is chairing. I'm told Ambassador Galiel Humadros herself is coming. If you could bring it to their attention that these fanatic assaults on property have the potential to derail any progress they might achieve, it would help a great deal. Frankly, any more of these vandalisms and I may have to pull up stakes and go home. My insurance premiums are high enough as it is, but" 
 	"I'm flattered that you think so highly of my position here, but I'm only the commerce liaison for the embassy. My function is purely advisory--" 
-	"Then by all means, advise. Besides, you underestimate your potential. You're also an attaché from the Calvin Institute, and the Calvin Institute is respected even by the Earthers. A word from you--" 
+	"Then by all means, advise. Besides, you underestimate your potential. You're also an attachÃ© from the Calvin Institute, and the Calvin Institute is respected even by the Earthers. A word from you--" 
 	Ariel's com beeped. "Excuse me, Mr. Udal." She touched the contact. "Yes?" 
 	"Ariel, you better check the subetheric," Ariel's aide, Hofton, said. 
 	"In a few minutes--"
@@ -523,7 +523,7 @@ Ariel Burgess gazed at the tri-D image projected above her desk, a vague dread d
 	Udal sucked in his breath sharply. "Is there sound?" 
 	Ariel fumbled for the controls. 
 	"--lice have informed us that so far none of the perpetrators have been apprehended," a reporter was saying. "The death toll so far is ten, including Senator Clar Eliton and members of his staff. Repeated requests for explanations on how weapons got past the security systems have so far received no satisfactory answers. I repeat: Senator Clar Eliton and the Auroran Ambassador Galiel Humadros have been murdered, as well as several members of their respective staffs, in an assault by a number of armed assailants who have all managed to escape. None of the security measures supposedly in place operated, either afterward or apparently before the assault."
-	"They didn't... I... have to make some calls..." Udal plucked his recording from Ariel's desk player and headed for the door. "Thank you for your time, Ms. Burgess. I'll let you know…"
+	"They didn't... I... have to make some calls..." Udal plucked his recording from Ariel's desk player and headed for the door. "Thank you for your time, Ms. Burgess. I'll let you knowÂ…"
 	"Mr. Udal."
 	He stopped and looked at her, face open with shock. 
 	"Warehouse those drones until we can clear this up. I don't want to see any more of these on the open market."
@@ -611,9 +611,9 @@ The floor of the main gallery had been cleared of people and blood by the time D
 	No one in the control room had been at ease with the agents. Joler Hammis had been openly hostile. They did not have the familiarity with these systems that they claimed, but they never hesitated to use the people around them. Poor Kedder ended up redoing most of what he and Derec had already gone over. Kedder kept giving Derec apologetic looks. Hammis stayed for a time, then shook his head and left. Everyone moved cautiously, ever-aware of the agents' presence, as if a wrong gesture might invite terrible consequences. When Derec's part was finished, they showed him the door. He felt numb. 
 	Looking around, it was difficult to imagine that this place had been the stage for the slaughter he had seen. The floor shone now, polished, ready for new traffic, though when normal flow might resume he had no idea. Shuttle traffic had finally, after hours of delay, been rerouted to other ports. 
 	What was the point...? he wondered hollowly. 
-	He stopped in the middle of the gallery and turned slowly, gazing across the unoccupied expanse. It was rare to see so much room on Earth unpeopled. Everywhere in the warrens and metal caverns, people crowded each other. Standing here seemed a luxury for the moment, a pleasantly eerie feeling, a prescé vu, different from "outside," different from standing in a similar place on a Spacer world where crowding was a bad dream and an incomprehensible myth. 
+	He stopped in the middle of the gallery and turned slowly, gazing across the unoccupied expanse. It was rare to see so much room on Earth unpeopled. Everywhere in the warrens and metal caverns, people crowded each other. Standing here seemed a luxury for the moment, a pleasantly eerie feeling, a prescÃ© vu, different from "outside," different from standing in a similar place on a Spacer world where crowding was a bad dream and an incomprehensible myth. 
 	He saw no robots now. Union Station had been a robot-saturated environ, unique on Earth. They had provided comfort and security for the offworld travelers that came through constantly, created a familiar environment for Spacer visitors, and facilitated the services of the RI. It had been a showpiece and a diplomatic necessity, something for the proponents of robots on Earth to hold up as an example of how it might be. To see none here now made it stranger yet. 
-	Derec continued to the exit, down the empty tunnel, and out onto the broad apron. A few personal transports still occupied the cordoned-off space. Beyond, the boulevard ran by, and across from that the express strips started. The few people riding past gave the Union Station façade uncomprehending stares, as if the place had suddenly become something other than it had always been, revealing a shocking reality long hidden. 
+	Derec continued to the exit, down the empty tunnel, and out onto the broad apron. A few personal transports still occupied the cordoned-off space. Beyond, the boulevard ran by, and across from that the express strips started. The few people riding past gave the Union Station faÃ§ade uncomprehending stares, as if the place had suddenly become something other than it had always been, revealing a shocking reality long hidden. 
 	He climbed into his vehicle and closed his eyes. Weariness, disbelief, and stress combined to fog his mind. He gave himself a few minutes before engaging the drive and pulling onto the boulevard. 
 	The com light winked at him. He pressed the contact. 
 	"Derec."
@@ -717,7 +717,7 @@ command override omega-five catalogue reset, shunt to auxiliary buffer, fourth t
 SIX 
 
 Mia opened her eyes to darkness. Not absolute--she could see shapes and a few details, enough to tell her that she was in a small room. She felt nothing, and for a few seconds she panicked, groping in memory for the cause. 
-	"You are anæsthetized." 
+	"You are anÃ¦sthetized." 
 	She heard the words but did not immediately recognize their meaning. Still, she felt herself calming down, and gradually she understood. 
 	"I'm in hospital," she croaked, her throat dry and mouth cottony. She coughed, which came as a sound with no sensation in her chest. She hated this. "Water...?" 
 	A tube touched her lips and she took it and sucked. Cool liquid filled her mouth. She saw a large shape, shadow on shadow, to her left, looming, a thin line of white light marking its head. 
@@ -731,12 +731,12 @@ Mia opened her eyes to darkness. Not absolute--she could see shapes and a few de
 	"Yes."
 	Then she remembered. "Prisoners--"
 	"Secured and turned over for processing."
-	"I was…hurt…"
+	"I wasÂ…hurtÂ…"
 	"Multiple projectile wounds, right leg, right arm, left fourth rib. Healing vectors are positive, prognosis excellent. Rehabilitative coma is withdrawn. Full function should return in three to five days."
 	"I instructed you to protect me. "
 	"Yes."
 	Mia blinked and looked away, remembering the last moments at Union Station. She had lain bleeding while a transport drone chattered helplessly at her side about assisting her. The pain--it had been difficult to think, to decide. She had passed out, a wholly new experience, one she hoped never to repeat. Then Bogard had arrived, two unconscious people in its grasp, and the concern in its voice had brought her focus. Bogard was already on the edge, having failed to protect Senator Eliton. Following her orders had kept it functioning; it needed another purpose to keep it from collapsing. Bogard was resilient, more so than any robot she had ever heard about, but it was still a robot with a positronic brain restricted by the Three Laws. She remembered--vaguely--issuing a series of specific instructions to commandeer transport drones for the prisoners and see that she was safe... 
-	Her arms tingled. The anæsthetic was slowly wearing off. 
+	Her arms tingled. The anÃ¦sthetic was slowly wearing off. 
 	"Could we have a little more light, Bogard?"
 	"I recommend against it."
 	"Explain."
@@ -756,7 +756,7 @@ Mia opened her eyes to darkness. Not absolute--she could see shapes and a few de
 	Mia did not know if the tingling in her belly was the result of restored sensation or fear. 
 	"Bogard, I want you to surveil the premises."
 	"I should not leave you."
-	"Listen carefully, Bogard. Right now we don't have enough information to make a decision. We need to know. You don't want to let the staff know I'm awake, fine. This is the alternative. I can't do anything till the anæsthetic wears off, anyway. I need to know what's happening, if anything. I repeat: surveil the premises."
+	"Listen carefully, Bogard. Right now we don't have enough information to make a decision. We need to know. You don't want to let the staff know I'm awake, fine. This is the alternative. I can't do anything till the anÃ¦sthetic wears off, anyway. I need to know what's happening, if anything. I repeat: surveil the premises."
 	Mia watched the big shadow, wondering if it would accept her logic and her instruction. Bogard was obviously still on the edge of a breakdown. That it still functioned evidently resulted from binding it to her safety, but she did not know how far she could push it. 
 	"Your assessment is sound," Bogard said. "I will return as soon as possible."
 	And it vanished. Mia imagined she felt a slight shift of air, an almost-breeze, as it left the room. Its speed startled her, and she wondered then how it had been possible that it had permitted Senator Eliton to die. 
@@ -809,7 +809,7 @@ Bogard carried her down to a sublevel of the facility, among the storage lockers
 	Protocol dictated she contact One and report. 
 	But they knew about Bogard... 
 	Her leg ached violently, and she sucked air between her teeth. "Bogard, is there anything you can do for my pain?" 
-	"I can administer a general anæsthetic. I regret I do not have a local."
+	"I can administer a general anÃ¦sthetic. I regret I do not have a local."
 	"At some point we need to find painkillers. First, though, I need... I need some things... Can you get me to my apartment from here undetected?" 
 	"Yes."
 	"That's a start. Do that. I can think on the way."
@@ -1040,7 +1040,7 @@ The Phylaxis Group offices occupied three floors of a refurbished small industri
 	"Well, it does, sort of. The point is, a positronic brain isn't a human brain, so the expectation is unrealistic. But most people don't know that." Derec studied the screens. "This looks worse than it should, though. There ought to have been discreet sectors, at least. This appeared to have no coherence at all."
 	"You said there were two positronic specialists there?" Rana said. 
 	"They were there when I arrived. Whether or not they were on watch when this happened..."
-	The pattern on their screens resembled a collection of interference grids, moiré textures, coils, dark and light alternating rhythmically. Rana touched a spot on her screen. 
+	The pattern on their screens resembled a collection of interference grids, moirÃ© textures, coils, dark and light alternating rhythmically. Rana touched a spot on her screen. 
 	"What bothers me are these little loops here and here. Same sort of thing, but according to their size they never quite amounted to much, like a problem that solved itself. Now, that can theoretically happen in a positronic brain--confusion, ambiguity, indecision, all that can start a recursive loop that dissolves as soon as it finds solid footing. But not this much, and they usually have a distinctive endpoint pattern. These just evaporate..."
 	"It's likely the same event could trigger several loops."
 	"Sure."
@@ -1401,7 +1401,7 @@ Derec found Rana asleep on the cot in the cafeteria, one arm draped over her eye
 	"Sure."
 	"Thank you." Derec closed the connection. 
 	"Don't feel too bad," Rana said. "Imbitek has something like sixty percent of Earth's robotics market."
-	"Only don't ever call it that to their face. It's 'imbedded service technologies'." Derec steepled his fingers below his chin, staring unseeing at the blank com screen. "Who at the Calvin Institute would issue instructions for them to bypass the contract service…?"
+	"Only don't ever call it that to their face. It's 'imbedded service technologies'." Derec steepled his fingers below his chin, staring unseeing at the blank com screen. "Who at the Calvin Institute would issue instructions for them to bypass the contract serviceÂ…?"
 	The company that had installed the RI had been Solarian, not Auroran, but there had had to be a Calvin representative to oversee it. Who had that been? Derec tapped the request in the datum. 
 	Bys Randic. He remembered her, but she had rotated back to Aurora several months ago. The company itself had been a midsized firm, not a bad choice, but certainly not the first that would have recommended itself to Derec. The byzantine complications of the Terran bidding process still baffled him--certainly there had been better firms, but the traditions of Earther government procurement could not be circumvented by straightforward Spacer logic. But he had been there during the entire operation as well and audited the process. Eliton had seen to that, since it came under his committee's oversight. Other companies--mostly Terran--had installed the satellite systems, but the Calvin Institute rep had vetted the interfaces and pronounced them acceptable. Who, along that striated line of involved parties, could have overridden such a vital part of the process? 
 	He punched another code into the terminal. "Imbitek Corporation, how may I direct your call?" said a synthetic voice, ungendered and inoffensive. 
@@ -1581,7 +1581,7 @@ Mia tensed when the medical robot showed up, but made herself relax and allow it
 	"That's not as bad as I thought... so is that the good news?" Setaris asked. 
 	"That's the good part. Last night I spoke to Benen Yarick from Humadros's legation. The survivors want to leave."
 	Setaris looked pleased. "You did speak to Yarick. Good."
-	"It's irregular, though. I thought she should speak to you or…"
+	"It's irregular, though. I thought she should speak to you orÂ…"
 	"Or who, Ariel? Go on."
 	"Yarick is simply frightened. She claims that even if she brought herself to stay, her state of mind would make her virtually useless at the conference."
 	"Hm. I suppose I can see her point of view, but... what did you tell her?" 
@@ -1921,7 +1921,7 @@ Rana kept glancing over the top of her console at Ariel, who sat on the opposite
 	"You said that before."
 	"You didn't believe me?" 
 	"People don't usually display that much heat over philosophy."
-	"Not the abstract kind, no. But when it relates directly to what you do, who you are..." Derec frowned. "She believes I betrayed her trust. We... it sounds like a cliché, but we really had everything together for a while."
+	"Not the abstract kind, no. But when it relates directly to what you do, who you are..." Derec frowned. "She believes I betrayed her trust. We... it sounds like a clichÃ©, but we really had everything together for a while."
 	"Until?" 
 	"Until I started playing around with the ideas that became Bogard." He looked at Rana. "You can be damn nosy."
 	Rana shrugged. She began to say more, then nodded toward Ariel. "Decision time?" 
@@ -2154,7 +2154,7 @@ In light of recent revelations," the newscaster declared from the subetheric, "t
 	"You're in the Auroran Embassy. What's going to hurt you here?" 
 	"I don't know. And that's just it. I do not know. Until I can walk on my own and defend myself, I just--I can't release Bogard to you."
 	"Agent Daventri--" 
-	Mia shook her head. "I'm sorry, Mr. A very. I can't. Please don't press me further on this. Maybe in a day or two…"
+	Mia shook her head. "I'm sorry, Mr. A very. I can't. Please don't press me further on this. Maybe in a day or twoÂ…"
 	"There's another problem," Derec said. "Bogard right now is unaware ofa discrepancy in its memory. Its behavior is conforming to its program, but there is discrepancy and eventually the self-diagnostics are going to tumble to it. When that happens, Bogard will hunt it down even if it means tearing its own programming apart to find out what the problem is. Bogard could easily destroy itself. That's why debrief is important. More so because it involves a personal failure on its part."
 	"I don't know what to tell you."
 	"Don't tell me anything. Release Bogard--" 
@@ -2198,7 +2198,7 @@ In light of recent revelations," the newscaster declared from the subetheric, "t
 
 FIFTEEN
 
-The Civic Morgue occupied a sublevel, well below the main hospital complex in Reed District. Its innocuous façade could have been easily missed--a plain metal door with an ID scanner to its right, a plain sign above the lintel. No other vehicles were in the small lot when the embassy limo pulled in. 
+The Civic Morgue occupied a sublevel, well below the main hospital complex in Reed District. Its innocuous faÃ§ade could have been easily missed--a plain metal door with an ID scanner to its right, a plain sign above the lintel. No other vehicles were in the small lot when the embassy limo pulled in. 
 	Derec stepped from the limo and tugged at the hem of the formal jacket Ariel insisted he wear. It did not quite fit and he kept pulling at the sleeves and shrugging as if to ease the tightness out of his shoulders. He had been glad she had lacked the rest of the suit that went with it. 
 	A second door was set into the wall a dozen or so meters from the visitors' entrance, one large enough for ambulances. The space hummed with a deep background noise from above. The place was unadorned--bare metal, struts and sheeting and harsh lights. Derec could not even find graffiti, as if by unspoken agreement no one intruded upon the area. 
 	Ariel led the way to the entrance, carrying herself with confidence, as if she did this all the time. Derec still wondered whom she had called for the authorization to get in here, but all she gave him was a secret smile as she had dug through a closet for the jacket. She stopped at the door and slid her ill into the scanner. 
@@ -2400,7 +2400,7 @@ Derec experienced a profound sense of relief when the limo pulled away from the 
 	"I've never seen you before," Derec said, taking the slip. 
 	"Thank you," Ariel said. As they walked away, she said quietly, "It is contrary to service regulations to divulge personal information without proper authorization."
 	Derec shrugged. "He won't have a job next week anyway--he's a temp. He probably doesn't know the regulations. But he certainly doesn't want an unsatisfactory mark on his performance record." He gestured around the gallery. "Did you notice? No robots."
-	"It's a shame. This place felt…"
+	"It's a shame. This place feltÂ…"
 	"Like home?" 
 	Ariel snorted. "No place on Earth feels like that. I was going to say 'civilized,' but that's not right. It felt safe."
 	"Because of the robots?" 
@@ -2429,7 +2429,7 @@ Derec experienced a profound sense of relief when the limo pulled away from the 
 	"The ticket was purchased six weeks ago," Derec said. 
 	Ariel nodded. "Before Tro arrived. And the ticket was bought here."
 	"Why would the Solarians kill their own people?" 
-	"It wouldn't make sense, would it? Besides which, the Union Station RI was a point of pride to them. Seeing it all fail…" 
+	"It wouldn't make sense, would it? Besides which, the Union Station RI was a point of pride to them. Seeing it all failÂ…" 
 	"Speaking of which, it would be a good thing if I could get back there to look at the RI."
 	"Hmm? Oh." Ariel worked her terminal again. "Wait a second... I initiated a log search before we left regarding this alleged directive not to report minor errors to you. I want to see if it's turned anything..." She frowned at the terminal. "No. It did not come from us. Nor from any other office of the Auroran Embassy." She looked at Derec. "I could do an offworld search to see if my predecessor did, but I doubt we'd find anything. That would mean collusion and there'd be no trail."
 	"None to speak of." He gestured at the datum. "Uh, the RI?" 
@@ -2805,7 +2805,7 @@ Ariel waited nervously at a small table by a massive pillar and watched the thro
 	Derec wandered in with a crowd of school kids who were all dressed in bright blue-and-yellow jumpers and wearing their ID badges prominently around their necks. He got in the queue, picked up a tray, and went through the line. 
 	He drifted by her table, then looked again. He made an exaggerated grin and ambled over, everything about him suddenly announcing salacious intent. 
 	"Excuse me, but I couldn't help notice," he said, just a bit too loudly. A few people turned to look, then as quickly turned away. "You look lonely. Mind if I join you?" 
-	Ariel almost laughed. It was so blatantly clichéd she wondered that anyone could possibly accept such an invitation. 
+	Ariel almost laughed. It was so blatantly clichÃ©d she wondered that anyone could possibly accept such an invitation. 
 	"I don't think" she began. 
 	"You're that friend of Kate's, aren't you? Down at the data import pool? I'm Massey."
 	Ariel looked away, working at her smile. "I'm sorry, I didn't recognize you at first. Please."
@@ -2859,7 +2859,7 @@ They took a strip east, toward the convention district.
 	"Don't know. I told him I'd think it over." 
 	Ariel and Derec continued on to the escalator. As they descended to sublevel E, she noticed how few other people seemed to be around. Most of this area contained maintenance, service, and distribution facilities and those few people present looked like I-rated laborers, dressed in plain overalls. The sound of heavy machinery gave a throbbing background groan, and the air smelled warm, metallic. 
 	They paused at the intersection of an alleyway and the main corridor. Ariel slipped her portable datum from inside her jacket. The map of the area on the small screen also gave their location. 
-	"Down there," she said, pointing across the corridor and returning the datum quickly to its pouch. She looked around, frowning. "There's something else about this area…"
+	"Down there," she said, pointing across the corridor and returning the datum quickly to its pouch. She looked around, frowning. "There's something else about this areaÂ…"
 	They turned down a narrow passage covered by a wide strip of dull grey material, a guide path for movers. At the end they emerged into a wide area fronting a garage entrance. Old transports lined the wall to their right, grimy vehicles long unused, their identifying markings obscured by dirt and wear. Two wide transport exits opened on either side of the apron. 
 	"D. C. Municipal Transport Service Terminal," Derec read the sign above the main door. "Substation Six-E-Vernon Section."
 	"This is the place." Ariel looked around, frowning.
@@ -2873,7 +2873,7 @@ They took a strip east, toward the convention district.
 	Her own anger surprised Ariel. She drew slow breaths and suppressed it. "Mia still won't release it."
 	"That has to change."
 	"She's afraid." 
-	Derec shrugged. "All right, there should be another access, for maintenance crews or supervisors or whatever." He sounded ambivalent now, his voice dull and flat. He walked away from her, skirting the edge of the broad apron. He disappeared to the left of the façade. 
+	Derec shrugged. "All right, there should be another access, for maintenance crews or supervisors or whatever." He sounded ambivalent now, his voice dull and flat. He walked away from her, skirting the edge of the broad apron. He disappeared to the left of the faÃ§ade. 
 	Ariel searched the geometries surrounding the garage--suspended walkways, roofs, shuttered windows, sharp shapes piled up around massive supporting beams that ex tended into the cavernous heights high overhead. Mist obscured details of the main roof, haloing the bright points of light. She saw no one, which did not reassure her. She followed after Derec. 
 	The gangway turned right several meters from its entrance. Ariel experienced a brief touch of claustrophobia looking up the walls that formed the narrow canyon. 
 	She found Derec at the top of a set of metal steps, tentatively entering data into a small panel set alongside the human-sized door. His face was blank, now, only his eyes bright with concentration. Ariel stood by the comer, a few meters away, watching, as if she could do anything if they were caught. 
@@ -3722,7 +3722,7 @@ Mia watched Bogard stumble away from the transport and felt a twinge of optimism
 	"Is that why you work with robots?"
 	"I told you--" 
 	"You told me why you built Bogard."
-	"Touché." Derec looked out the opposite window for a time, and she thought he intended to drop the subject. But then, not looking at her, he said, "I'm the son of a genius. I lost... memories. I've made up for a lot of them, but I can never know how much I'll never recover. I don't know why I'm as good at robotics as I am. Parental influence? Maybe. Probably. But that answer is common, easy, and unsatisfying. Maybe you're right. Maybe I work with robots to... to understand." He turned to her. "They make more sense than people do. Most of the time."
+	"TouchÃ©." Derec looked out the opposite window for a time, and she thought he intended to drop the subject. But then, not looking at her, he said, "I'm the son of a genius. I lost... memories. I've made up for a lot of them, but I can never know how much I'll never recover. I don't know why I'm as good at robotics as I am. Parental influence? Maybe. Probably. But that answer is common, easy, and unsatisfying. Maybe you're right. Maybe I work with robots to... to understand." He turned to her. "They make more sense than people do. Most of the time."
 	Mia felt uncomfortable under his gaze, as if he expected more confession or perhaps confirmation. 
 	The transport turned onto an ascending ramp. 
 	"Do you think Senator Eliton is alive?" she asked. 
@@ -3859,7 +3859,7 @@ processing command recognition, partially impaired protocol, response limited, c
 	"Oh, that's good, he'll love this. Listen to it."
 	"Knock it off. That device should have rendered it down to its component molecules. It's still walking around."
 	"I'm impressed. Can you imagine body armor made out of this stuff? Bogard, command imperative established, Agent Gambel and Agent Cupra. Confirm?" 
-	"…con-firrrrm-ed…"
+	"Â…con-firrrrm-edÂ…"
 	"Bogard, you will accompany us. We are your field retrieval. Confirmed?" 
 	"... field... re-field-retrieve-field..."
 	"Confirm, Bogard."
@@ -4062,7 +4062,7 @@ Ariel disliked using Derec's robot. She made the call to Special Service--anonym
 	"Does he know that?" 
 	"He's been notified." He sighed. "Look, Ariel--it's been a lousy week and it isn't over yet. When I heard it was you, I thought that for two minutes I'd be able to talk to someone who didn't want a liter of my blood and a position statement. Where've you been, by the way? I've called a couple of times, but Hofton kept telling me you were unavailable."
 	"As you say, it's been a lousy week."
-	Taprin nodded. "Touché. Look, what do you want me to do?" 
+	Taprin nodded. "TouchÃ©. Look, what do you want me to do?" 
 	"Talk to somebody, get them to stop. Or do you want to see the Spacer community leave en masse?" 
 	"It might actually be safer for them. But I'll see what I can do." He gave a wan smile. "Maybe this Saturday? Dinner? I'm not sure what I'll be doing, but if you say yes, I'll make time."
 	''I'll have to see, Jonis. This situation was unexpected. I might not have any Saturdays for a while."
@@ -4354,7 +4354,7 @@ A faint smell of burning plastic brought him awake. Derec kept his eyes closed, 
 	"What? Oh. I--well, I didn't always feel that way. But after working there and--I lost friends, Mr. Avery. I was a pariah among certain people."
 	"Find new friends. Not everyone on this planet is a bigot."
 	Kedder grunted and lapsed into sullen silence. 
-	Derec licked his lips; his mouth felt dry and numb--leftovers from the anæsthetic. "So let me see if I guessed correctly. Imbitek paid you to allow them to install a few experimental components. Since they were already an authorized contractor on the project, you couldn't see a legal problem, certainly not an ethical one. They offered enough money to assuage any other doubts you might have and, besides, they convinced you that the RI was temporary and afterward, if everything went well, you could have a position with them. So you agreed. You also helped them with locating the nodes they wanted. They even had a Solarian consultant to convince you that nothing would go wrong. You know your training in positronics isn't on par with a specialist from Solaria, so this makes perfect sense. All you have to do over the course of the next several months is log any glitches that crop up and route the reports to the Solarian consultant rather than to the authorized service contractor--me."
+	Derec licked his lips; his mouth felt dry and numb--leftovers from the anÃ¦sthetic. "So let me see if I guessed correctly. Imbitek paid you to allow them to install a few experimental components. Since they were already an authorized contractor on the project, you couldn't see a legal problem, certainly not an ethical one. They offered enough money to assuage any other doubts you might have and, besides, they convinced you that the RI was temporary and afterward, if everything went well, you could have a position with them. So you agreed. You also helped them with locating the nodes they wanted. They even had a Solarian consultant to convince you that nothing would go wrong. You know your training in positronics isn't on par with a specialist from Solaria, so this makes perfect sense. All you have to do over the course of the next several months is log any glitches that crop up and route the reports to the Solarian consultant rather than to the authorized service contractor--me."
 	Derec tried to shift onto his side to make breathing a little easier, but without success. "'Adjustment errors,' they told you--happens from time to time, nothing to worry about. Then it all blew up in your face when the attack on the conference delegates happened. You knew something to do with those systems had interfered with the RI and compromised security. You didn't know what, you probably didn't even know that it was supposed to do that. You only knew that something you had allowed to happen had caused a major disaster. I show up and you decide, on the spot, to say nothing. Maybe I'd conclude it was Imbitek's fault, which I did. It never occurred to me to question you or Hammis, not till I found out that no directive had been issued by the Calvin Institute to route those 'adjustment errors' to them instead of me. Even then, I didn't really think it was you. I thought you'd been lied to. I wanted to find out who'd done that. But now... let me guess, it was pointed out to you that your continued cooperation was necessary or the facts of your violation of protocol would be made public. You'd be lucky to escape imprisonment."
 	Kedder sniffed. "It wasn't supposed to happen this way."
 	"What about Hammis? Was he part of it?" 
@@ -4381,7 +4381,7 @@ A faint smell of burning plastic brought him awake. Derec kept his eyes closed, 
 	"So," Derec said, "who's Bok?"
 	"Bok Golner."
 	"Am I supposed to know him?"
-	"He's…dangerous."
+	"He'sÂ…dangerous."
 	"So I gather. Managin?" 
 	Kedder nodded. 
 	"All the gunmen at Union Station?" 
@@ -4534,7 +4534,7 @@ A small contingent of Auroran security met them in the embassy garage. Mia stepp
 	Hofton nodded. "Yes, sir, I remember you. I'm pleased to see that you're all right. There have been further complications. Ariel wishes to see both of you as soon as possible. What needs tending here?" 
 	From the rear of the transport, Bogard emerged, carrying the still-unconscious men. Mia watched the expressions on the faces of the security team. They looked briefly startled and a little wary, but accepted Bogard at once. 
 	"We need these two placed in isolation, under guard," Mia said. 
-	Hofton frowned. "The embassy doesn't have a jail as such…"
+	Hofton frowned. "The embassy doesn't have a jail as suchÂ…"
 	"I don't care if it's a closet."
 	"That we can provide." Hofton gestured to the Aurorans. "Take them to the secured briefing rooms."
 	"Keep them separate," Mia added. "Bogard, go with them and assist in observation."
@@ -5017,7 +5017,7 @@ Bogard ran directly through the perimeter. The voltage discharged against it, bu
 	Derec screamed and pushed himself away. 
 	People surrounded him, but their guns were aimed at Golner's corpse. 
 	It lay now, half its head gone, a copper strand wrapped around its waist and wrist. Derec followed the line of the strand into the woods to a shapeless mass of material that glowed dimly in the first vague light of approaching dawn. 
-	"Violation... violation..." The voice was weak and tinny. "First Law violation... unacceptable... vio--vi--violation…"
+	"Violation... violation..." The voice was weak and tinny. "First Law violation... unacceptable... vio--vi--violationÂ…"
 	Gradually the voice faded away, and the forest was still. 
 
 Agent Sathen knelt before Derec and offered him a cup. 
