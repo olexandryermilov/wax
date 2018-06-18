@@ -57,8 +57,19 @@ default-extensions:
 
 dependencies:
   - base >= 4.9 && < 5
+  - unordered-containers
+  - hashable
   - rio
   - lens
+  - path
+  - path-io
+  - criterion
+  - deepseq
 
 library:
   source-dirs: src
+
+executables:
+  criterion-books:
+    source-dirs: src
+    main: Wax.Criterion.Books
