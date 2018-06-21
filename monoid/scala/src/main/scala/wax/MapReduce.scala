@@ -14,17 +14,18 @@ import scala.io.Source
 
 object MapReduce {
 
-  def mapReduce[A, T: Monoid](m: List[A])(map: A => T): T = {
-    m.map(map).foldLeft(Monoid.empty)(Monoid.combine[T])
+  def mapReduce[A, T: Monoid](m: List[A])(f: A => T): T = {
+    m.map(f).foldLeft(Monoid.empty)(Monoid.combine[T])
   }
 
-  def mapReducePar[A, T: Monoid](m: List[A])(map: A => T): T = {
+  def mapReducePar[A, T: Monoid](m: List[A])(f: A => T): T = {
+    val empty = Future.successful(Monoid.empty)
     def reduce(m: List[Future[T]]): Future[T] = m match {
-      case Nil => Future.successful(Monoid.empty)
+      case Nil => empty
       case h :: Nil => h
       case _ =>
         val nl = m.grouped(2).map {
-          case Nil => Future.successful(Monoid.empty)
+          case Nil => empty
           case h :: Nil => h
           case h1 :: h2 :: Nil =>
             for {
@@ -34,15 +35,15 @@ object MapReduce {
         }.toList
         reduce(nl)
     }
-    Await.result(reduce(m.map(map).map(Future.successful)), Duration.Inf)
+    Await.result(reduce(m.map(f).map(Future.successful)), Duration.Inf)
   }
 
 }
 
 object FileProcessor extends App {
-  def process[T: Monoid](f: String => T)(path: File): T = MapReduce.mapReduce(readTokens(path))(f)
+  def process[T: Monoid](f: String => T)(path: File): T = MapReduce.mapReducePar(readTokens(path))(f)
 
-  def processMany[T: Monoid](f: String => T)(paths: List[File]): T = MapReduce.mapReduce(paths)(process(f))
+  def processMany[T: Monoid](f: String => T)(paths: List[File]): T = MapReduce.mapReducePar(paths)(process(f))
 }
 
 object Appchik extends App {
@@ -50,44 +51,28 @@ object Appchik extends App {
     override def empty: Map[String, Int] = Map.empty
 
     override def combine(x: Map[String, Int],
-                         y: Map[String, Int]): Map[String, Int] =
-      x ++ y.map { case (key, value) => key -> (value + x.getOrElse(key, 0)) }
+                         y: Map[String, Int]): Map[String, Int] = {
+      val keyset = x.keySet ++ y.keySet
+      keyset.map(k => k -> {x.getOrElse(k, 0) + y.getOrElse(k, 0)}).toMap
+    }
   }
 
   val files = new File(this.getClass.getClassLoader.getResource("books").toURI)
     .listFiles()
     .flatMap(_.listFiles())
     .toList
+//    .take(10)
 
   runWithTiming {
     FileProcessor.processMany(str => Map(str -> 1))(files)
   }
 }
 
+//Word count (most used word longer that 5 letters)
 //Inverted index (3-rd interview quiz)
-object InvertedIndexBuilder extends App {
-
-  //load a bunch of files
-  val fileToToken = new File("inverted_index").listFiles().toList.flatMap(f => readTokens(f).map(t => f.getName -> t))
-  val monoid = new Monoid[Map[String, Set[String]]] {
-    override def empty: Map[String, Set[String]] = Map.empty
-
-    override def combine(x: Map[String, Set[String]],
-                         y: Map[String, Set[String]]): Map[String, Set[String]] =
-      x ++ y.map { case (key, value) => key -> (value ++ x.getOrElse(key, Set.empty)) }
-  }
-  runWithTiming{
-    MapReduce.mapReduce(fileToToken){ case (f,t) => Map(t -> Set(f)) }(monoid)
-//    Await.result(MapReduce.mapReducePar(fileToToken){ case (f,t) => Map(t -> Set(f)) }(monoid), Duration.Inf)
-  }
-}
-
-//Friends
-//Get friends graph of all the wix kiev employees?
-//object FriendGraphBuilder extends App {
-  //load the friend mappings
-  //mapreduce. Map = (Person, Person) -> Set(Person) mappings where people in tuples are sorted by name, reduce
-//}
+//Count distinct
+//Count distinct (HyperLogLog)
+//Longest word
 
 object util {
   def readTokens(file:File): List[String] = Source.fromFile(file).getLines.flatMap(tokenize).toList
@@ -110,6 +95,7 @@ object util {
 
     val end: LocalTime = LocalTime.now
     pr("MapReduce end. Printing...")
+    pr(res + "")
     println("Total seconds passed: " + time.Duration.between(start, end).getSeconds)
 
     res
