@@ -73,3 +73,7 @@ executables:
   criterion-books:
     source-dirs: src
     main: Wax.Criterion.Books
+
+  criterion-fib:
+    source-dirs: src
+    main: Wax.Criterion.Fibonacci
