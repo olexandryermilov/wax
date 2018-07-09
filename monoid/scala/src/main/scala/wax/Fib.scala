@@ -47,10 +47,3 @@ object ExpUtils {
     exp(Monoid.empty[T], n, power)
   }
 }
-
-object MatrixMultiplicationMonoid extends Monoid[Matrix] {
-  override def empty: Matrix = ???
-
-  override def combine(x: Matrix, y: Matrix): Matrix = ???
-
-}

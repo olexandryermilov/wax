@@ -46,34 +46,6 @@ object FileProcessor extends App {
   def processMany[T: Monoid](f: String => T)(paths: List[File]): T = MapReduce.mapReducePar(paths)(process(f))
 }
 
-object Appchik extends App {
-  implicit val monoid = new Monoid[Map[String, Int]] {
-    override def empty: Map[String, Int] = Map.empty
-
-    override def combine(x: Map[String, Int],
-                         y: Map[String, Int]): Map[String, Int] = {
-      val keyset = x.keySet ++ y.keySet
-      keyset.map(k => k -> {x.getOrElse(k, 0) + y.getOrElse(k, 0)}).toMap
-    }
-  }
-
-  val files = new File(this.getClass.getClassLoader.getResource("books").toURI)
-    .listFiles()
-    .flatMap(_.listFiles())
-    .toList
-//    .take(10)
-
-  runWithTiming {
-    FileProcessor.processMany(str => Map(str -> 1))(files)
-  }
-}
-
-//Word count (most used word longer that 5 letters)
-//Inverted index (3-rd interview quiz)
-//Count distinct
-//Count distinct (HyperLogLog)
-//Longest word
-
 object util {
   def readTokens(file:File): List[String] = Source.fromFile(file).getLines.flatMap(tokenize).toList
 
