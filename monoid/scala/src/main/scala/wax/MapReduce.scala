@@ -2,15 +2,35 @@ package wax
 
 import java.io.File
 import java.time
-import java.time.LocalTime
+import java.time.LocalDateTime.now
+import java.time.{LocalDateTime, LocalTime}
 
 import cats.Monoid
-import wax.util._
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
 import scala.io.Source
+
+object Runner extends App {
+  def run[T](a: => T): T = {
+    def log(s: String) = println(LocalTime.now.toString + ". " + s)
+
+    log("MapReduce start")
+
+    val start = now()
+    val res: T = a
+    val end = now()
+
+    log("MapReduce end")
+    log(res.toString)
+    println("Total seconds passed: " + time.Duration.between(start, end).getSeconds)
+
+    res
+  }
+
+
+}
 
 object MapReduce {
 
@@ -21,56 +41,33 @@ object MapReduce {
   def mapReducePar[A, T: Monoid](m: List[A])(f: A => T): T = {
     val empty = Future.successful(Monoid.empty)
     def reduce(m: List[Future[T]]): Future[T] = m match {
-      case Nil => empty
-      case h :: Nil => h
-      case _ =>
-        val nl = m.grouped(2).map {
-          case Nil => empty
-          case h :: Nil => h
-          case h1 :: h2 :: Nil =>
+      case Nil      => empty
+      case a :: Nil => a
+      case _        => reduce {
+        m.grouped(2).map {
+          case Nil           => empty
+          case a :: Nil      => a
+          case a :: b :: Nil =>
             for {
-              h1v <- h1
-              h2v <- h2
-            } yield Monoid.combine(h1v, h2v)
+              av <- a
+              bv <- b
+            } yield Monoid.combine(av, bv)
         }.toList
-        reduce(nl)
+      }
     }
     Await.result(reduce(m.map(f).map(Future.successful)), Duration.Inf)
   }
 
 }
 
-object FileProcessor extends App {
-  def process[T: Monoid](f: String => T)(path: File): T = MapReduce.mapReducePar(readTokens(path))(f)
-
-  def processMany[T: Monoid](f: String => T)(paths: List[File]): T = MapReduce.mapReducePar(paths)(process(f))
-}
-
-object util {
+object FileProcessor {
+  def process[T: Monoid](f: String => T)(file: File): T = MapReduce.mapReducePar(readTokens(file))(f)
+  def processMany[T: Monoid](f: String => T)(files: List[File]): T = MapReduce.mapReducePar(files)(process(f))
   def readTokens(file:File): List[String] = Source.fromFile(file).getLines.flatMap(tokenize).toList
-
-  def tokenize(str: String): List[String] =
+  private def tokenize(str: String): List[String] =
     str.toLowerCase
       .replace("\n", " ")
       .replace("\t", " ")
       .replaceAll("""[\p{Punct}]""", "")
       .split(" ").toList
-
-  def runWithTiming[T](a: => T): T = {
-    val start = LocalTime.now
-    def date = LocalTime.now.toString
-    def pr(s: String) = println(date + ". " + s)
-
-    pr("MapReduce start")
-
-    val res: T = a
-
-    val end: LocalTime = LocalTime.now
-    pr("MapReduce end. Printing...")
-    pr(res + "")
-    println("Total seconds passed: " + time.Duration.between(start, end).getSeconds)
-
-    res
-  }
-
 }
