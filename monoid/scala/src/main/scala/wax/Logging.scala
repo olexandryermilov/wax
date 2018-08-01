@@ -3,12 +3,11 @@ package wax
 import java.io.FileOutputStream
 
 import cats.effect.IO
-import cats.implicits._
-
+import cats.kernel.Monoid
 object Logging {
-  val readLn = IO(scala.io.StdIn.readLine)
-
   type Logger = String => IO[Unit]
+
+  implicit def monoid[A]: Monoid[IO[A]] = ???
 
   def consoleLogger: IO[Logger] = IO { input =>
     IO {
@@ -22,16 +21,16 @@ object Logging {
     input => IO(stream.write(input.getBytes))
   }
 
-  def main(args: Array[String]): Unit = program.unsafeRunSync()
-
-  val program: IO[Unit] = for {
-    logger <- consoleLogger combine fileLogger("logging.log")
-    _      <- run(logger)
-  } yield ()
-
   def run(logger: Logger): IO[Unit] = for {
-    input <- readLn
+    input <- IO(scala.io.StdIn.readLine)
     _     <- logger(s"User input: $input\n")
     _     <- run(logger)
   } yield ()
+
+  val program: IO[Unit] = for {
+    logger <- Monoid.combine(consoleLogger, fileLogger("logging.log"))
+    _      <- run(logger)
+  } yield ()
+
+  def main(args: Array[String]): Unit = program.unsafeRunSync()
 }

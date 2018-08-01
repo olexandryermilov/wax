@@ -3,7 +3,6 @@ package wax
 import java.io.File
 import java.time
 import java.time.LocalDateTime.now
-import java.time.{LocalDateTime, LocalTime}
 
 import cats.Monoid
 
@@ -13,23 +12,16 @@ import scala.concurrent.{Await, Future}
 import scala.io.Source
 
 object Runner extends App {
-  def run[T](a: => T): T = {
-    def log(s: String) = println(LocalTime.now.toString + ". " + s)
-
-    log("MapReduce start")
-
-    val start = now()
-    val res: T = a
-    val end = now()
-
-    log("MapReduce end")
-    log(res.toString)
-    println("Total seconds passed: " + time.Duration.between(start, end).getSeconds)
-
-    res
-  }
+  val start = now()
 
 
+  /*
+    Your code here
+   */
+
+
+  val end = now()
+  println("Total seconds passed: " + time.Duration.between(start, end).getSeconds)
 }
 
 object MapReduce {
