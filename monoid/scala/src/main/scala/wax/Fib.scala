@@ -20,7 +20,12 @@ object Matrices {
     def ^(power: Int): Matrix2x2 = exp(matrix, power)
   }
 
-  implicit val matrixMonoid: Monoid[Matrix2x2] = ???
+  implicit val matrixMonoid: Monoid[Matrix2x2] = {
+    /*
+      Your code here
+     */
+    ???
+  }
 }
 
 object ExpUtils {
