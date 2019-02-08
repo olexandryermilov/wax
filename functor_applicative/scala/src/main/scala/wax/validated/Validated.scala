@@ -21,8 +21,8 @@ object Validated extends App {
   def validateConfig(config: Map[String, String]): Validated[ConfigError, Map[String, String]] = ???
 
   validateConfig(validConfig) == Valid(validConfig)
-  validateConfig(invalidConfig) == Invalid(
-    NonEmptyList(ParseError("appPort"),
+  validateConfig(invalidConfig) == Invalid(NonEmptyList(
+    ParseError("appPort"),
     MissingConfig("dbUsername") ::
     ParseError("dbPort") ::
     Nil))
