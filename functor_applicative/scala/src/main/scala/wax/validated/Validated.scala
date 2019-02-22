@@ -3,34 +3,44 @@ package wax.validated
 import cats.data.NonEmptyList
 
 object Validated extends App {
-  val validConfig: Map[String, String] = Map(
-    "appPort"    -> "8080",
-    "dbHost"     -> "127.0.0.1",
-    "dbUsername" -> "yarik",
-    "dbPw"       -> "is a happy",
-    "dbSchema"   -> "pug",
-    "dbPort"     -> "3300")
+  val validConfig = Config(
+    appPort    = 8080,
+    dbHost     = "127.0.0.1",
+    dbUsername = "root",
+    dbPw       = "sa",
+    dbSchema   = "rkt",
+    dbPort     = 3300,
+  )
 
-  val invalidConfig: Map[String, String] = Map(
-    "appPort"    -> "808o",
-    "dbHost"     -> "127.0.0.1",
-    "dbPw"       -> "is a happy",
-    "dbSchema"   -> "pug",
-    "dbPort"     -> "java.lang.NullPointerException")
+  val typicalBorisConfig = Config(
+    appPort    = -42,
+    dbHost     = "127.0.0.1:3300",
+    dbUsername = "yarik",
+    dbPw       = "is a happy",
+    dbSchema   = "pug",
+    dbPort     = 3300,
+  )
 
-  def validateConfig(config: Map[String, String]): Validated[ConfigError, Map[String, String]] = ???
+  def validateConfig(config: Config): Validated[ConfigError, Config] = ???
 
   validateConfig(validConfig) == Valid(validConfig)
-  validateConfig(invalidConfig) == Invalid(NonEmptyList(
-    ParseError("appPort"),
-    MissingConfig("dbUsername") ::
-    ParseError("dbPort") ::
-    Nil))
+  validateConfig(typicalBorisConfig) == Invalid(NonEmptyList(
+    ConfigError("appPort", "port must be a positive value between 0 and 65536"),
+    ConfigError("dbHost", "db host must be a proper hostname/ip without port") ::
+    Nil
+  ))
 }
 
-sealed abstract class ConfigError
-case class MissingConfig(field: String) extends ConfigError
-case class ParseError(field: String) extends ConfigError
+object Validator {
+  def validatePort(p: Int) =
+    if (p >= 0 && p <= 65536) Valid(p)
+    else Invalid(ConfigError("appPort", "port must be a positive value between 0 and 65536"))
+  def validateHost(h: String) = ???
+}
+
+case class Config(appPort: Int, dbHost: String, dbUsername: String, dbPw: String, dbSchema: String, dbPort: Int)
+
+case class ConfigError(field: String, message: String)
 
 sealed trait Validated[+E, +A]
 case class Valid[+A](a: A) extends Validated[Nothing, A]
