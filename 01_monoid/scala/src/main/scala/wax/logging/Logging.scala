@@ -1,17 +1,12 @@
-package wax
+package wax.logging
 
 import java.io.FileOutputStream
 
 import cats.effect.IO
+import cats.implicits._
 import cats.kernel.Monoid
 
-object Logging {
-  val program: IO[Unit] = for {
-    logger <- Monoid.combine(consoleLogger, fileLogger("logging.log"))
-    _      <- run(logger)
-  } yield ()
-
-  def main(args: Array[String]): Unit = program.unsafeRunSync()
+object Logging extends App {
 
   type Logger = String => IO[Unit]
 
@@ -39,4 +34,11 @@ object Logging {
     _     <- logger(s"User input: $input\n")
     _     <- run(logger)
   } yield ()
+
+  val program: IO[Unit] = for {
+    logger <- consoleLogger |+| fileLogger("logging.log")
+    _      <- run(logger)
+  } yield ()
+
+  program.unsafeRunSync()
 }

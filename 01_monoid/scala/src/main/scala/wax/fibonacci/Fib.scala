@@ -1,32 +1,28 @@
-package wax
+package wax.fib
 
 import cats.Monoid
-import wax.ExpUtils.exp
-import wax.Matrices.Matrix2x2
+import wax.fib.ExpUtils.exp
 
 object Fib extends App {
   val n = 0
-  val matrix = Matrix2x2(1, 1,
-                         1, 0)
 
-  val result = matrix ^ n
-  println(result.a21)
-}
-
-object Matrices {
-  case class Matrix2x2(a11: Int, a12: Int, a21: Int, a22: Int)
-
-  implicit class MatrixOps(val matrix: Matrix2x2) extends AnyVal {
-    def ^(power: Int): Matrix2x2 = exp(matrix, power)
-  }
-
-  implicit val matrixMonoid: Monoid[Matrix2x2] = {
+  implicit val M: Monoid[Matrix2x2] = {
     /*
       Your code here
      */
     ???
   }
+
+  val result = exp(
+    Matrix2x2(1, 1,
+              1, 0),
+    n
+  )
+
+  println(result.a21)
 }
+
+case class Matrix2x2(a11: Int, a12: Int, a21: Int, a22: Int)
 
 object ExpUtils {
   def exp[T: Monoid](n: T, power: Int): T =
