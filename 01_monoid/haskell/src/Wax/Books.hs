@@ -20,7 +20,6 @@ import           Path
 import           Path.IO
 import qualified Prelude as P (words)
 import           Prelude hiding (words, Word)
-import           Data.Semigroup
 
 --------------------------------------------------------------------------------
 data WordsMap = WordsMap !(HashMap String Int) deriving (Show, Generic)
