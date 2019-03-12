@@ -13,7 +13,7 @@ import           Control.Lens
 import           Control.Monad
 import           Control.Monad.IO.Class
 import           Data.Char
-import           Data.HashMap.Lazy (HashMap, empty, unionWith)
+import           Data.HashMap.Strict (HashMap, empty, unionWith)
 import           Data.List hiding (words)
 import           GHC.Generics (Generic)
 import           Path
