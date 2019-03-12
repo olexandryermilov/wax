@@ -3,40 +3,32 @@ package wax.mapreduce
 import java.io.File
 import java.time
 import java.time.LocalDateTime.now
+import java.util.concurrent.Executors
 
 import cats.Monoid
-import cats.effect.IO
-import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.duration.Duration
-import scala.concurrent.{Await, Future}
+import cats.effect.{ContextShift, IO}
+
+import scala.concurrent.ExecutionContext
 import scala.io.Source
 
-object Runner extends App {
-  val start = now()
-  implicit val monoid = new Monoid[Map[String, Int]] {
-    override def empty: Map[String, Int] = Map.empty
-
-    override def combine(x: Map[String, Int],
-                         y: Map[String, Int]): Map[String, Int] = {
-      val keyset = x.keySet ++ y.keySet
-      keyset.map(k => k -> {x.getOrElse(k, 0) + y.getOrElse(k, 0)}).toMap
-    }
+object MapReduceRunner extends App {
+  def run[T](t: => T) = {
+    val start = now()
+    val res = t
+    val end = now()
+    println("Millis passed: " + time.Duration.between(start, end).toMillis)
+    res
   }
 
-  val files = FileUtils.authorBooks("asimov").head :: Nil
-  val strings = files.flatMap(FileUtils.readTokens)
-  println("ZDELANO")
-  val res = MapReduce.par(strings)(t => Map(t -> 1))
+  implicit val monoid = ???
 
-  val end = now()
-  println("Total seconds passed: " + time.Duration.between(start, end).getSeconds)
-  println(s"res: $res")
+  run(???)
 }
 
 object MapReduce {
+  val numCores = Runtime.getRuntime.availableProcessors
+  implicit val cs: ContextShift[IO] = IO.contextShift(ExecutionContext.fromExecutor(Executors.newWorkStealingPool()))
 
-  private val numCores = Runtime.getRuntime.availableProcessors
-  println(s"Cores: $numCores")
   def seq[A, T: Monoid](m: List[A])(f: A => T): T =
     m.map(f).foldLeft(Monoid.empty[T])(Monoid.combine[T])
 
@@ -45,28 +37,8 @@ object MapReduce {
     val groupSize = (1.0 * m.size / numCores).ceil.toInt
     m.grouped(groupSize).toList
      .parTraverse(a => IO(a.map(f).foldLeft(Monoid.empty[T])(Monoid.combine[T])))
-     .map(_.foldLeft(Monoid.empty[T])(Monoid.combine[T]))
+     .map(_.combineAll)
      .unsafeRunSync()
-  }
-
-  def mapReducePar[A, T: Monoid](m: List[A])(f: A => T): T = {
-    val empty = Future.successful(Monoid.empty[T])
-    def reduce(m: List[Future[T]]): Future[T] = m match {
-      case Nil      => empty
-      case a :: Nil => a
-      case _        => reduce {
-        m.grouped(2).map {
-          case Nil           => empty
-          case a :: Nil      => a
-          case a :: b :: Nil =>
-            for {
-              av <- a
-              bv <- b
-            } yield Monoid.combine(av, bv)
-        }.toList
-      }
-    }
-    Await.result(reduce(m.map(f).map(Future.successful)), Duration.Inf)
   }
 }
 
