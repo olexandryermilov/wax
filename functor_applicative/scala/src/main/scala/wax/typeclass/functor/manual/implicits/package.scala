@@ -1,6 +1,6 @@
-package wax.functor.manual
+package wax.typeclass.functor.manual
 
-import wax.functor.manual.typeclass.Functor
+import wax.typeclass.functor.manual.typeclass.Functor
 
 import scala.language.higherKinds
 

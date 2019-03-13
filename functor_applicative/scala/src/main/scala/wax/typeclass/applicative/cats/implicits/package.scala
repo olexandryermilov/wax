@@ -1,4 +1,4 @@
-package wax.applicative.cats
+package wax.typeclass.applicative.cats
 
 import cats.Applicative
 

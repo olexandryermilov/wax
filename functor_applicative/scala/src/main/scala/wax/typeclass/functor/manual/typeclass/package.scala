@@ -1,4 +1,4 @@
-package wax.functor.manual
+package wax.typeclass.functor.manual
 
 import scala.language.higherKinds
 

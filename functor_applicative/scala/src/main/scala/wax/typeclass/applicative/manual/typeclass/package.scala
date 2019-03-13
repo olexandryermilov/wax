@@ -1,4 +1,4 @@
-package wax.applicative.manual
+package wax.typeclass.applicative.manual
 
 import scala.language.higherKinds
 

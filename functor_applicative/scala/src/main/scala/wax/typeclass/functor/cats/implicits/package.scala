@@ -1,4 +1,4 @@
-package wax.functor.cats
+package wax.typeclass.functor.cats
 
 import cats.Functor
 
