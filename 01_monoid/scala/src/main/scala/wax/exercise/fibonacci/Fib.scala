@@ -1,7 +1,7 @@
-package wax.fibonacci
+package wax.exercise.fibonacci
 
 import cats.Monoid
-import wax.fibonacci.ExpUtils.exp
+import wax.exercise.fibonacci.ExpUtils.exp
 
 object Fib extends App {
   val n = 0

@@ -1,6 +1,4 @@
-package wax.semigroup.manual
-
-import wax.semigroup.manual.typeclass.Semigroup
+package wax.typeclass.semigroup
 
 package object implicits {
   implicit val stringSemigroup: Semigroup[String] = new Semigroup[String] {

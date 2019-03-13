@@ -2,8 +2,8 @@ package wax.semigroup.laws.manual
 
 import org.scalacheck.Prop.{AnyOperators, forAll}
 import org.scalacheck.{Arbitrary, Properties}
-import wax.semigroup.manual.implicits._
-import wax.semigroup.manual.typeclass._
+import wax.typeclass.semigroup.Semigroup
+import wax.typeclass.semigroup.implicits._
 
 import scala.reflect.ClassTag
 

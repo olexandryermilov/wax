@@ -1,4 +1,4 @@
-package wax.logging
+package wax.exercise.logging
 
 import java.io.FileOutputStream
 

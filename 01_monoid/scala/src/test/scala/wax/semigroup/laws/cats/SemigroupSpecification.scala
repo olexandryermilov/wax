@@ -1,8 +1,8 @@
 package wax.semigroup.laws.cats
 
-import wax.semigroup.cats.implicits._
 import cats.kernel.laws.discipline.SemigroupTests
 import cats.tests.CatsSuite
+import wax.typeclass.semigroup.catz._
 
 class SemigroupSpecification extends CatsSuite {
   // pass implicit here (stringSemigroup) to make sure that our implementation is used

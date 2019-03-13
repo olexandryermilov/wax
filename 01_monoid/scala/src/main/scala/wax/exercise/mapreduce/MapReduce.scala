@@ -1,4 +1,4 @@
-package wax.mapreduce
+package wax.exercise.mapreduce
 
 import java.io.File
 import java.time
