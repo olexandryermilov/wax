@@ -5,35 +5,39 @@ module Wax.Parser where
 import Prelude
 import Control.Applicative
 
-newtype Parser a = Parser { parse :: String -> [(a,String)] }
+data Result a = Success String a | Failure String String
+
+newtype Parser a = Parser { parse :: String -> Result a }
+
+instance Functor Result where
+  fmap _ (Failure s e) = Failure s e
+  fmap f (Success s a) = Success s $ f a
 
 instance Functor Parser where
-  fmap f (Parser cs) = Parser $ \s -> [(f a, b) | (a, b) <- cs s]
+  fmap f (Parser cs) = Parser $ \s -> f <$> cs s
 
 instance Applicative Parser where
-  pure a = Parser $ \s -> [(a, s)]
-  (Parser cs1) <*> (Parser cs2) = Parser $ \s -> [(f a, s2) | (f, s1) <- cs1 s, (a, s2) <- cs2 s1]
+  pure a = Parser $ \s -> Success s a
+  (Parser cs1) <*> (Parser cs2) = Parser $ \s -> case cs1 s of
+    Failure s1 e -> Failure s1 e
+    Success s1 f -> f <$> cs2 s1
 
 instance Alternative Parser where
-  empty = Parser $ \_ -> []
-  p <|> q = Parser $ \s ->
-    case parse p s of
-    []  -> parse q s
-    res -> res
+  empty   = Parser $ \_ -> Failure "" "Empty parser"
+  p <|> q = Parser $ \s -> case parse p s of
+    Failure _ _     -> parse q s
+    r@(Success _ _) -> r
 
-runParser :: Parser a -> String -> Either String a
-runParser m s = case parse m s of
-  [(a, [])] -> Right a
-  [(_, _)]  -> Left "parser did not consume entire stream"
-  _         -> Left "parser error"
+satisfy :: (Char -> Bool) -> String -> Parser Char
+satisfy p e = Parser parser
+  where parser (x:xs) | p x = Success xs x
+        parser s            = Failure s e
 
-satisfy :: (Char -> Bool) -> Parser Char
-satisfy p = Parser parser
-  where parser (x:xs) | p x = [(x, xs)]
-        parser _            = []
+anyChar :: Parser Char
+anyChar = satisfy (\_ -> True) ""
 
 char :: Char -> Parser Char
-char = satisfy . (==)
+char c = satisfy (c ==) (show c)
 
 space :: Parser Char
 space = char ' '
@@ -46,5 +50,23 @@ token :: Parser a -> Parser a
 token p = many space *> p <* many space
 
 --------------------------------------------------------------------------------
+runParser :: Parser a -> String -> Either String a
+runParser m s = case parse m s of
+  Success "" a -> Right a
+  Success s0 _ -> Left $ "parser did not consume entire stream: " <> s0
+  Failure s0 e -> Left $ concat
+    [ "parser error", "\n"
+    , "  expected: ", e, "\n"
+    , "     input: \"", s0, "\""
+    ]
+
+--------------------------------------------------------------------------------
 main :: IO ()
-main = putStrLn "parser example"
+main =
+  let t = "hello"
+      i = "    hells  "
+  in do
+    putStrLn $ "Going to parse token '" <> t <> "' in '" <> i <> "'"
+    case runParser (token . string $ t) i of
+      Left e -> putStrLn e
+      Right _ -> putStrLn "success"
