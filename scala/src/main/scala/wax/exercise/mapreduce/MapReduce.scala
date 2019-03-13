@@ -52,9 +52,9 @@ object MapReduce {
 
 object FileUtils {
   private def file(path: String) = new File(this.getClass.getClassLoader.getResource(path).toURI)
-  def allAuthors: List[String] = file("books").listFiles().map(_.getName).toList
-  def allBooks: List[File] = allAuthors.map(author => file(s"books/$author")).flatMap(_.listFiles())
-  def authorBooks(author: String): List[File] = file(s"books/$author").listFiles().toList
+  def allAuthors: List[String] = file("mapreduce/books").listFiles().map(_.getName).toList
+  def allBooks: List[File] = allAuthors.map(author => file(s"mapreduce/books/$author")).flatMap(_.listFiles())
+  def authorBooks(author: String): List[File] = file(s"mapreduce/books/$author").listFiles().toList
 
   private def tokenize(str: String): List[String] =
     str.toLowerCase

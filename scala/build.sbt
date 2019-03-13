@@ -1,4 +1,4 @@
-name := "Monoid WS"
+name := "Functional WS by MC Ștefan"
 
 scalacOptions += "-Ypartial-unification"
 

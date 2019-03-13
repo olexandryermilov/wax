@@ -1,4 +1,4 @@
-package wax.excercise.validated
+package wax.exercise.validated
 
 import cats.Applicative
 import cats.data.NonEmptyList

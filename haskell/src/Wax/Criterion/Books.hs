@@ -23,7 +23,7 @@ main
 go :: IO ()
 go = do
   fp <- getCurrentDir
-  books <- readBooks $ parent fp </> [reldir|scala/src/main/resources/books/|]
+  books <- readBooks $ parent fp </> [reldir|scala/src/main/resources/mapreduce/books/|]
   let (WordsMap wordsMap)  = foldMap toWordsMap books
   let leastUsed = findBy (curry $ (>5) . length . fst) (<) maxBound wordsMap
   let mostUsed  = findBy (curry $ (>5) . length . fst) (>) minBound wordsMap

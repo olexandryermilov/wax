@@ -1,9 +1,10 @@
-package wax.excercise.io
+package wax.exercise.applicativeio
 
 import java.io.File
 
-import scala.io.Source
 import cats.effect.IO
+
+import scala.io.Source
 
 object IOApp extends App {
 
