@@ -1,4 +1,4 @@
-package wax.semigroup.laws.cats
+package wax.typeclass.semigroup.laws.cats
 
 import cats.kernel.laws.discipline.SemigroupTests
 import cats.tests.CatsSuite

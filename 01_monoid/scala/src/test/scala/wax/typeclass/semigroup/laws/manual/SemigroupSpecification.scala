@@ -1,4 +1,4 @@
-package wax.semigroup.laws.manual
+package wax.typeclass.semigroup.laws.manual
 
 import org.scalacheck.Prop.{AnyOperators, forAll}
 import org.scalacheck.{Arbitrary, Properties}
