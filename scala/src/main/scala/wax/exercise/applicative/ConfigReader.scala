@@ -10,7 +10,7 @@ import scala.io.Source
 object ConfigReader {
 
   private def readConfig(fileName: String): IO[String] = IO {
-    val file = new File(this.getClass.getClassLoader.getResource(s"applicative_io/$fileName").toURI)
+    val file = new File(this.getClass.getClassLoader.getResource(s"applicative/$fileName").toURI)
     Source.fromFile(file).getLines.toString()
   }
 
