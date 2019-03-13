@@ -17,14 +17,19 @@ fileLogger filePath = do
   putStrLn "Debug: fileLogger is called"
   handle <- openFile filePath WriteMode
   hSetBuffering handle NoBuffering
-  return (hPutStr handle)
-
-main :: IO ()
-main = consoleLogger <> fileLogger "/Users/borysb/logging.log"
-  >>= run
+  return (hPutStrLn handle)
 
 run :: Logger -> IO ()
-run logger = forever $ logger . formatInput <$> getLine
+run logger = forever $ do
+  putStr "Please give me some input: "
+  hFlush stdout
+  input <- getLine
+  logger . formatInput $ input
 
 formatInput :: String -> String
-formatInput input = "User input: " <> input <> "\n"
+formatInput input = "User input: " <> input
+
+--------------------------------------------------------------------------------
+main :: IO ()
+main =  consoleLogger <> fileLogger "logging.log"
+  >>= run
