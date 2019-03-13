@@ -5,8 +5,8 @@ import java.time
 import java.time.LocalDateTime.now
 import java.util.concurrent.Executors
 
-import cats.Monoid
-import cats.effect.{ContextShift, IO}
+import cats.{Functor, Monoid}
+import cats.effect.{ContextShift, IO, Sync}
 
 import scala.concurrent.ExecutionContext
 import scala.io.Source
@@ -23,6 +23,14 @@ object MapReduceRunner extends App {
   implicit val monoid = ???
 
   run(???)
+
+  trait FunctorOption extends Functor[Option] {
+    def fmap[A, B](f: A => B)(fa: Option[A]) =
+      fa match {
+        case Some(a) => Some(f(a))
+        case None => None
+      }
+  }
 }
 
 object MapReduce {
