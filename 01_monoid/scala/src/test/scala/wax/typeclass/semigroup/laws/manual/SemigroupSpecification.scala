@@ -17,7 +17,7 @@ trait SemigroupSpecificationSupport {
   def semigroup[A](implicit sg: Semigroup[A], ar: Arbitrary[A], tag: ClassTag[A]): Properties =
     new Properties(s"Semigroup[${tag.toString}]") {
       property("associativity") = forAll { (a: A, b: A, c: A) =>
-        sg.append(sg.append(a, b), c) =? sg.append(a, sg.append(b, c))
+        sg.combine(sg.combine(a, b), c) =? sg.combine(a, sg.combine(b, c))
       }
     }
 }

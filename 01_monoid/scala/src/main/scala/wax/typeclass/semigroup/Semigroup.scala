@@ -6,7 +6,7 @@ package wax.typeclass.semigroup
 //   2. (a ⊕ b) ⊕ c = a ⊕ (b ⊕ c)
 //
 trait Semigroup[A] {
-  def append(x: A, y: A): A
+  def combine(x: A, y: A): A
 }
 
 object Semigroup {
