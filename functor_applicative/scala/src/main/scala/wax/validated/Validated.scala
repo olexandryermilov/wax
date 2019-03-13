@@ -10,7 +10,7 @@ sealed trait Validated[+E, +A]
 case class Valid[+A](a: A) extends Validated[Nothing, A]
 case class Invalid[+E](e: E) extends Validated[E, Nothing]
 
-object Validated extends App {
+object ValidatedApp extends App {
   implicit def validatedApplicative[E: Semigroup]: Applicative[Validated[E, ?]] = ???
 
   def validateConfig(config: Config): Validated[NonEmptyList[ConfigError], Config] = ???

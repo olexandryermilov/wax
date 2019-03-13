@@ -13,7 +13,7 @@ package object typeclass {
   }
 
   object Functor {
-    def apply[F: Functor]: Functor[F] = implicitly[Functor[F]]
+    def apply[F[_]: Functor]: Functor[F] = implicitly[Functor[F]]
   }
 
 }
