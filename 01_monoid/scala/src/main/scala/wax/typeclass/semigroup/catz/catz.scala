@@ -1,6 +1,10 @@
 package wax.typeclass.semigroup
 
 package object catz {
+  implicit val intSemigroup: cats.Semigroup[Int] = new cats.Semigroup[Int] {
+    override def combine(x: Int, y: Int): Int = ???
+  }
+
   implicit val stringSemigroup: cats.Semigroup[String] = new cats.Semigroup[String] {
     override def combine(x: String, y: String): String = ???
   }

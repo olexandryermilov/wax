@@ -8,6 +8,7 @@ import wax.typeclass.semigroup.implicits._
 import scala.reflect.ClassTag
 
 object SemigroupSpecification extends Properties("Semigroup") with SemigroupSpecificationSupport {
+  include(semigroup[Int])
   include(semigroup[String])
   include(semigroup[List[Int]])
 }
