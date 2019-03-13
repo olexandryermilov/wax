@@ -57,14 +57,17 @@ default-extensions:
 
 dependencies:
   - base >= 4.9 && < 5
-  - unordered-containers
-  - hashable
-  - rio
-  - lens
-  - path
-  - path-io
   - criterion
   - deepseq
+  - hashable
+  - lens
+  - parallel
+  - path
+  - path-io
+  - random
+  - rio
+  - time
+  - unordered-containers
 
 library:
   source-dirs: src
