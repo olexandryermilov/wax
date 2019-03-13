@@ -44,3 +44,7 @@ string (x:xs) = char x *> string xs *> pure (x:xs)
 
 token :: Parser a -> Parser a
 token p = many space *> p <* many space
+
+--------------------------------------------------------------------------------
+main :: IO ()
+main = putStrLn "parser example"

@@ -1,7 +1,7 @@
-name: wax-monoid
+name: wax
 version: 0.1.0.0
-synopsis: Workbook for Monoid workshop
-description: Workbook for Monoid workshop
+synopsis: Functional WS by MC Ștefan
+description: Functional WS by MC Ștefan
 author: Boris Buliga <boris@d12frosted.io>
 maintainer: Boris Buliga <boris@d12frosted.io>
 license: MIT
@@ -69,14 +69,19 @@ dependencies:
   - time
   - unordered-containers
 
-library:
-  source-dirs: src
-
 executables:
-  criterion-books:
-    source-dirs: src
-    main: Wax.Criterion.Books
+  wax-fib-profile:
+    source-dirs: fibonacci
+    main: Wax.Criterion
 
-  criterion-fib:
-    source-dirs: src
-    main: Wax.Criterion.Fibonacci
+  wax-mapreduce-profile:
+    source-dirs: mapreduce
+    main: Wax.Criterion
+
+  wax-logging:
+    source-dirs: logging
+    main: Wax.Logging
+
+  wax-parser:
+    source-dirs: parser
+    main: Wax.Parser

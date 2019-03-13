@@ -1,4 +1,4 @@
-module Wax.Criterion.Fibonacci where
+module Wax.Criterion where
 
 --------------------------------------------------------------------------------
 import Wax.Fibonacci

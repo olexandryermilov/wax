@@ -1,6 +1,6 @@
 {-# LANGUAGE QuasiQuotes #-}
 
-module Wax.Criterion.Books where
+module Wax.Criterion where
 
 --------------------------------------------------------------------------------
 import Wax.Books
