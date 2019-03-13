@@ -10,13 +10,19 @@ sealed trait Validated[+E, +A]
 case class Valid[+A](a: A) extends Validated[Nothing, A]
 case class Invalid[+E](e: E) extends Validated[E, Nothing]
 
+case class Config(appPort: Int, dbHost: String, dbUsername: String, dbPw: String, dbSchema: String, dbPort: Int)
+case class ConfigError(field: String, message: String)
+
 object ValidatedApp extends App {
   implicit def validatedApplicative[E: Semigroup]: Applicative[Validated[E, ?]] = ???
 
-  def validateConfig(config: Config): Validated[NonEmptyList[ConfigError], Config] = ???
+  def validateConfig(config: (Int, String, String, String, String, Int)): Validated[NonEmptyList[ConfigError], Config] = ???
 
-  validateConfig(Configs.validConfig) == Valid(Configs.validConfig)
-  validateConfig(Configs.typicalBorisConfig) == Invalid(NonEmptyList.of(
+  val validConfig = (8080, "127.0.0.1", "root", "sa", "rkt", 3300,)
+  validateConfig(validConfig) == Valid(Config.tupled(validConfig))
+
+  val typicalBorisConfig = (-42, "127.0.0.1:3300", "${username}", "is a happy", "pug", 3300, )
+  validateConfig(typicalBorisConfig) == Invalid(NonEmptyList.of(
     ConfigError("appPort", "port must be an int between 0 and 65536"),
     ConfigError("dbHost", "host must be a proper hostname/ip without port")
   ))
@@ -34,27 +40,4 @@ object Validator {
       case Some(s) => Valid(s)
       case None => Invalid(NonEmptyList.one(ConfigError(field, "host must be a proper hostname/ip without port")))
     }
-}
-
-case class Config(appPort: Int, dbHost: String, dbUsername: String, dbPw: String, dbSchema: String, dbPort: Int)
-case class ConfigError(field: String, message: String)
-
-object Configs {
-  val validConfig = Config(
-    appPort    = 8080,
-    dbHost     = "127.0.0.1",
-    dbUsername = "root",
-    dbPw       = "sa",
-    dbSchema   = "rkt",
-    dbPort     = 3300,
-  )
-
-  val typicalBorisConfig = Config(
-    appPort    = -42,
-    dbHost     = "127.0.0.1:3300",
-    dbUsername = "username",
-    dbPw       = "is a happy",
-    dbSchema   = "pug",
-    dbPort     = 3300,
-  )
 }
