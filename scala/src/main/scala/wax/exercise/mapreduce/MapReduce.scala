@@ -20,7 +20,7 @@ object MapReduceRunner extends App {
     res
   }
 
-  implicit val monoid = ???
+  implicit val monoid: Monoid[Map[String, Int]] = ???
 
   run(???)
 
