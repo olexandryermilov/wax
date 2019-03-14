@@ -1,8 +1,8 @@
-package wax.exercise.applicative
+package wax.exercise.parser
 
 import cats.data.NonEmptyList
 
-object ApplicativeApp extends App {
+object ConfigParserApp extends App {
 
   val Configs(validConfigStr, invalidConfigStr) = ConfigReader.readConfigs.unsafeRunSync()
 

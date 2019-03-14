@@ -1,4 +1,4 @@
-package wax.exercise.applicative
+package wax.exercise.parser
 
 import cats.Applicative
 import cats.data.NonEmptyList
@@ -23,7 +23,24 @@ object ConfigValidator {
     else Invalid(NonEmptyList.one(ConfigValidationError(field, "host must be a proper hostname/ip without port")))
 
 
-  implicit val validatedApplicative: Applicative[Validated[NonEmptyList[ConfigValidationError], ?]] = ???
+  implicit def validatedApplicative[E: Semigroup]: Applicative[Validated[E, ?]] =
+    new Applicative[Validated[E, ?]] {
+      override def pure[A](x: A): Validated[E, A] = Valid(x)
+
+      override def ap[A, B](ff: Validated[E, A => B])
+                           (fa: Validated[E, A]): Validated[E, B] = {
+        ff match {
+          case Valid(atob) => fa match {
+            case Valid(a) => Valid(atob(a))
+            case e@Invalid(_) => e
+          }
+          case e@Invalid(error1) => fa match {
+            case Valid(_) => e
+            case Invalid(error2) => Invalid(error1 |+| error2)
+          }
+        }
+      }
+    }
 
   //TODO Validate config using applicative
   def validateConfig(config: Config): Validated[NonEmptyList[ConfigValidationError], Config] = ???

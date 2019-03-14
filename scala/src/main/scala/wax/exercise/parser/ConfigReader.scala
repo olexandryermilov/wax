@@ -1,4 +1,4 @@
-package wax.exercise.applicative
+package wax.exercise.parser
 
 import java.io.File
 
