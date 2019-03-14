@@ -28,7 +28,7 @@ object Parser {
 
     override def ap[A, B](ff: Parser[A => B])(fa: Parser[A]): Parser[B] = Parser(s =>
       ff.parse(s) match {
-        case ParserFailure()      => ParserFailure()
+        case ParserFailure() => ParserFailure()
         case ParserSuccess(s1, f) => fa.parse(s1).fmap(f)
       }
     )
@@ -42,17 +42,12 @@ object Parser {
     override def combineK[A](x: Parser[A], y: Parser[A]): Parser[A] = Parser(s =>
       x.parse(s) match {
         case ParserFailure() => y.parse(s)
-        case success         => success
+        case success => success
       }
     )
 
     override def pure[A](x: A): Parser[A] = parserApplicative.pure(x)
   }
-
-//  def satisfy(pred: Char => Boolean): Parser[Char] = Parser {
-//    case x : xs if pred(x) => ParserSuccess(xs, x)
-//    case _                  => ParserFailure()
-//  }
 
   def satisfy(pred: Char => Boolean): Parser[Char] = Parser { s =>
     if (s.nonEmpty && pred(s.head)) ParserSuccess(s.tail, s.head)
@@ -66,6 +61,19 @@ object Parser {
   def anyChar: Parser[Char] = ???
 
   def space: Parser[Char] = char(' ')
+
+  def oneOf(chars: Seq[Char]): Parser[Char] = satisfy(chars.contains)
+
+  def digit: Parser[Char] = satisfy(_.isDigit)
+
+  def letterOrDigit: Parser[Char] = satisfy(_.isLetterOrDigit)
+
+  def number: Parser[Int] = {
+    val sign = string("-") <+> "".pure[Parser]
+    val digits = some(digit).fmap(_.mkString)
+    val number = sign.fmap[String => String](a => b => a ++ b) <*> digits
+    number.fmap(_.toInt)
+  }
 
   def string(str: String): Parser[String] =
     if (str.isEmpty) str.pure[Parser]
@@ -87,9 +95,4 @@ object Parser {
       case ParserSuccess(s1, v) => many(parser).parse(s1).fmap(xs => v :: xs)
     }
   )
-}
-
-object SuperDuper extends App {
-  val r = Parser.token(Parser.string("hello")).parse(" hello    ")
-  println(s"$r")
 }
