@@ -22,42 +22,13 @@ case class Parser[A](parse: String => ParserResult[A]) {
 }
 
 object Parser {
-  implicit val parserResultFunctor: Functor[ParserResult] = new Functor[ParserResult] {
-    override def map[A, B](fa: ParserResult[A])(f: A => B): ParserResult[B] = fa match {
-      case ParserFailure() => ParserFailure()
-      case ParserSuccess(input, value) => ParserSuccess(input, f(value))
-    }
-  }
+  implicit val parserResultFunctor: Functor[ParserResult] = ???
 
-  implicit val parserFunctor: Functor[Parser] = new Functor[Parser] {
-    override def map[A, B](fa: Parser[A])(f: A => B): Parser[B] = Parser(s => fa.parse(s).fmap(f))
-  }
+  implicit val parserFunctor: Functor[Parser] = ???
 
-  implicit val parserApplicative: Applicative[Parser] = new Applicative[Parser] {
-    override def pure[A](x: A): Parser[A] = Parser(s => ParserSuccess(s, x))
+  implicit val parserApplicative: Applicative[Parser] = ???
 
-    override def ap[A, B](ff: Parser[A => B])(fa: Parser[A]): Parser[B] = Parser(s =>
-      ff.parse(s) match {
-        case ParserFailure() => ParserFailure()
-        case ParserSuccess(s1, f) => fa.parse(s1).fmap(f)
-      }
-    )
-  }
-
-  implicit val parserAlternative: Alternative[Parser] = new Alternative[Parser] {
-    override def ap[A, B](ff: Parser[A => B])(fa: Parser[A]): Parser[B] = parserApplicative.ap(ff)(fa)
-
-    override def empty[A]: Parser[A] = Parser(_ => ParserFailure())
-
-    override def combineK[A](x: Parser[A], y: Parser[A]): Parser[A] = Parser(s =>
-      x.parse(s) match {
-        case ParserFailure() => y.parse(s)
-        case success => success
-      }
-    )
-
-    override def pure[A](x: A): Parser[A] = parserApplicative.pure(x)
-  }
+  implicit val parserAlternative: Alternative[Parser] = ???
 
   def satisfy(pred: Char => Boolean): Parser[Char] = Parser { s =>
     if (s.nonEmpty && pred(s.head)) ParserSuccess(s.tail, s.head)
@@ -66,7 +37,7 @@ object Parser {
 
   def char(a: Char): Parser[Char] = satisfy(_ == a)
 
-  def notChar: Parser[Char] = ???
+  def notChar(a: Char): Parser[Char] = ???
 
   def anyChar: Parser[Char] = ???
 
@@ -78,6 +49,7 @@ object Parser {
 
   def letterOrDigit: Parser[Char] = satisfy(_.isLetterOrDigit)
 
+  // TODO: consider asking people to implement this parser
   def number: Parser[Int] = {
     val sign = string("-") <+> "".pure[Parser]
     val digits = some(digit).fmap(_.mkString)
