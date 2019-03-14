@@ -2,26 +2,22 @@ package wax.exercise.applicative
 
 import java.io.File
 
-import cats.Applicative
 import cats.effect.IO
 import cats.implicits._
+
 import scala.io.Source
 
 object ConfigReader {
+  val validConfigFile = "validConfig"
+  val invalidConfigFile = "typicalBorisConfig"
 
-  private def readConfig(fileName: String): IO[String] = IO {
+  private def readFile(fileName: String): IO[String] = IO {
     val file = new File(this.getClass.getClassLoader.getResource(s"applicative/$fileName").toURI)
     Source.fromFile(file).getLines.toString()
   }
 
-//  implicit val ioApplicative: Applicative[IO]
-//
-//  def readConfigs: IO[Configs] = {
-//    val validConfigFile = "validConfig"
-//    val typicalBorisConfigFile = "typicalBorisConfig"
-//
-//    readConfig(validConfigFile).fm
-//  }
+  //TODO read 2 configs
+  def readConfigs: IO[Configs] = ???
 
 }
 

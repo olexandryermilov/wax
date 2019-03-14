@@ -34,21 +34,6 @@ object Parser {
     )
   }
 
-  implicit val parserAlternative: Alternative[Parser] = new Alternative[Parser] {
-    override def ap[A, B](ff: Parser[A => B])(fa: Parser[A]): Parser[B] = parserApplicative.ap(ff)(fa)
-
-    override def empty[A]: Parser[A] = Parser(_ => ParserFailure())
-
-    override def combineK[A](x: Parser[A], y: Parser[A]): Parser[A] = Parser(s =>
-      x.parse(s) match {
-        case ParserFailure() => y.parse(s)
-        case success         => success
-      }
-    )
-
-    override def pure[A](x: A): Parser[A] = parserApplicative.pure(x)
-  }
-
 //  def satisfy(pred: Char => Boolean): Parser[Char] = Parser {
 //    case x : xs if pred(x) => ParserSuccess(xs, x)
 //    case _                  => ParserFailure()
@@ -87,14 +72,6 @@ object Parser {
       case ParserSuccess(s1, v) => many(parser).parse(s1).fmap(xs => v :: xs)
     }
   )
-
-  implicit class AlternativeExt[F[_] : Alternative, A](v: F[A]) {
-//    def some: F[List[A]] = some_v
-//    def many: F[List[A]] = many_v
-
-    private def many_v: F[List[A]] = some_v <+> List.empty[A].pure[F]
-    private def some_v: F[List[A]] = Alternative[F].map2(v, many_v)((x, xs) => x :: xs)
-  }
 }
 
 object SuperDuper extends App {
