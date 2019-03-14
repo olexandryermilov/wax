@@ -34,6 +34,21 @@ object Parser {
     )
   }
 
+  implicit val parserAlternative: Alternative[Parser] = new Alternative[Parser] {
+    override def ap[A, B](ff: Parser[A => B])(fa: Parser[A]): Parser[B] = parserApplicative.ap(ff)(fa)
+
+    override def empty[A]: Parser[A] = Parser(_ => ParserFailure())
+
+    override def combineK[A](x: Parser[A], y: Parser[A]): Parser[A] = Parser(s =>
+      x.parse(s) match {
+        case ParserFailure() => y.parse(s)
+        case success         => success
+      }
+    )
+
+    override def pure[A](x: A): Parser[A] = parserApplicative.pure(x)
+  }
+
 //  def satisfy(pred: Char => Boolean): Parser[Char] = Parser {
 //    case x : xs if pred(x) => ParserSuccess(xs, x)
 //    case _                  => ParserFailure()
