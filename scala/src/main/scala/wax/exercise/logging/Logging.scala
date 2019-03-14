@@ -3,14 +3,14 @@ package wax.exercise.logging
 import java.io.FileOutputStream
 
 import cats.effect.IO
-import cats.implicits._
+import cats.syntax.monoid._
 import cats.kernel.Monoid
 
 object Logging extends App {
 
   type Logger = String => IO[Unit]
 
-  implicit def monoid[A]: Monoid[IO[A]] = {
+  implicit val monoidIoLogger: Monoid[IO[Logger]] = {
     /*
       Your code here
      */

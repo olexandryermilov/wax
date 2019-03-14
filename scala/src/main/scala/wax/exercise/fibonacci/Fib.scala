@@ -6,7 +6,7 @@ import wax.exercise.fibonacci.ExpUtils.exp
 object Fib extends App {
   val n = 0
 
-  implicit val M: Monoid[Matrix2x2] = {
+  implicit val matrixMonoid: Monoid[Matrix2x2] = {
     /*
       Your code here
      */

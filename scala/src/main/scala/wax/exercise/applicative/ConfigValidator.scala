@@ -23,7 +23,7 @@ object ConfigValidator {
     else Invalid(NonEmptyList.one(ConfigValidationError(field, "host must be a proper hostname/ip without port")))
 
 
-  implicit val validatedApplicative: Applicative[Validated[NonEmptyList[ConfigValidationError], Config]] = ???
+  implicit val validatedApplicative: Applicative[Validated[NonEmptyList[ConfigValidationError], ?]] = ???
 
   //TODO Validate config using applicative
   def validateConfig(config: Config): Validated[NonEmptyList[ConfigValidationError], Config] = ???
