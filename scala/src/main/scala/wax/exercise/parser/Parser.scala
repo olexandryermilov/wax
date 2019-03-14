@@ -6,10 +6,20 @@ import cats.implicits._
 import scala.language.higherKinds
 
 sealed trait ParserResult[A]
+
 case class ParserSuccess[A](input: String, value: A) extends ParserResult[A]
+
 case class ParserFailure[A]() extends ParserResult[A]
 
-case class Parser[A](parse : String => ParserResult[A])
+case class Parser[A](parse: String => ParserResult[A]) {
+  def run(input: String): Either[String, A] = parse(input) match {
+    case ParserFailure()                   => Left("parser error")
+    case ParserSuccess(s, _) if s.nonEmpty => Left("parser did not consume entire stream: '" ++ s ++ "'")
+    case ParserSuccess(_, v)               => Right(v)
+  }
+
+  def unsafeRun(input: String): A = run(input).left.map(e => throw new RuntimeException(e)).toTry.get
+}
 
 object Parser {
   implicit val parserResultFunctor: Functor[ParserResult] = new Functor[ParserResult] {
