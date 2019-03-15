@@ -26,17 +26,17 @@ dependencies:
 
 executables:
   wax-fib-profile:
-    source-dirs: fibonacci
+    source-dirs: src/exercise/fibonacci
     main: Wax.Criterion
 
   wax-mapreduce-profile:
-    source-dirs: mapreduce
+    source-dirs: src/exercise/mapreduce
     main: Wax.Criterion
 
   wax-logging:
-    source-dirs: logging
+    source-dirs: src/exercise/logging
     main: Wax.Logging
 
   wax-parser:
-    source-dirs: parser
+    source-dirs: src/exercise/parser
     main: Wax.Parser
