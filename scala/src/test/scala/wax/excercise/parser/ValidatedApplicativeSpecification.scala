@@ -7,52 +7,45 @@ import cats.tests.CatsSuite
 import org.scalacheck.Arbitrary
 import org.scalacheck.Arbitrary.arbitrary
 import wax.exercise.parser._
+import org.scalacheck._
+import cats.implicits._
 
 class ValidatedApplicativeSpecification extends CatsSuite {
   implicit val validatedApplicative: Applicative[Validated[NonEmptyList[Int], ?]] = ConfigValidator.validatedApplicative[NonEmptyList[Int]]
 
   implicit val eq: Eq[Validated[NonEmptyList[Int], Int]] = _ == _
   implicit val eq2: Eq[Validated[NonEmptyList[Int], (Int, Int, Int)]] = _ == _
-
-  {
-    implicit val arbitraryValid: Arbitrary[Validated[NonEmptyList[Int], Int]] = Arbitrary {
-      arbitrary[Int] map Valid.apply
-    }
-
-    implicit val arbitraryValidF: Arbitrary[Validated[NonEmptyList[Int], Int => Int]] = Arbitrary {
-        arbitrary[Int => Int] map Valid.apply
-    }
-
-    checkAll("Validated.Valid<*>Valid.ApplicativeLaws",
-      ApplicativeTests[Validated[NonEmptyList[Int], ?]](validatedApplicative).applicative[Int, Int, Int]
-    )
+  implicit def arbitraryNel[A: Arbitrary]: Arbitrary[NonEmptyList[A]] = Arbitrary {
+    arbitrary[List[A]] filter (_.nonEmpty) map (l => NonEmptyList.fromListUnsafe(l))
   }
+  implicit def arbitraryValid[A: Arbitrary]: Arbitrary[Valid[A]] = Arbitrary { arbitrary[A] map Valid.apply }
+  implicit def arbitraryInvalid[A: Arbitrary]: Arbitrary[Invalid[A]] = Arbitrary { arbitrary[A] map Invalid.apply }
 
-  {
-    implicit val arbitraryInvalid: Arbitrary[Validated[NonEmptyList[Int], Int]] = Arbitrary {
-      arbitrary[Int] map (i => Invalid(NonEmptyList.one(i)))
-    }
+  checkAll(
+    "ValidatedNel",
+    {
+      implicit val arbitraryValidated: Arbitrary[Validated[NonEmptyList[Int], Int]] = Arbitrary {
+        arbitrary[Boolean].flatMap {
+          case true => arbitraryValid[Int].arbitrary
+          case false => arbitraryInvalid[NonEmptyList[Int]].arbitrary
+        }
+      }
 
-    implicit val arbitraryValidF: Arbitrary[Validated[NonEmptyList[Int], Int => Int]] = Arbitrary {
+      implicit val arbitraryValidatedF: Arbitrary[Validated[NonEmptyList[Int], Int => Int]] = Arbitrary {
         arbitrary[Int => Int] map Valid.apply
-    }
+      }
 
-    checkAll("Validated.Invalid<*>Valid.ApplicativeLaws",
       ApplicativeTests[Validated[NonEmptyList[Int], ?]](validatedApplicative).applicative[Int, Int, Int]
-    )
-  }
-
-  {
-    implicit val arbitraryInvalid: Arbitrary[Validated[NonEmptyList[Int], Int]] = Arbitrary {
-      arbitrary[Int] map (i => Invalid(NonEmptyList.one(i)))
     }
+  )
 
-    implicit val arbitraryValidF: Arbitrary[Validated[NonEmptyList[Int], Int => Int]] = Arbitrary {
-      arbitrary[Int] map (i => Invalid(NonEmptyList.one(i)))
-    }
-
-    checkAll("Validated.Invalid<*>Invalid.ApplicativeLaws",
-      ApplicativeTests[Validated[NonEmptyList[Int], ?]](validatedApplicative).applicative[Int, Int, Int]
-    )
+  test("ValidatedNel error aggregation") {
+    Prop.forAll { (invalid1: Invalid[NonEmptyList[Int]], invalid2: Invalid[NonEmptyList[Int]]) =>
+      val res = validatedApplicative.fmap(invalid1)(identity).ap(invalid2)
+      res match {
+        case Invalid(errors) => errors == invalid1.e ::: invalid2.e
+        case _ => false
+      }
+    }.check
   }
 }
