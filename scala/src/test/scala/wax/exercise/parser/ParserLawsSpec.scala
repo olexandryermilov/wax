@@ -6,7 +6,7 @@ import cats.laws.discipline._
 import wax.exercise.parser.Parser._
 import org.scalacheck._
 
-class ParserResultSpec extends CatsSuite {
+class ParserLawsSpec extends CatsSuite {
   checkAll("ParserResult", FunctorTests[ParserResult].functor[Int, Int, String])
 
   implicit def parserResultEq[A]: Eq[ParserResult[A]] = new Eq[ParserResult[A]] {
