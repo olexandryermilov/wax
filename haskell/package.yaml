@@ -40,3 +40,13 @@ executables:
   wax-parser:
     source-dirs: src/exercise/parser
     main: Wax.Parser
+
+tests:
+  semigroup-spec:
+    main: Wax.Spec
+    source-dirs:
+      - test/typeclass/semigroup
+      - src/typeclass/semigroup
+    dependencies:
+      - tasty
+      - tasty-quickcheck
