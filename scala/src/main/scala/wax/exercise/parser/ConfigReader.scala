@@ -12,7 +12,7 @@ object ConfigReader {
   val invalidConfigFile = "typicalBorisConfig"
 
   private def readFile(fileName: String): IO[String] = IO {
-    val file = new File(this.getClass.getClassLoader.getResource(s"applicative/$fileName").toURI)
+    val file = new File(this.getClass.getClassLoader.getResource(s"parser/$fileName").toURI)
     Source.fromFile(file).getLines.toString()
   }
 
