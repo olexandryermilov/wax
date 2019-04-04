@@ -1,3 +1,7 @@
 env=test
+test_db_host_config_type=ip
 test_db_host=127.0.0.1
+stage_db_host_config_type=hostame
+stage_db_host=db.stage.com
+prod_db_host_config_type=hostname
 prod_db_host=db.prod.com
