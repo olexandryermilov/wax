@@ -9,6 +9,7 @@ import org.scalacheck.Arbitrary.arbitrary
 import wax.exercise.parser._
 import org.scalacheck._
 import cats.implicits._
+import wax.exercise.parser.ConfigValidator._
 
 class ValidatedApplicativeSpecification extends CatsSuite {
   implicit val validatedApplicative: Applicative[Validated[NonEmptyList[Int], ?]] = ConfigValidator.validatedApplicative[NonEmptyList[Int]]
