@@ -12,25 +12,14 @@ import scala.concurrent.ExecutionContext
 import scala.io.Source
 
 object MapReduceRunner extends App {
-  def run[T](t: => T) = {
-    val start = now()
-    val res = t
-    val end = now()
-    println("Millis passed: " + time.Duration.between(start, end).toMillis)
-    res
-  }
 
-  implicit val monoid: Monoid[Map[String, Int]] = ???
+  type Result[V] = Map[String, V]
 
-  run(???)
+  implicit val monoid: Monoid[Result[Int]] = ???
 
-  trait FunctorOption extends Functor[Option] {
-    def fmap[A, B](f: A => B)(fa: Option[A]) =
-      fa match {
-        case Some(a) => Some(f(a))
-        case None => None
-      }
-  }
+  def mapReduceJob(): Result[Int] = ???
+
+  Benchmark.run(mapReduceJob())
 }
 
 object MapReduce {
@@ -47,6 +36,15 @@ object MapReduce {
      .parTraverse(a => IO(a.map(f).foldLeft(Monoid.empty[T])(Monoid.combine[T])))
      .map(_.combineAll)
      .unsafeRunSync()
+  }
+}
+
+object Benchmark {
+  def run[T](t: => T) = {
+    val start = now()
+    val res = t
+    val end = now()
+    (res, time.Duration.between(start, end).toMillis)
   }
 }
 

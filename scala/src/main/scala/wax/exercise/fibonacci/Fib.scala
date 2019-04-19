@@ -4,25 +4,21 @@ import cats.Monoid
 import wax.exercise.fibonacci.ExpUtils.exp
 
 object Fib extends App {
-  val n = 0
 
-  implicit val matrixMonoid: Monoid[Matrix2x2] = {
-    /*
-      Your code here
-     */
-    ???
-  }
+  case class Matrix2x2(a11: Int, a12: Int, a21: Int, a22: Int)
 
-  val result = exp(
+  implicit val matrixMonoid: Monoid[Matrix2x2] = ???
+
+  def fibOtEn(en: Int) = exp(
     Matrix2x2(1, 1,
               1, 0),
-    n
-  )
+    en
+  ).a21
 
-  println(result.a21)
+  println(fibOtEn(0))
 }
 
-case class Matrix2x2(a11: Int, a12: Int, a21: Int, a22: Int)
+
 
 object ExpUtils {
   def exp[T: Monoid](n: T, power: Int): T =

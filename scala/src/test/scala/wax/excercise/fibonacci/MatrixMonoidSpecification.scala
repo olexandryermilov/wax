@@ -4,7 +4,8 @@ import cats.{Eq, Monoid}
 import cats.kernel.laws.discipline.MonoidTests
 import cats.tests.CatsSuite
 import org.scalacheck.{Arbitrary, Gen}
-import wax.exercise.fibonacci.{Fib, Matrix2x2}
+import wax.exercise.fibonacci.Fib
+import wax.exercise.fibonacci.Fib.Matrix2x2
 
 class MatrixMonoidSpecification extends CatsSuite {
   implicit val matrixMonoid: Monoid[Matrix2x2] = Fib.matrixMonoid

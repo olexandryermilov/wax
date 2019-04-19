@@ -1,6 +1,7 @@
 package wax.exercise.parser
 
 import cats.data.NonEmptyList
+import wax.exercise.parser.ConfigValidator._
 
 object Application extends App {
 

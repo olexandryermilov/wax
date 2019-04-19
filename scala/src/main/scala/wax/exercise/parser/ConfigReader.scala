@@ -16,7 +16,7 @@ object ConfigReader {
     Source.fromFile(file).getLines.toString()
   }
 
-  //TODO read 2 configs
+  //TODO read 2 configs without using flatMap or for-comprehension
   def readConfigs: IO[Configs] = ???
 
 }

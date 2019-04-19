@@ -10,12 +10,7 @@ object Logging extends App {
 
   type Logger = String => IO[Unit]
 
-  implicit val monoidIoLogger: Monoid[IO[Logger]] = {
-    /*
-      Your code here
-     */
-    ???
-  }
+  implicit val monoidIoLogger: Monoid[IO[Logger]] = ??? //Your code here
 
   def consoleLogger: IO[Logger] = IO { input =>
     IO {
@@ -29,15 +24,15 @@ object Logging extends App {
     input => IO(stream.write(input.getBytes))
   }
 
-  def run(logger: Logger): IO[Unit] = for {
+  def someApp(logger: Logger): IO[Unit] = for {
     input <- IO(scala.io.StdIn.readLine)
     _     <- logger(s"User input: $input\n")
-    _     <- run(logger)
+    _     <- someApp(logger)
   } yield ()
 
   val program: IO[Unit] = for {
     logger <- consoleLogger |+| fileLogger("logging.log")
-    _      <- run(logger)
+    _      <- someApp(logger)
   } yield ()
 
   program.unsafeRunSync()
