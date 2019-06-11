@@ -1,0 +1,51 @@
+* wax :: IO FunctionalWorkshop
+
+#+BEGIN_HTML
+<p align="center">
+  <img src="images/hot-wax.png">
+</p>
+#+END_HTML
+
+Collection of training materials for the functional workshop.
+
+** Day 1: Go to the classes to meet your type classes
+
+*** Plan
+
+1. Type classes.
+   1. Introduce the problem.
+      1. Abstraction.
+      2. Composability.
+      3. Extensibility.
+   2. Use example with code we don't own.
+   3. Solve the problem with wrappers.
+   4. Introduce idea of the type classes.
+   5. Implicits (/Haskell/: show the difference).
+2. Semigroup.
+   1. Formal definition.
+   2. Informal definition with example in host language.
+   3. Note importance of laws for type classes.
+   4. Instance examples.
+   5. Checking the laws.
+      1. Manually (pen and paper).
+      2. Automatically (property based testing).
+   6. Note that it's very common for the data types to have multiple instances
+      of semigroup.
+   7. More examples of semigroups.
+   8. H/W: write an instance that breaks the laws.
+3. Monoid.
+   1. Format definition.
+   2. Informal definition with example in host language.
+   3. Monoid laws.
+   4. Instance examples.
+   5. Not all semigroups are monoids. Provide examples.
+4. Workshop
+   1. Fibonacci
+   2. Calculate top used words in huge amount of files.
+   3. Logging.
+
+** Day 2: Mappings in the category of all types
+
+** Day 3: Monoids in the category of endofunctors
+
+** Day 4: Reader-shmeader
