@@ -20,7 +20,7 @@ newtype IntAdd = IntAdd Int deriving (Show, Eq)
 newtype IntMult = IntMult Int deriving (Show, Eq)
 
 instance MySemigroup IntAdd where
-  (IntAdd a) <!+!> (IntAdd b) = IntAdd $ a
+  (IntAdd a) <!+!> (IntAdd b) = IntAdd $ a + b
 
 instance MySemigroup IntMult where
   (IntMult a) <!+!> (IntMult b) = IntMult $ a * b

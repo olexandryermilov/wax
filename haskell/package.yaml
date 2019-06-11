@@ -24,6 +24,12 @@ dependencies:
   - time
   - unordered-containers
 
+library:
+  source-dirs:
+    - src/typeclass/semigroup
+  exposed-modules:
+    - Wax.MySemigroup
+
 executables:
   wax-fib-profile:
     source-dirs: src/exercise/fibonacci
@@ -46,7 +52,7 @@ tests:
     main: Wax.Spec
     source-dirs:
       - test/typeclass/semigroup
-      - src/typeclass/semigroup
     dependencies:
       - tasty
       - tasty-quickcheck
+      - wax

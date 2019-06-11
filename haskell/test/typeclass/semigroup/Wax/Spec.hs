@@ -14,15 +14,18 @@ import Test.Tasty.QuickCheck
 --------------------------------------------------------------------------------
 mySemigroupProperties :: TestTree
 mySemigroupProperties = testGroup "MySemigroup"
-  [ testProperty "associativity for [Int]" $
-      \x y z -> ((x :: [Int]) <!+!> (y <!+!> z)) == ((x <!+!> y) <!+!> z)
-  , testProperty "associativity for List' Int" $
-      \x y z -> ((x :: List' Int) <!+!> (y <!+!> z)) == ((x <!+!> y) <!+!> z)
-  , testProperty "associativity for IntAdd" $
-      \x y z -> ((x :: IntAdd) <!+!> (y <!+!> z)) == ((x <!+!> y) <!+!> z)
-  , testProperty "associativity for IntMult" $
-      \x y z -> ((x :: IntMult) <!+!> (y <!+!> z)) == ((x <!+!> y) <!+!> z)
+  [ testProperty "associativity for [Int]"
+    (assocProp :: [Int] -> [Int] -> [Int] -> Bool)
+  , testProperty "associativity for List' Int"
+    (assocProp :: List' Int -> List' Int -> List' Int -> Bool)
+  , testProperty "associativity for IntAdd"
+    (assocProp :: IntAdd -> IntAdd -> IntAdd -> Bool)
+  , testProperty "associativity for IntMult"
+    (assocProp :: IntMult -> IntMult -> IntMult -> Bool)
   ]
+
+assocProp :: (Eq a, MySemigroup a) => a -> a -> a -> Bool
+assocProp x y z = (x <!+!> (y <!+!> z)) == ((x <!+!> y) <!+!> z)
 
 --------------------------------------------------------------------------------
 tests :: TestTree
