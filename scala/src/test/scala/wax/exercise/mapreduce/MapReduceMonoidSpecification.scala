@@ -1,4 +1,4 @@
-package wax.excercise.mapreduce
+package wax.exercise.mapreduce
 
 import cats.Monoid
 import cats.kernel.laws.discipline.MonoidTests

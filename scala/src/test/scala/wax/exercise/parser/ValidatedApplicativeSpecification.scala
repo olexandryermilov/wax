@@ -1,4 +1,4 @@
-package wax.excercise.parser
+package wax.exercise.parser
 
 import cats.{Applicative, Eq}
 import cats.data.NonEmptyList

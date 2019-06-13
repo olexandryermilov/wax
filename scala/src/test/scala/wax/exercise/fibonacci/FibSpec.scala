@@ -1,4 +1,4 @@
-package wax.excercise.fibonacci
+package wax.exercise.fibonacci
 
 import cats.tests.CatsSuite
 import org.scalacheck.{Gen, Prop}

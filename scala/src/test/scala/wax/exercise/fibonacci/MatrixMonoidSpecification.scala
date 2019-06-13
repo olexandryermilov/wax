@@ -1,4 +1,4 @@
-package wax.excercise.fibonacci
+package wax.exercise.fibonacci
 
 import cats.{Eq, Monoid}
 import cats.kernel.laws.discipline.MonoidTests
