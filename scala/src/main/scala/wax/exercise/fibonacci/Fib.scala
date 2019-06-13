@@ -19,7 +19,6 @@ object Fib extends App {
 }
 
 
-
 object ExpUtils {
   def exp[T: Monoid](n: T, power: Int): T =
     if (power < 0) throw new IllegalArgumentException("Something sad happened")

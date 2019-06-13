@@ -1,0 +1,8 @@
+So I decided to write a book. You know, a regular book with a protagonist. And
+also with an antagonist, because no protagonist can live without antagonist. On
+the other hand we are living in the post-modern era, so protagonist can be
+antagonist at the same time.
+
+So I decided to write a book, but then Valik came with a crazy idea to play
+around with mapReduce. So here I am, writing this tiny text just to please your
+testing need.
