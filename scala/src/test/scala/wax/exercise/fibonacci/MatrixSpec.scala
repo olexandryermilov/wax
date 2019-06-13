@@ -7,7 +7,7 @@ import org.scalacheck.{Arbitrary, Gen}
 import wax.exercise.fibonacci.Fib
 import wax.exercise.fibonacci.Fib.Matrix2x2
 
-class MatrixMonoidSpecification extends CatsSuite {
+class MatrixSpec extends CatsSuite {
   val matrixMonoid: Monoid[Matrix2x2] = Fib.matrixMonoid
 
   implicit val eq: Eq[Matrix2x2] = (x: Matrix2x2, y: Matrix2x2) => x == y

@@ -11,7 +11,7 @@ import org.scalacheck._
 import cats.implicits._
 import wax.exercise.parser.ConfigValidator._
 
-class ValidatedApplicativeSpecification extends CatsSuite {
+class ValidatedSpec extends CatsSuite {
   implicit val validatedApplicative: Applicative[Validated[NonEmptyList[Int], ?]] = ConfigValidator.validatedApplicative[NonEmptyList[Int]]
 
   implicit val eq: Eq[Validated[NonEmptyList[Int], Int]] = _ == _

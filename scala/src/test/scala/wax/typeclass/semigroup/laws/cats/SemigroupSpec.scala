@@ -4,7 +4,7 @@ import cats.kernel.laws.discipline.SemigroupTests
 import cats.tests.CatsSuite
 import wax.typeclass.semigroup.catz._
 
-class SemigroupSpecification extends CatsSuite {
+class SemigroupSpec extends CatsSuite {
   // pass implicit here (stringSemigroup) to make sure that our implementation is used
   checkAll("Int.SemigroupLaws", SemigroupTests[Int](intSemigroup).semigroup)
 

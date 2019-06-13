@@ -6,7 +6,7 @@ import cats.tests.CatsSuite
 import wax.exercise.mapreduce.MapReduce
 import wax.exercise.mapreduce.MapReduce.Result
 
-class MapReduceMonoidSpecification extends CatsSuite {
+class MapReduceSpec extends CatsSuite {
   val monoid: Monoid[Result[Int]] = MapReduce.monoid
 
   checkAll("MapReduce.MonoidLaws", MonoidTests[Map[String, Int]](monoid).monoid)

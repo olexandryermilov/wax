@@ -7,13 +7,13 @@ import wax.typeclass.semigroup.implicits._
 
 import scala.reflect.ClassTag
 
-object SemigroupSpecification extends Properties("Semigroup") with SemigroupSpecificationSupport {
+object SemigroupSpec extends Properties("Semigroup") with SemigroupSpec {
   include(semigroup[Int])
   include(semigroup[String])
   include(semigroup[List[Int]])
 }
 
-trait SemigroupSpecificationSupport {
+trait SemigroupSpec {
   def semigroup[A](implicit sg: Semigroup[A], ar: Arbitrary[A], tag: ClassTag[A]): Properties =
     new Properties(s"Semigroup[${tag.toString}]") {
       property("associativity") = forAll { (a: A, b: A, c: A) =>
