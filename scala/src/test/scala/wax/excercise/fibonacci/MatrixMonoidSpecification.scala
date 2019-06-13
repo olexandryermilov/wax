@@ -8,15 +8,15 @@ import wax.exercise.fibonacci.Fib
 import wax.exercise.fibonacci.Fib.Matrix2x2
 
 class MatrixMonoidSpecification extends CatsSuite {
-  implicit val matrixMonoid: Monoid[Matrix2x2] = Fib.matrixMonoid
+  val matrixMonoid: Monoid[Matrix2x2] = Fib.matrixMonoid
 
   implicit val eq: Eq[Matrix2x2] = (x: Matrix2x2, y: Matrix2x2) => x == y
   implicit val arbM: Arbitrary[Matrix2x2] = Arbitrary {
     for {
-      a11 <- Arbitrary.arbitrary[Int]
-      a12 <- Arbitrary.arbitrary[Int]
-      a21 <- Arbitrary.arbitrary[Int]
-      a22 <- Arbitrary.arbitrary[Int]
+      a11 <- Gen.choose(2, 1000)
+      a12 <- Gen.choose(2, 1000)
+      a21 <- Gen.choose(2, 1000)
+      a22 <- Gen.choose(2, 1000)
     } yield Matrix2x2(a11, a12, a21, a22)
   }
 

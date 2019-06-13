@@ -9,7 +9,7 @@ import cats.Functor
 object Benchmark {
   case class BenchmarkResult[A](result: A, duration: Duration) {
     override def toString: String =
-      s"""duration = $duration
+      s"""duration = ${duration.toMillis} ms
          |result   = $result""".stripMargin
   }
 
