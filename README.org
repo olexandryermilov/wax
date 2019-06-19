@@ -10,8 +10,6 @@ Collection of training materials for the functional workshop.
 
 ** Day 1: Go to the classes to meet your type classes
 
-[[https://docs.google.com/presentation/d/1SWkXuAFV4pQaOO-ySXKDgaUXUti28W581xepAFTnQhE/edit#slide=id.p][Slides]]
-
 *** Plan
 
 1. Type classes.
