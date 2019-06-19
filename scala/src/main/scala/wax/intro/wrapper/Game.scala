@@ -16,10 +16,16 @@ case class Hero(name: String, job: String, level: Int) extends Introducible with
   override def title(): String = name
 }
 
-case class Monster(name: String, level: Int) extends Introducible with HasTitle {
+case class Orc(name: String, level: Int) extends Introducible with HasTitle {
   override def introduce(): String = s"Lok-tar ogar! Me be $name. Me be strong. Level $level strong!"
 
   override def title(): String = name
+}
+
+case class Ooze(level: Int) extends Introducible with HasTitle {
+  override def introduce(): String = 1.to(level).map(_=>"brlup").mkString("-")
+
+  override def title(): String = "Ooze"
 }
 
 case class CockatriceWrapper(cockatrice: Cockatrice) extends Introducible with HasTitle {
@@ -30,29 +36,37 @@ case class CockatriceWrapper(cockatrice: Cockatrice) extends Introducible with H
 }
 
 object GameSimple extends App {
-  def introduce(creature: Introducible): Unit = println(creature.introduce())
-
   val player = Hero(name = "Valik", job = "Black Mage", level = 20)
-  val someRandomMonster = Monster(name = "Garrosh", level = 105)
+  val orc = Orc(name = "Garrosh", level = 105)
+  val ooze = Ooze(level = 2)
   val cockatrice = CockatriceWrapper(Cockatrice(level = 666, element = Element.Fire))
 
+  def introduce(creatute: Introducible): Unit = {
+    // some real shit animations
+    println(creatute.introduce())
+    // some real shit animations
+  }
+
   introduce(player)
-  introduce(someRandomMonster)
+  introduce(orc)
+  introduce(ooze)
   introduce(cockatrice)
 }
 
 object GameWithTitles extends App {
+  val player = Hero(name = "Valik", job = "Black Mage", level = 20)
+  val orc = Orc(name = "Garrosh", level = 105)
+  val ooze = Ooze(level = 2)
+  val cockatrice = CockatriceWrapper(Cockatrice(level = 666, element = Element.Fire))
+
   def say(creature: HasTitle, message: String): Unit =
     println(s"[${creature.title()}]: $message")
 
   def introduce[A <: Introducible with HasTitle](creature: A): Unit =
     say(creature, creature.introduce())
 
-  val player = Hero(name = "Valik", job = "Black Mage", level = 20)
-  val someRandomMonster = Monster(name = "Garrosh", level = 105)
-  val cockatrice = CockatriceWrapper(Cockatrice(level = 666, element = Element.Fire))
-
   introduce(player)
-  introduce(someRandomMonster)
+  introduce(orc)
+  introduce(ooze)
   introduce(cockatrice)
 }
