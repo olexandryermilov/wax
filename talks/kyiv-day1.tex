@@ -1,4 +1,4 @@
-% Created 2019-06-19 Wed 14:55
+% Created 2019-06-20 Thu 10:23
 % Intended LaTeX compiler: pdflatex
 \documentclass[presentation,aspectratio=169,smaller]{beamer}
 \usepackage[utf8]{inputenc}
@@ -37,9 +37,9 @@
 \maketitle
 
 \section*{Intro}
-\label{sec:orgacdba30}
+\label{sec:orga3b4d36}
 
-\begin{frame}[label={sec:orgb3b50a6}]{About us}
+\begin{frame}[label={sec:org5d91517}]{About us}
 \begin{block}{Valik}
 Server guild manager in Kyiv. Formerly forced people to use functional
 programming style in the Domains (Premium) team. Now works on Tagless Infra to
@@ -56,7 +56,7 @@ why.
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:orge79ef3c}]{About the Workshop}
+\begin{frame}[label={sec:org07e977a}]{About the Workshop}
 \begin{itemize}
 \item Basic workshop is split into 3 parts:
 \begin{enumerate}
@@ -71,7 +71,7 @@ ready for this.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org9a2bdff},fragile]{Whys}
+\begin{frame}[label={sec:org209c76b},fragile]{Whys}
  \begin{itemize}
 \item Functional programming roams (a bit).
 \begin{itemize}
@@ -86,7 +86,7 @@ important.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org8927eab}]{Plan}
+\begin{frame}[label={sec:org03d9374}]{Plan}
 \begin{itemize}
 \item Type classes
 \item Property based testing (just a tip of)
@@ -97,9 +97,9 @@ important.
 \end{frame}
 
 \section*{Typeclasses}
-\label{sec:org6f1ef7e}
+\label{sec:org7f68dde}
 
-\begin{frame}[label={sec:org12fc6c7}]{Fulfilling a dream}
+\begin{frame}[label={sec:org844c701}]{Fulfilling a dream}
 \begin{itemize}
 \item Imagine that we are game developers (yay!).
 \item Imagine that we are writing a game (double yay!).
@@ -107,7 +107,7 @@ important.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgd4688ee},fragile]{Meet the hero}
+\begin{frame}[label={sec:org8b801f8},fragile]{Meet the hero}
  \begin{minted}[]{scala}
 case class Hero(name: String, job: String, level: Int) {
   def introduce(): String = s"Hi! My name is $name. I am $level level $job."
@@ -123,7 +123,7 @@ object Game extends App {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:org8936489},fragile]{Every hero needs a monster}
+\begin{frame}[label={sec:org85927e2},fragile]{Every hero needs a monster}
  \begin{minted}[]{scala}
 case class Hero(name: String, job: String, level: Int) {
   def introduce(): String = s"Hi! My name is $name. I am $level level $job."
@@ -154,7 +154,7 @@ object Game extends App {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:org8fe115c},fragile]{Everyone is polite}
+\begin{frame}[label={sec:orgae5c5a0},fragile]{Everyone is polite}
  \begin{itemize}
 \item In our world everyone is polite. Even ooze, brlup-blup!
 \item Rendering process of greetings is a hard process and boils down to the string
@@ -175,10 +175,13 @@ object Game extends App {
 \end{minted}
 
 \item But it would so nice to avoid all this \texttt{\_.introduce()}.
+\begin{itemize}
+\item And you know, DRY leads to disasters!
+\end{itemize}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org2a5d16c},fragile]{Introducing abstractions}
+\begin{frame}[label={sec:org64acd6e},fragile]{Introducing abstractions}
  \begin{minted}[]{scala}
 trait Introducible {
   def introduce(): String
@@ -199,7 +202,7 @@ case class Ooze(level: Int) extends Introducible {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:orgefa714b},fragile]{Using the \texttt{trait}}
+\begin{frame}[label={sec:org13dc762},fragile]{Using the \texttt{trait}}
  \begin{minted}[]{scala}
 object Game extends App {
   val player = Hero("Valik", "Black Mage", 20)
@@ -223,7 +226,7 @@ object Game extends App {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:orgc5a9525},fragile]{Here comes the cockatrice}
+\begin{frame}[label={sec:org5512cf6},fragile]{Here comes the cockatrice}
  \begin{minted}[]{scala}
 import io.proprietary.monsters.cockatrice._
 
@@ -240,7 +243,7 @@ object Game extends App {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:orgf227dc7},fragile]{Shawarma to the rescue}
+\begin{frame}[label={sec:org3d60614},fragile]{Shawarma to the rescue}
  \begin{columns}
 \begin{column}{0.25\columnwidth}
 \begin{center}
@@ -279,7 +282,7 @@ object Game extends App {
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orga7e0392}]{Properties we care about}
+\begin{frame}[label={sec:org26f547b}]{Properties we care about}
 \begin{itemize}
 \item Abstraction - we care about what you can do and not what you are.
 \item Composition - we want a way to express that we want something that can do
@@ -289,7 +292,7 @@ as well.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org695f47c},fragile]{With \texttt{trait} + wrappers approach}
+\begin{frame}[label={sec:org34ef72b},fragile]{With \texttt{trait} + wrappers approach}
  \begin{itemize}
 \item Abstraction works. We are able to define generic \texttt{introduce} function.
 \item Composition works thanks to \texttt{with} keyword.
@@ -311,17 +314,33 @@ value.
 You know where it’s going to, right?
 \end{frame}
 
-\begin{frame}[label={sec:org5c05842}]{F[\_]}
+\begin{frame}[label={sec:org3f8a382}]{F[\_]}
 \begin{center}
 \includegraphics[height=7cm]{images/f_.jpg}
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orge258f59},fragile]{What if\ldots{}}
+\begin{frame}[label={sec:orgc35fca6},fragile]{What if\ldots{}}
  We divide data and behaviour
 
 \pause
 
+\begin{columns}
+\begin{column}[t]{0.42\columnwidth}
+\begin{minted}[]{scala}
+trait Introducible {
+  def introduce(): String
+}
+\end{minted}
+\end{column}
+
+\begin{column}[t]{0.05\columnwidth}
+\vspace*{0px}
+
+{\large \Rightarrow}
+\end{column}
+
+\begin{column}[t]{0.55\columnwidth}
 \begin{minted}[]{scala}
 trait Introducible[A] {
   def introduce(a: A): String
@@ -332,8 +351,12 @@ trait Introducible[A] {
 \item \texttt{A} is data
 \item \texttt{Introducible[A]} - behaviour
 \end{itemize}
+\end{column}
+\end{columns}
 
 \pause
+
+\vspace*{1cm}
 
 So we can pass separately two values:
 
@@ -344,13 +367,30 @@ So we can pass separately two values:
 
 \pause
 
+\begin{columns}
+\begin{column}[t]{0.42\columnwidth}
+\begin{minted}[]{scala}
+def introduce(creatute: Introducible): Unit =
+  println(creatute.introduce())
+\end{minted}
+\end{column}
+
+\begin{column}[t]{0.05\columnwidth}
+\vspace*{0px}
+
+{\large \Rightarrow}
+\end{column}
+
+\begin{column}[t]{0.55\columnwidth}
 \begin{minted}[]{scala}
 def introduce[A](creature: A)(impl: Introducible[A]): Unit =
   println(impl.introduce(creature))
 \end{minted}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:org30eda45},fragile]{We treat our own types}
+\begin{frame}[label={sec:org3e4729f},fragile]{We treat our own types}
  \begin{minted}[]{scala}
 trait Introducible[A] {
   def introduce(a: A): String
@@ -374,7 +414,7 @@ object Game extends App {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:orgd97e212},fragile]{And external types in the same way}
+\begin{frame}[label={sec:orgcfd1d85},fragile]{And external types in the same way}
  \begin{minted}[]{scala}
 import io.proprietary.monsters.cockatrice._
 
@@ -396,7 +436,7 @@ object Game extends App {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:orga6e003e}]{But passing implementation around is\ldots{}}
+\begin{frame}[label={sec:org8dc371d}]{But passing implementation around is\ldots{}}
 \begin{center}
 \includegraphics[height=7cm]{images/cucumber.jpg}
 \end{center}
@@ -404,7 +444,7 @@ object Game extends App {
 Cucumbersome
 \end{frame}
 
-\begin{frame}[label={sec:orgc890088},fragile]{So implicits :(}
+\begin{frame}[label={sec:org7435474},fragile]{So implicits :(}
  \begin{minted}[]{scala}
 object Introducible {
   implicit val introducibleCockatrice: Introducible[Cockatrice] = /*...*/
@@ -424,7 +464,7 @@ object Game extends App {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:orge87d81c},fragile]{Summoning the summoner}
+\begin{frame}[label={sec:orgecca0e8},fragile]{Summoning the summoner}
  \begin{minted}[]{scala}
 trait Introducible[A] { /*...*/ }
 
@@ -446,7 +486,7 @@ object GameSummoner extends App {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:orgde00f87},fragile]{So with type classes}
+\begin{frame}[label={sec:org8d7b14e},fragile]{So with type classes}
  \begin{itemize}
 \item Abstraction works. Again, we are able to define generic \texttt{introduce} function.
 \item Composition works, just require two behaviours.
@@ -464,7 +504,7 @@ behaviour implementation separately.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org3fdc11e}]{So type classes}
+\begin{frame}[label={sec:orgd7e5996}]{So type classes}
 Type class is just a construct that supports ad hoc polymorphism. E.g. allows
 one to define polymorphic functions that can be applied to arguments of
 different types and behave differently based the type of the arguments.
@@ -481,9 +521,9 @@ In Scala this can be achieved in several ways:
 \end{frame}
 
 \section*{Semigroup}
-\label{sec:org3ac9575}
+\label{sec:org80e393a}
 
-\begin{frame}[label={sec:orgeb41d09}]{Semigroup}
+\begin{frame}[label={sec:orgec2e24e}]{Semigroup}
 A semigroup is an algebraic structure consisting of a set together with an
 associative binary operation.
 
@@ -501,7 +541,7 @@ $$\forall a, b, c \in S : (a \cdot b) \cdot c = a \cdot (b \cdot c)$$
  there is more than one operation for a set to form a semigroup.
 \end{frame}
 
-\begin{frame}[label={sec:orgda03762},fragile]{But it’s not that scary}
+\begin{frame}[label={sec:org7002ccb},fragile]{But it’s not that scary}
  \begin{columns}
 \begin{column}{0.5\columnwidth}
 \begin{minted}[]{scala}
@@ -532,7 +572,7 @@ package object typeclass {
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgc8690ce}]{Laws are important}
+\begin{frame}[label={sec:org30f3033}]{Laws are important}
 \begin{itemize}
 \item In most cases type classes should have some associated laws.
 \item Laws describe behaviour of the interface, what you can expect.
@@ -540,7 +580,7 @@ package object typeclass {
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgc2edce0},fragile]{Instance example}
+\begin{frame}[label={sec:orgf8c1a72},fragile]{Instance example}
  \begin{minted}[]{scala}
 package object implicits {
   implicit val stringSemigroup: Semigroup[String] = new Semigroup[String] {
@@ -550,7 +590,7 @@ package object implicits {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:org6e16e2c},fragile]{Checking laws - \sout{pen and paper} in comments}
+\begin{frame}[label={sec:org149cba3},fragile]{Checking laws - \sout{pen and paper} in comments}
  \begin{minted}[]{scala}
 package object implicits {
   implicit val stringSemigroup: Semigroup[String] = new Semigroup[String] {
@@ -569,13 +609,13 @@ combine(a, combine(b, c))
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:orgc276e31}]{You're programmer after all}
+\begin{frame}[label={sec:orge9a04af}]{You're programmer after all}
 \begin{center}
 \includegraphics[height=7cm]{images/you-re-programmer.jpg}
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org03e1c95},fragile]{Question on the interview: property based testing}
+\begin{frame}[label={sec:orgf9bb7f3},fragile]{Question on the interview: property based testing}
  \begin{minted}[]{scala}
 object SemigroupSpecification extends Properties("Semigroup") with SemigroupSpecificationSupport {
  include(semigroup[String](stringSemigroup))
@@ -598,7 +638,7 @@ trait SemigroupSpecificationSupport {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:orgdf832f5}]{More examples}
+\begin{frame}[label={sec:org6ccb4d6}]{More examples}
 \begin{itemize}
 \item Numbers with \(+\), \(*\), \(min\), \(max\)
 \item Booleans with conjunction, disjunction, implication etc.
@@ -607,7 +647,7 @@ trait SemigroupSpecificationSupport {
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org04c03f1},fragile]{Lets hack}
+\begin{frame}[label={sec:org8f8178a},fragile]{Lets hack}
  \begin{enumerate}
 \item Clone \texttt{git@github.com:d12frosted/wax.git}
 \item Add missing definitions in \texttt{wax.typeclass.semigroup}
@@ -616,9 +656,9 @@ trait SemigroupSpecificationSupport {
 \end{frame}
 
 \section*{Monoid}
-\label{sec:org8032507}
+\label{sec:org688eb4e}
 
-\begin{frame}[label={sec:orgb9f5880}]{Monoid}
+\begin{frame}[label={sec:orgf489957}]{Monoid}
 A monoid is an algebraic structure consisting of a set together with an
 associative binary operation and an identity element from that set.
 
@@ -638,7 +678,7 @@ $$\forall a \in S : e \cdot a = a \cdot e = a$$
 In other words, monoid is just a semigroup with identity element.
 \end{frame}
 
-\begin{frame}[label={sec:org61fc4bf},fragile]{Again, it's not that scary}
+\begin{frame}[label={sec:org077bd85},fragile]{Again, it's not that scary}
  \begin{minted}[]{scala}
 package object typeclass {
 
@@ -659,7 +699,7 @@ package object typeclass {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:org2ab047f},fragile]{Examples}
+\begin{frame}[label={sec:orgf106318},fragile]{Examples}
  \begin{itemize}
 \item \(\{\mathbb{N}_0, +\}\), where \(0\) is the identity element.
 \item \(\{\mathbb{N}, *\}\), where \(1\) is the identity element.
@@ -676,9 +716,9 @@ here):
 \end{frame}
 
 \section*{Transition to the practical part}
-\label{sec:org7e15353}
+\label{sec:org4f64b98}
 
-\begin{frame}[label={sec:org588bd94}]{The most important question}
+\begin{frame}[label={sec:org8ad43a7}]{The most important question}
 \begin{center}
 \includegraphics[height=7cm]{images/whyyy.png}
 \end{center}
@@ -687,9 +727,9 @@ Why did we learn this?
 \end{frame}
 
 \section*{Fibonacci}
-\label{sec:orgf20d8e4}
+\label{sec:org7296e3b}
 
-\begin{frame}[label={sec:org6f455f1}]{The Fibonacci numbers}
+\begin{frame}[label={sec:orgd19d790}]{The Fibonacci numbers}
 On the interview we ask people to write a function that returns the nth
 Fibonacci number.
 
@@ -700,7 +740,7 @@ Fibonacci number.
 \end{align*}
 \end{frame}
 
-\begin{frame}[label={sec:orga7ae3fc},fragile]{Solution}
+\begin{frame}[label={sec:orgad12118},fragile]{Solution}
  \begin{columns}
 \begin{column}[t]{0.5\columnwidth}
 \begin{block}{What we expect}
@@ -735,7 +775,7 @@ def fib(n: Int): Int = {
 
 As they say, truth is somewhere in the logarithm.
 \end{frame}
-\begin{frame}[label={sec:org3835dfa},fragile]{Two folds}
+\begin{frame}[label={sec:orgccc8410},fragile]{Two folds}
  \begin{itemize}
 \item \texttt{def foldl[A, B](xs: Seq[A])(z: B)(op: B => A => B): B}
 \begin{itemize}
@@ -754,7 +794,7 @@ change the direction of the \texttt{fold}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgdd7346a}]{Example}
+\begin{frame}[label={sec:org76346e4}]{Example}
 \begin{columns}
 \begin{column}[t]{0.5\columnwidth}
 \begin{block}{foldl}
@@ -774,7 +814,7 @@ change the direction of the \texttt{fold}
 \end{columns}
 \end{frame}
 
-\begin{frame}[label={sec:orgbb75f19},fragile]{What Monoid gives us}
+\begin{frame}[label={sec:org2b56e12},fragile]{What Monoid gives us}
  \begin{itemize}
 \item Combining function is symmetrical (\texttt{append : A -> A -> A}).
 \item Monoid provides identity element of type \texttt{A} (\texttt{empty}).
@@ -792,7 +832,7 @@ much as we want the functions.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org88dd2a3}]{Power in terms of Monoid}
+\begin{frame}[label={sec:orgbb3bfff}]{Power in terms of Monoid}
 \begin{itemize}
 \item In some cases all elements of the list are the same.
 \pause
@@ -813,7 +853,7 @@ much as we want the functions.
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:org86ec6a4}]{Power in terms of Monoid}
+\begin{frame}[label={sec:org4cab848}]{Power in terms of Monoid}
 \begin{center}
 \includegraphics[height=4cm]{.dot/fold-power-2.png}
 \end{center}
@@ -822,7 +862,7 @@ Evaluating \(a + a\) always yields the same result. So there is no point in
 repeating this calculation 4 times.
 \end{frame}
 
-\begin{frame}[label={sec:orgdc5e625}]{Power in terms of Monoid}
+\begin{frame}[label={sec:org1626ec3}]{Power in terms of Monoid}
 \begin{center}
 \includegraphics[height=4cm]{.dot/fold-power-3.png}
 \end{center}
@@ -832,7 +872,7 @@ operations out of 7. In general, this optimisation leads to the result in \(\log
 n\) operations.
 \end{frame}
 
-\begin{frame}[label={sec:orgac3b589},fragile]{Power in terms of Monoid}
+\begin{frame}[label={sec:org91077cd},fragile]{Power in terms of Monoid}
  All this means that we can define a function \texttt{power}:
 
 \begin{minted}[]{scala}
@@ -842,7 +882,7 @@ def power[A: Monoid](a: A, n: Int): A = {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:org3fcdc0e}]{Back to Fibonacci}
+\begin{frame}[label={sec:org4163051}]{Back to Fibonacci}
 Fibonacci number can be defined in a different way.
 
 \begin{equation*}
@@ -866,7 +906,7 @@ multiplication.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgd15cf5d},fragile]{Time for work}
+\begin{frame}[label={sec:org250c4b6},fragile]{Time for work}
  \begin{itemize}
 \item Open \texttt{wax.exercise.fibonacci} module.
 \item Task is to implement monoid for \texttt{Matrix2x2}.
@@ -876,7 +916,7 @@ matrix-based implementations.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org970da8a}]{Outcome}
+\begin{frame}[label={sec:org64def94}]{Outcome}
 \begin{itemize}
 \item Just think about it.
 \begin{itemize}
@@ -892,9 +932,9 @@ noticing it.
 \end{frame}
 
 \section*{Books}
-\label{sec:org6a07640}
+\label{sec:org504f9e8}
 
-\begin{frame}[label={sec:org3b983fb}]{Folds with Monoids}
+\begin{frame}[label={sec:orgf4e5b12}]{Folds with Monoids}
 \begin{itemize}
 \item We already know that Monoids give us an ability to place parentheses in any
 fashion.
@@ -909,7 +949,7 @@ gain performance.
 \end{center}
 \end{frame}
 
-\begin{frame}[label={sec:orga877565}]{Folds with Monoids}
+\begin{frame}[label={sec:orgc086469}]{Folds with Monoids}
 \begin{center}
 \includegraphics[height=4cm]{.dot/fold-parallel-2.png}
 \end{center}
@@ -918,7 +958,7 @@ Every expression on each level does not depend on other expressions from the
 same level, which means that we can evaluate them in parallel.
 \end{frame}
 
-\begin{frame}[label={sec:orgce7085a},fragile]{MapReduce}
+\begin{frame}[label={sec:orge61ba91},fragile]{MapReduce}
  \begin{itemize}
 \item Sometimes we have a collection of elements that don't form Monoid.
 \item But we can transform (going ahead, \texttt{map}) them into something that is a Monoid
@@ -930,7 +970,7 @@ same level, which means that we can evaluate them in parallel.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgd680c90},fragile]{Getting the top used words from set of books}
+\begin{frame}[label={sec:orgba285ed},fragile]{Getting the top used words from set of books}
  \begin{itemize}
 \item Open \texttt{wax.exercise.mapreduce} module.
 \item Task is to
@@ -951,9 +991,9 @@ to test your \texttt{job}.
 \end{frame}
 
 \section*{Logger}
-\label{sec:org0387304}
+\label{sec:org731e3ea}
 
-\begin{frame}[label={sec:org4ef1811},fragile]{Things to note}
+\begin{frame}[label={sec:orga3ea19f},fragile]{Things to note}
  \begin{itemize}
 \item Functional programming is not about \texttt{Monads} and \texttt{IO}.
 \begin{itemize}
@@ -970,7 +1010,7 @@ the committee that \texttt{IO} is missing.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgd464011},fragile]{Let's start with some wrappers (pun intended)}
+\begin{frame}[label={sec:org7f0fde4},fragile]{Let's start with some wrappers (pun intended)}
  \begin{itemize}
 \item Suppose that we have some case class \texttt{Wrapper[A](value: A)}
 \item Can it be a monoid?
@@ -994,7 +1034,7 @@ object Wrapper {
 \end{minted}
 \end{frame}
 
-\begin{frame}[label={sec:org129ab84},fragile]{Wrappers of monoids are monoids}
+\begin{frame}[label={sec:orgccc4f44},fragile]{Wrappers of monoids are monoids}
  \begin{itemize}
 \item So IO can also be a monoid
 \begin{minted}[]{scala}
@@ -1009,7 +1049,7 @@ def functionMonoid[A, B: Monoid]: Monoid[Function[A, B]] = ???
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org61fbb94},fragile]{Logger}
+\begin{frame}[label={sec:org06d499d},fragile]{Logger}
  \begin{itemize}
 \item \texttt{Logger} is basically a function from \texttt{String} to \texttt{IO[Unit]}.
 \begin{minted}[]{scala}
@@ -1026,7 +1066,7 @@ type Logger = String => IO[Unit]
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org62737a8},fragile]{Logger}
+\begin{frame}[label={sec:org78fc6d0},fragile]{Logger}
  \begin{itemize}
 \item Open \texttt{wax.exercise.logging} module
 \item Task is to implement monoid for \texttt{IO[Logger]}
@@ -1035,9 +1075,9 @@ type Logger = String => IO[Unit]
 \end{frame}
 
 \section*{Recap}
-\label{sec:org6e7d391}
+\label{sec:org02e1b75}
 
-\begin{frame}[label={sec:orgf774200},fragile]{Recap (recup?)}
+\begin{frame}[label={sec:orgab30d1b},fragile]{Recap (recup?)}
  \begin{itemize}
 \item Semigroup is something with means of combining these somethings.
 \item Monoid is semigroup that also has neutral element that doesn't affect a combination.
@@ -1052,11 +1092,11 @@ something else also begins to form a monoid.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:orgf6f5737}]{Questions?}
+\begin{frame}[label={sec:org1d65926}]{Questions?}
 \centerline{\huge $\epsilon \rho \omega \tau \eta \sigma \eta$?}
 \end{frame}
 
-\begin{frame}[label={sec:orgcdef3c1}]{Thank you very much!}
+\begin{frame}[label={sec:org5e03e3d}]{Thank you very much!}
 \centerline{\huge We hope you enjoyed this session.}
 \end{frame}
 \end{document}

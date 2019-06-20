@@ -134,6 +134,7 @@ why.
   #+end_src
 
 - But it would so nice to avoid all this =_.introduce()=.
+  - And you know, DRY leads to disasters!
 
 ** Introducing abstractions
 
@@ -274,9 +275,49 @@ You know where it’s going to, right?
 
 ** What if...
 
+*** Trait                                                        :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:END:
+
 We divide data and behaviour
 
 #+BEAMER: \pause
+
+**** Trait - before                                             :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.42
+:END:
+
+#+begin_src scala
+  trait Introducible {
+    def introduce(): String
+  }
+#+end_src
+
+**** Trait - middle                                             :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_col:             0.05
+:BEAMER_opt:             [t]
+:END:
+
+#+begin_export latex
+\vspace*{0px}
+#+end_export
+
+#+begin_export latex
+{\large \Rightarrow}
+#+end_export
+
+**** Trait - now                                                :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.55
+:END:
 
 #+begin_src scala
   trait Introducible[A] {
@@ -287,7 +328,16 @@ We divide data and behaviour
 - =A= is data
 - =Introducible[A]= - behaviour
 
+*** Trait usage                                                  :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:END:
+
 #+BEAMER: \pause
+
+#+begin_export latex
+\vspace*{1cm}
+#+end_export
 
 So we can pass separately two values:
 
@@ -295,6 +345,40 @@ So we can pass separately two values:
 - implementation of behaviour
 
 #+BEAMER: \pause
+
+**** Trait usage - now                                          :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.42
+:END:
+
+#+begin_src scala
+  def introduce(creatute: Introducible): Unit =
+    println(creatute.introduce())
+#+end_src
+
+**** Trait - middle                                             :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_col:             0.05
+:BEAMER_opt:             [t]
+:END:
+
+#+begin_export latex
+\vspace*{0px}
+#+end_export
+
+#+begin_export latex
+{\large \Rightarrow}
+#+end_export
+
+**** Trait usage - before                                       :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.55
+:END:
 
 #+begin_src scala
   def introduce[A](creature: A)(impl: Introducible[A]): Unit =
