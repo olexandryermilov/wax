@@ -42,7 +42,6 @@ why.
 ** Whys
 
 - Functional programming roams (a bit).
-  - Tagless infra grows and spreads.
   - More projects are using functional programming techniques and idioms (at
     different scale).
 - Some people are still confused by all these functional talks (~OptionT~, type
@@ -253,7 +252,7 @@ why.
 ** With =trait= + wrappers approach
 
 - Abstraction works. We are able to define generic =introduce= function.
-- Composition works thanks to =with= keyword.
+- Composition works thanks to =with= keyword. But it's not commutative.
   #+begin_src scala
     def surpriseAttack[A <: Introducible with CanAttack](creature: A): Unit
   #+end_src
@@ -496,7 +495,7 @@ Cucumbersome
 
 ** So type classes
 
-Type class is just a construct that supports ad hoc polymorphism. E.g. allows
+Type class is just a construct that supports *ad hoc polymorphism*. E.g. allows
 one to define polymorphic functions that can be applied to arguments of
 different types and behave differently based the type of the arguments.
 
@@ -504,8 +503,7 @@ In other words, function overloading.
 
 In Scala this can be achieved in several ways:
 
-- Class inheritance.
-- Traits.
+- Class inheritance or traits.
 - Type classes (traits + implicits).
 
 * Semigroup
@@ -527,6 +525,11 @@ $$\forall a, b, c \in S : (a \cdot b) \cdot c = a \cdot (b \cdot c)$$
 *Important*. Semigroup is a pair of the set and the operation. You can’t say
  that string is a semigroup, you must provide an operation. And in many cases
  there is more than one operation for a set to form a semigroup.
+
+#+BEAMER: \pause
+
+*Note*. We usually omit the requirement that operation must be closed, e.g.
+$\forall a, b \in S : a \cdot b \in S$.
 
 ** But it’s not that scary
 
@@ -574,7 +577,7 @@ $$\forall a, b, c \in S : (a \cdot b) \cdot c = a \cdot (b \cdot c)$$
 #+begin_src scala
   package object implicits {
     implicit val stringSemigroup: Semigroup[String] = new Semigroup[String] {
-      override def combine(x: String, y: String): String = x + y
+      override def append(x: String, y: String): String = x + y
     }
   }
 #+end_src
@@ -584,17 +587,17 @@ $$\forall a, b, c \in S : (a \cdot b) \cdot c = a \cdot (b \cdot c)$$
 #+begin_src scala
   package object implicits {
     implicit val stringSemigroup: Semigroup[String] = new Semigroup[String] {
-      override def combine(x: String, y: String): String = x + y
+      override def append(x: String, y: String): String = x + y
     }
   }
 
   /*
-  combine(a, combine(b, c))
-    = combine(a, b + c)
+  append(a, append(b, c))
+    = append(a, b + c)
     = a + (b + c)
     = (associativity of +)
-    = (a + b) + c = combine(a + b, c)
-    = combine(combine(a, b), c)
+    = (a + b) + c = append(a + b, c)
+    = append(append(a, b), c)
   */
 #+end_src
 
@@ -615,7 +618,7 @@ $$\forall a, b, c \in S : (a \cdot b) \cdot c = a \cdot (b \cdot c)$$
      new Properties(s"Semigroup[${tag.toString}]") {
        // $\forall a, b, c \in A: (a \cdot b) \cdot c = a \cdot (b \cdot c)$
        property("associativity") = forAll { (a: A, b: A, c: A) =>
-         sg.combine(sg.combine(a, b), c) =? sg.combine(a, sg.combine(b, c))
+         sg.combine(sg.append(a, b), c) =? sg.append(a, sg.append(b, c))
        }
      }
   }
@@ -632,6 +635,14 @@ $$\forall a, b, c \in S : (a \cdot b) \cdot c = a \cdot (b \cdot c)$$
 - Booleans with conjunction, disjunction, implication etc.
 - Square nonnegative matrices with multiplication.
 - Lists, Strings, Maps etc. with concatenation/union
+
+** Contra-examples
+
+- $\{\mathbb{N}, /\}$ is not a Semigroup, because $/$ is not associative.
+- The same goes for $\{\mathbb{N}, a^b \}$.
+- $\{\mathbb{N}, -\}$ is not a Semigroup, because $-$ is not a closed operation,
+  e.g. $\exists a, b \in \mathbb{N}: a - b \notin \mathbb{N}$,
+  for example $10 - 15 = -5 \notin \mathbb{N}$.
 
 ** Lets hack
 
