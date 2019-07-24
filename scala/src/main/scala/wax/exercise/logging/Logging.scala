@@ -10,7 +10,11 @@ object Logging extends App {
 
   type Logger = String => IO[Unit]
 
-  implicit val monoidIoLogger: Monoid[IO[Logger]] = ??? //Your code here
+  implicit val monoidUnit: Monoid[Unit] = ???
+
+  implicit def monoidFunction[A, B : Monoid]: Monoid[A => B] = ???
+
+  implicit def monoidIo[A: Monoid]: Monoid[IO[A]] = IO.ioMonoid
 
   def consoleLogger: IO[Logger] = IO { input =>
     IO {
