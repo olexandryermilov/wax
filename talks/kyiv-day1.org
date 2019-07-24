@@ -1079,19 +1079,14 @@ semigroup.
 
 ** Monoid
 
-A monoid is an algebraic structure consisting of a set together with an
-associative binary operation and an identity element from that set.
-
-#+BEAMER: \pause
-
-A monoid is a set $S$ with binary operation $\cdot : S \times S \rightarrow
-S$ that satisfies associativity property:
-
+A monoid is a set $S$ with binary closed operation $\cdot : S \times S
+\rightarrow S$ that satisfies associativity property:
 $$\forall a, b, c \in S : (a \cdot b) \cdot c = a \cdot (b \cdot c)$$
 
 and identity element $e$ that satisfies
-
 $$\forall a \in S : e \cdot a = a \cdot e = a$$
+
+Operation is closed when $\forall a, b \in S : a \cdot b \in S$.
 
 #+BEAMER: \pause
 
@@ -1124,6 +1119,8 @@ In other words, monoid is just a semigroup with identity element.
 - $\{\mathbb{N}, *\}$, where $1$ is the identity element.
 - Boolean with XOR, XNOR, OR, AND.
 - String with concatenation (empty string is identity element).
+
+#+BEAMER: \pause
 
 But not every Semigroup forms a Monoid (we are not talking about free monoids
 here):
