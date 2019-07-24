@@ -1772,24 +1772,32 @@ same level, which means that we can evaluate them in parallel.
 ** MapReduce
 
 - Sometimes we have a collection of elements that don't form Monoid.
-- But we can transform (going ahead, =map=) them into something that is a Monoid
-  - Again, going ahead, this also can be done in parallel.
+#+BEAMER: \pause
+- But we can transform (e.g. =map=) them into something that is a Monoid
+#+BEAMER: \pause
 - There is a strange accent, where people pronounce 'fold' as 'reduce'.
+#+BEAMER: \pause
 - This is how we get the =mapReduce=.
+#+BEAMER: \pause
+- Just think about it, =mapReduce= is possible thanks to =Monoid= and its
+  /laws/.
 
-** Getting the top used words from set of books
+** Coding time
 
-- Open =wax.exercise.mapreduce= module.
-- Task is to
-  - Implement monoid for =MapReduce.Result[A]=.
-  - Implement the =job= function. Let's find the most used word among all the
-    books that is also longer than 4 symbols.
-- Books are located in the =resources= directory.
-- Use =allBooks= to load all available books or =authorBooks= to load all books
-  of specific author.
-  - =authorBooks("boris")= - you can use this author with small amount of text
-    to test your =job=.
-- Compare benchmark results.
+- <1-> Our goal is to find 10 top used words among multiple books.
+- <2-> Open =wax.exercise.mapreduce.MapReduce= file.
+- <3-> =MapReduce= object implements =mapReduce= function (two variants - par and
+  seq).
+- <4-> =Main= object runs (not yet defined) =job= and profiles it (par vs seq).
+- <5-> =Result[Int]= is a map with words and their usage counter.
+- <6-> Your goal is to:
+  1. Implement monoid instance for =MapReduce.Result[A]=.
+  2. Implement the =job= function to find the most used word.
+- <7-> Use helpers from =FileUtils=:
+  - =readTokens= to get the list of words from the file.
+  - =authorBooks= to get the list of books (files) by author (e.g.
+    =authorBooks("boris")=).
+  - =allBooks= to get the list of all book among all available authors.
 
 * Logger
 
