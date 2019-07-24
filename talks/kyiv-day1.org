@@ -1,4 +1,4 @@
-#+TITLE: Functional Workshop: Part 1
+#+TITLE: Functional Forkshop: Part 1
 #+AUTHOR: Boris Buliga, Valentyn Vakatsiienko
 #+EMAIL: borysb@wix.com
 #+STARTUP: beamer
@@ -9,6 +9,8 @@
 #+LATEX_HEADER: \setminted{mathescape=true}
 #+LATEX_HEADER: \setbeamertemplate{itemize items}[circle]
 #+LATEX_HEADER: \setbeamertemplate{enumerate items}[default]
+#+LATEX_HEADER: \setlength{\parskip}{\baselineskip}%
+#+LATEX_HEADER: \setlength{\parindent}{0pt}%
 #+OPTIONS: H:2 toc:nil num:nil
 
 * Intro
@@ -28,16 +30,17 @@ Developer at Payments by Wix team. Jumps between two extremes - Emacs Lisp and
 Haskell. Wants to force people around to use both languages, but can't explain
 why.
 
-** About the Workshop
+** About the Forkshop
 
-- Basic workshop is split into 3 parts:
+- Basic forkshop is split into several parts:
   1. Type classes, Semigroups and Monoids.
   2. Functors and Applicative Functors.
   3. Monads.
-- Theory and practice. You'll have to write code, so make sure your laptop is
-  ready for this.
-- Main target audience is Scala developers.
-- Workshop is duplicated in Haskell.
+  4. Readers.
+  5. Comonads.
+- Theory and practice. Make sure that you are ready to write the code.
+- Target audience is Scala developers learning FP.
+- Forkshop is duplicated in Haskell.
 
 ** Whys
 
@@ -49,21 +52,34 @@ why.
 - Having a common language and understanding of some fundamental stuff is
   important.
 
-** Plan
+* Today
+
+** Agenda
 
 - Type classes
-- Property based testing (just a tip of)
 - Semigroups
 - Monoids
 - 3 interesting™ tasks
 
-* Typeclasses
+* Type classes
 
-** Fulfilling a dream
+** Type classes
 
-- Imagine that we are game developers (yay!).
-- Imagine that we are writing a game (double yay!).
-- And every game needs a hero, who can properly introduce itself.
+- Problem:
+  - Application design
+  - Data and logic separation
+- Plan:
+  - Write a simple application
+  - Evolve it
+  - Check different approaches
+  - Introduce type classes
+
+** Application definition
+
+- We are writing a game.
+- With multiple different creatures.
+- Everyone introduces themselves.
+- Introduction consists of animations and text showing in a bubble.
 
 ** Meet the hero
 
@@ -75,7 +91,9 @@ why.
   object Game extends App {
     val player = Hero("Valik", "Black Mage", 20)
 
-    println(player.introduce())
+    someRealShitSounds()
+    drawBubble(player.introduce())
+    someRealShitAnimations()
   }
 
   // Hi! My name is Valik. I am 20 level Black Mage.
@@ -84,10 +102,6 @@ why.
 ** Every hero needs a monster
 
 #+begin_src scala
-  case class Hero(name: String, job: String, level: Int) {
-    def introduce(): String = s"Hi! My name is $name. I am $level level $job."
-  }
-
   case class Orc(name: String, level: Int) {
     def introduce(): String =
       s"Lok-tar ogar! Me be $name. Me be strong. Level $level strong!"
@@ -96,15 +110,37 @@ why.
   case class Ooze(level: Int) {
     def introduce(): String = 1.to(level).map(_=>"brlup").mkString("-")
   }
+#+end_src
 
+** Game
+
+*** Code                                                         :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.46
+:BEAMER_env:             column
+:END:
+
+#+begin_src scala
   object Game extends App {
     val player = Hero("Valik", "Black Mage", 20)
     val orc = Orc("Garrosh", 105)
     val ooze = Ooze(2)
 
-    println(player.introduce())
-    println(orc.introduce())
-    println(ooze.introduce())
+    // Introduce player
+    someRealShitSounds()
+    drawBubble(player.introduce())
+    someRealShitAnimations()
+
+    // Introduce orc
+    someRealShitSounds()
+    drawBubble(orc.introduce())
+    someRealShitAnimations()
+
+    // Introduce ooze
+    someRealShitSounds()
+    drawBubble(ooze.introduce())
+    someRealShitAnimations()
   }
 
   // Hi! My name is Valik. I am 20 level Black Mage.
@@ -112,72 +148,253 @@ why.
   // brlup-brlup
 #+end_src
 
-** Everyone is polite
+#+BEAMER: \pause
 
-- In our world everyone is polite. Even ooze, brlup-blup!
-- Rendering process of greetings is a hard process and boils down to the string
-  manipulation.
-- So we decided to avoid code repetition and write a function that does just that.
+*** Problems                                                     :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.46
+:BEAMER_env:             column
+:END:
+
+#+begin_export latex
+\vspace*{0px}
+#+end_export
+
+Issues with this code:
+
+1. Repetition
+2. Noise
+3. Refactoring (all these ~introduce~ are not related to each other).
+
+** Be DRY, leap for disaster
+
+*** Old code                                                     :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.46
+:BEAMER_env:             column
+:END:
+
+#+begin_src scala
+  object Game extends App {
+    val player = Hero("Valik", "Black Mage", 20)
+    val orc = Orc("Garrosh", 105)
+    val ooze = Ooze(2)
+
+    // Introduce player
+    someRealShitSounds()
+    drawBubble(player.introduce())
+    someRealShitAnimations()
+
+    // Introduce orc
+    someRealShitSounds()
+    drawBubble(orc.introduce())
+    someRealShitAnimations()
+
+    // Introduce ooze
+    someRealShitSounds()
+    drawBubble(ooze.introduce())
+    someRealShitAnimations()
+  }
+#+end_src
+
+#+BEAMER: \pause
+
+*** New code                                                     :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.46
+:BEAMER_env:             column
+:END:
 
   #+begin_src scala
-    object Game extends App {
-      def introduce(phrase: String): Unit = {
-        // some real shit animations
-        println(phrase)
-        // some real shit animations
-      }
-      introduce(hero.introduce())
-      introduce(orc.introduce())
-      introduce(ooze.introduce())
+    def introduce(phrase: String): Unit = {
+      someRealShitSounds()
+      drawBubble(phrase)
+      someRealShitAnimations()
     }
   #+end_src
 
-- But it would so nice to avoid all this =_.introduce()=.
-  - And you know, DRY leads to disasters!
+#+BEAMER: \pause
+
+#+begin_src scala
+  object Game extends App {
+    val player = Hero("Valik", "Black Mage", 20)
+    val orc = Orc("Garrosh", 105)
+    val ooze = Ooze(2)
+
+    introduce(player.introduce())
+    introduce(orc.introduce())
+    introduce(ooze.introduce())
+  }
+#+end_src
+
+#+BEAMER: \pause
+
+Cool, but can we ~introduce(player)~?
 
 ** Introducing abstractions
+
+*** Old code                                                     :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:BEAMER_env:             column
+:END:
+
+#+begin_src scala
+  //
+
+
+
+  case class Hero(...) {
+    def introduce(): String = s"..."
+  }
+
+  case class Orc(...) {
+    def introduce(): String = s"..."
+  }
+
+  case class Ooze(...) {
+    def introduce(): String = s"..."
+  }
+#+end_src
+
+#+BEAMER: \pause
+
+*** New code                                                     :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:BEAMER_env:             column
+:END:
 
 #+begin_src scala
   trait Introducible {
     def introduce(): String
   }
 
-  case class Hero(name: String, job: String, level: Int) extends Introducible {
-    override def introduce(): String = s"Hi! My name is $name. I am $level level $job."
+  case class Hero(...) extends Introducible {
+    override def introduce(): String = s"..."
   }
 
-  case class Orc(name: String, level: Int) extends Introducible {
-    override def introduce(): String =
-      s"Lok-tar ogar! Me be $name. Me be strong. Level $level strong!"
+  case class Orc(...) extends Introducible {
+    override def introduce(): String = s"..."
   }
 
-  case class Ooze(level: Int) extends Introducible {
-    override def introduce(): String = 1.to(level).map(_=>"brlup").mkString("-")
+  case class Ooze(...) extends Introducible {
+    override def introduce(): String = s"..."
   }
 #+end_src
 
-** Using the =trait=
+** Game with =trait=
+
+*** Old code                                                     :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:BEAMER_env:             column
+:END:
 
 #+begin_src scala
-  object Game extends App {
-    val player = Hero("Valik", "Black Mage", 20)
-    val orc = Orc("Garrosh", 105)
-    val ooze = Ooze(2)
+  def introduce(phrase: String): Unit = {
+    someRealShitSounds()
+    drawBubble(phrase)
+    someRealShitAnimations()
+  }
 
-    def introduce(creatute: Introducible): Unit = {
-      // some real shit animations
-      println(creatute.introduce())
-      // some real shit animations
-    }
+  object Game extends App {
+    /* ... */
+
+    introduce(player.introduce())
+    introduce(orc.introduce())
+    introduce(ooze.introduce())
+  }
+#+end_src
+
+#+BEAMER: \pause
+
+*** New code                                                     :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:BEAMER_env:             column
+:END:
+
+#+begin_src scala
+  def introduce(creature: Introducible): Unit = {
+    someRealShitSounds()
+    drawBubble(creature.introduce())
+    someRealShitAnimations()
+  }
+
+  object Game extends App {
+    /* ... */
 
     introduce(player)
     introduce(orc)
     introduce(ooze)
   }
+#+end_src
 
-  // Hi! My name is Valik. I am 20 level Black Mage.
-  // Lok-tar ogar! Me be Garrosh. Me be strong. Level 105 strong!
-  // brlup-brlup
+** Game with trait
+
+*** Outcome                                                      :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_env:             column
+:END:
+
+- No more ~introduce(_.introduce())~.
+- We are adaptive. Less code needs to be changed if we need something new in the
+  ~introduce~ function (e.g. sound name) - just add new 'method' to the trait.
+- Refactoring becomes easier.
+
+*** Old code                                                     :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:BEAMER_env:             column
+:END:
+
+#+begin_src scala
+  def introduce(phrase: String): Unit = {
+    someRealShitSounds()
+    drawBubble(phrase)
+    someRealShitAnimations()
+  }
+
+  object Game extends App {
+    /* ... */
+
+    introduce(player.introduce())
+    introduce(orc.introduce())
+    introduce(ooze.introduce())
+  }
+#+end_src
+
+*** New code                                                     :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:BEAMER_env:             column
+:END:
+
+#+begin_src scala
+  def introduce(creature: Introducible): Unit = {
+    someRealShitSounds()
+    drawBubble(creature.introduce())
+    someRealShitAnimations()
+  }
+
+  object Game extends App {
+    /* ... */
+
+    introduce(player)
+    introduce(orc)
+    introduce(ooze)
+  }
 #+end_src
 
 ** Here comes the cockatrice
@@ -185,10 +402,10 @@ why.
 #+begin_src scala
   import io.proprietary.monsters.cockatrice._
 
-  /*...*/
+  /* ... */
 
   object Game extends App {
-    /*...*/
+    /* ... */
 
     val cockatrice = Cockatrice(level = 666, element = Element.Fire)
 
@@ -217,7 +434,7 @@ why.
 #+begin_src scala
   import io.proprietary.monsters.cockatrice._
 
-  /*...*/
+  /* ... */
 
   case class CockatriceWrapper(cockatrice: Cockatrice) extends Introducible {
     override def introduce(): String = {
@@ -227,284 +444,451 @@ why.
   }
 
   object Game extends App {
-    /*...*/
+    /* ... */
 
     val cockatrice = Cockatrice(level = 666, element = Element.Fire)
     val cockatriceW = CockatriceWrapper(cockatrice)
 
     introduce(cockatriceW)
 
-    /*...*/
+    /* ... */
   }
 
 
   // Haha. I am a fire cockatrice of level 666.
 #+end_src
 
-** Properties we care about
+** Calm down and reevaluate our goal
 
-- Abstraction - we care about what you can do and not what you are.
-- Composition - we want a way to express that we want something that can do
-  several things at once.
-- Extensibility - we want to extend even types that we don’t own. Built-in types
-  as well.
+- Abstraction - caring about what you can do and not what you are. E.g.
+  separation of data and behaviour.
+#+BEAMER: \pause
+- Composition - having a way to express something that can do several things at
+  once.
+#+BEAMER: \pause
+- Extensibility - extending all kind of types:
+  - types we own
+  - types we don't own
+  - even built-in types
 
-** With =trait= + wrappers approach
+** =trait= + wrapper: abstraction
 
-- Abstraction works. We are able to define generic =introduce= function.
-- Composition works thanks to =with= keyword. But it's not commutative.
-  #+begin_src scala
-    def surpriseAttack[A <: Introducible with CanAttack](creature: A): Unit
-  #+end_src
-- Extensibility is possible with some caveats:
-  - No consistency - we wrap only types we don't own.
-  - Nightmare to maintain when you need several behaviours. So you wrap the
-    wrapper.
-  - Bad usability - you can’t interchangeably use wrapper and the underlying
-    value.
+Abstraction holds. Proof is the ~introduce~ function itself.
+
+#+begin_src scala
+  def introduce(creature: Introducible): Unit = {
+    someRealShitSounds()
+    drawBubble(creature.introduce())
+    someRealShitAnimations()
+  }
+#+end_src
+
+** =trait= + wrapper: composition
+
+Composition holds thanks to =with= keyword.
 
 #+BEAMER: \pause
 
-You know where it’s going to, right?
+#+begin_src scala
+  trait CanAttack {
+    def attack(): Unit
+  }
 
-** F[_]
+  def patheticAttack[A <: Introducible with CanAttack](creature: A): Unit
+#+end_src
+
+#+BEAMER: \pause
+
+=with= keyword is not commutative
+
+~Introducible with CanAttack~ != ~CanAttack with Introducible~.
+
+** =trait= + wrapper: extensibility
+
+Extensibility holds, but with several caveats:
+
+1. No consistency - we wrap only types we don't own.
+2. Wrappers don't compose very well. You might even wrap your wrappers.
+3. Bad usability - you can’t interchangeably use wrapper and the underlying
+   value.
+
+** You know where it’s going to, right?
+
+#+BEAMER: \pause
 
 #+ATTR_LATEX: :height 7cm
 [[file:images/f_.jpg]]
 
-** What if...
+** Dividing data and behaviour
 
-*** Trait                                                        :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:END:
-
-We divide data and behaviour
-
-#+BEAMER: \pause
-
-**** Trait - before                                             :B_column:
+*** Trait - before                                               :B_column:
 :PROPERTIES:
 :BEAMER_env:             column
 :BEAMER_opt:             [t]
-:BEAMER_col:             0.42
+:BEAMER_col:             0.5
 :END:
 
 #+begin_src scala
   trait Introducible {
     def introduce(): String
   }
+
+  def introduce(creatute: Introducible): Unit = {
+
+    /* ... */
+    drawBubble(creatute.introduce())
+    /* ... */
+  }
 #+end_src
 
-**** Trait - middle                                             :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_col:             0.05
-:BEAMER_opt:             [t]
-:END:
+#+BEAMER: \pause
 
-#+begin_export latex
-\vspace*{0px}
-#+end_export
-
-#+begin_export latex
-{\large \Rightarrow}
-#+end_export
-
-**** Trait - now                                                :B_column:
+*** Trait - now                                                  :B_column:
 :PROPERTIES:
 :BEAMER_env:             column
 :BEAMER_opt:             [t]
-:BEAMER_col:             0.55
+:BEAMER_col:             0.5
 :END:
 
 #+begin_src scala
   trait Introducible[A] {
     def introduce(a: A): String
   }
+
+  def introduce[A](creature: A,
+                   impl: Introducible[A]): Unit = {
+    /* ... */
+    drawBubble(impl.introduce(creature))
+    /* ... */
+  }
 #+end_src
 
-- =A= is data
-- =Introducible[A]= - behaviour
-
-*** Trait usage                                                  :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:END:
-
-#+BEAMER: \pause
-
-#+begin_export latex
-\vspace*{1cm}
-#+end_export
-
-So we can pass separately two values:
-
-- data itself
-- implementation of behaviour
-
-#+BEAMER: \pause
-
-**** Trait usage - now                                          :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.42
-:END:
+** Usage
 
 #+begin_src scala
-  def introduce(creatute: Introducible): Unit =
-    println(creatute.introduce())
-#+end_src
-
-**** Trait - middle                                             :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_col:             0.05
-:BEAMER_opt:             [t]
-:END:
-
-#+begin_export latex
-\vspace*{0px}
-#+end_export
-
-#+begin_export latex
-{\large \Rightarrow}
-#+end_export
-
-**** Trait usage - before                                       :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.55
-:END:
-
-#+begin_src scala
-  def introduce[A](creature: A)(impl: Introducible[A]): Unit =
-    println(impl.introduce(creature))
-#+end_src
-
-** We treat our own types
-
-#+begin_src scala
+  // Define new trait
   trait Introducible[A] {
     def introduce(a: A): String
   }
+#+end_src
 
+#+BEAMER: \pause
+
+#+begin_src scala
+  // Remove behaviour from data
   case class Hero(name: String, job: String, level: Int)
+#+end_src
 
+#+BEAMER: \pause
+
+#+begin_src scala
+  // Implement behaviour as a value in companion object
   object Hero {
-    val introducibleHero: Introducible[Hero] = (a: Hero) => {
-      import a._
-      s"Hi! My name is $name. I am $level level $job."
+    val introducibleHero: Introducible[Hero] = new Introducible[Hero] {
+      override def introduce(a: Hero): String =
+        s"..."
     }
   }
+#+end_src
 
+#+BEAMER: \pause
+
+#+begin_src scala
+  // Pass data and behaviour separately
   object Game extends App {
-    def introduce[A](creature: A)(ev: Introducible[A]): Unit =
-      println(ev.introduce(creature))
-
-    introduce(Hero(name = "Valik", job = "Black Mage", level = 20))(Hero.introducibleHero)
+    /* ... */
+    introduce(
+      creature = hero,
+      impl = Hero.introducibleHero
+    )
   }
 #+end_src
 
-** And external types in the same way
+** External types? Pff...
 
 #+begin_src scala
   import io.proprietary.monsters.cockatrice._
 
-  trait Introducible[A] {
-    def introduce(a: A): String
-  }
-
-  object Introducible {
-    val introducibleCockatrice: Introducible[Cockatrice] = (a: Cockatrice) => {
-      s"Haha. I am a ${a.element.shortName} cockatrice of level ${a.level}."
+  // Implement behaviour as a value in companion object
+  object CockatriceInstances {
+    val introducibleCockatrice: Introducible[Cockatrice] = new Introducible[Cockatrice] {
+      override def introduce(a: Cockatrice): String =
+        s"..."
     }
   }
+#+end_src
 
+#+BEAMER: \pause
+
+#+begin_src scala
+  // Pass data and behaviour separately
   object Game extends App {
-    def introduce[A](creature: A)(ev: Introducible[A]): Unit = println(ev.introduce(creature))
-
-    introduce(Cockatrice(level = 666, element = Element.Fire))(Introducible.introducibleCockatrice)
+    /* ... */
+    introduce(
+      creature = cockatrice,
+      impl = CockatriceInstances.introducibleCockatrice
+    )
   }
 #+end_src
 
 ** But passing implementation around is...
 
-#+ATTR_LATEX: :height 7cm
+#+ATTR_LATEX: :height 5cm
 [[file:images/cucumber.jpg]]
 
 Cucumbersome
 
 ** So implicits :(
 
+*** Before                                                       :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
 #+begin_src scala
-  object Introducible {
-    implicit val introducibleCockatrice: Introducible[Cockatrice] = /*...*/
+  object Hero {
+    val introducibleHero:
+        Introducible[Hero] = ???
   }
 
-  object Hero {
-    implicit val introducibleHero: Introducible[Hero] = /*...*/
+  object CockatriceInstances {
+    val introducibleCockatrice:
+        Introducible[Cockatrice] = ???
+  }
+
+  def introduce[A](creature: A,
+                   impl: Introducible[A]): Unit = {
+    /* ... */
+    drawBubble(impl.introduce(creature))
+    /* ... */
   }
 
   object Game extends App {
-    def introduce[A](creature: A)(implicit ev: Introducible[A]): Unit =
-      println(ev.introduce(creature))
+    /* ... */
+    introduce(hero, introducibleHero)
+    introduce(cockatrice, introducibleCockatrice)
+  }
+#+end_src
 
-    introduce(Hero(name = "Valik", job = "Black Mage", level = 20))
-    introduce(Cockatrice(level = 666, element = Element.Fire))
+#+BEAMER: \pause
+
+*** After                                                        :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+#+begin_src scala
+  object Hero {
+    implicit val introducibleHero:
+        Introducible[Hero] = ???
+  }
+
+  object CockatriceInstances {
+    implicit val introducibleCockatrice:
+        Introducible[Cockatrice] = ???
+  }
+
+  def introduce[A](creature: A)
+               (implicit impl: Introducible[A]): Unit = {
+    /* ... */
+    drawBubble(impl.introduce(creature))
+    /* ... */
+  }
+
+  object Game extends App {
+    /* ... */
+    introduce(hero)
+    introduce(cockatrice)
   }
 #+end_src
 
 ** Summoning the summoner
 
+*** Before                                                       :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
 #+begin_src scala
-  trait Introducible[A] { /*...*/ }
-
-  object Introducible {
-    def apply[A: Introducible]: Introducible[A] = implicitly[Introducible[A]]
-
-    /*...*/
+  trait Introducible[A] {
+    def introduce(a: A): String
   }
 
-  /*...*/
 
-  object GameSummoner extends App {
-    def introduce[A: Introducible](creature: A): Unit =
-      println(Introducible[A].introduce(creature))
 
-    introduce(Hero(name = "Valik", job = "Black Mage", level = 20))
-    introduce(Cockatrice(level = 666, element = Element.Fire))
+
+
+
+  def introduce[A](creature: A)
+               (implicit impl: Introducible[A]): Unit = {
+    /* ... */
+    drawBubble(impl.introduce(creature))
+    /* ... */
   }
 #+end_src
 
-** So with type classes
+#+BEAMER: \pause
 
-- Abstraction works. Again, we are able to define generic =introduce= function.
-- Composition works, just require two behaviours.
-  #+begin_src scala
-    object Game {
-      def surpriseAttack[A : Introducible : CanAttack](creatute: A): Unit
-    }
-  #+end_src
-- Extensibility achieved and maintained consistency and usability.
-  - Consistent - we treat our own types the same way we types we don't own.
-  - Usability - no wrappers, no interchangeably problem. You pass data and
-    behaviour implementation separately.
+*** After                                                        :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
 
-** So type classes
+#+begin_src scala
+  trait Introducible[A] {
+    def introduce(a: A): String
+  }
 
-Type class is just a construct that supports *ad hoc polymorphism*. E.g. allows
-one to define polymorphic functions that can be applied to arguments of
+  object Introducible {
+    def apply[A: Introducible]: Introducible[A] =
+      implicitly[Introducible[A]]
+  }
+
+  def introduce[A: Introducible](creature: A): Unit = {
+
+    /* ... */
+    drawBubble(Introducible[A].introduce(creature))
+    /* ... */
+  }
+#+end_src
+
+** What have we done?
+
+*Type class* is just a construct that supports *ad hoc polymorphism*. E.g.
+allows one to define polymorphic functions that can be applied to arguments of
 different types and behave differently based the type of the arguments.
 
-In other words, function overloading.
+In other words, *type classes* are solution for supporting *function
+overloading*.
+
+#+BEAMER: \pause
 
 In Scala this can be achieved in several ways:
 
 - Class inheritance or traits.
 - Type classes (traits + implicits).
+
+** Type classes: abstraction
+
+*** Main                                                         :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:END:
+
+Abstraction holds. Proof is the ~introduce~ function itself.
+
+#+BEAMER: \pause
+
+*** Before                                                       :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+#+begin_src scala
+  def introduce(creature: Introducible): Unit = {
+    /* ... */
+    drawBubble(creature.introduce())
+    /* ... */
+  }
+#+end_src
+
+*** After                                                        :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+#+begin_src scala
+  def introduce[A: Introducible](creature: A): Unit = {
+    /* ... */
+    drawBubble(Introducible[A].introduce(creature))
+    /* ... */
+  }
+#+end_src
+
+#+BEAMER: \pause
+
+*** Main                                                         :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:END:
+
+We gain literal data and behaviour separation.
+
+** Type classes: composition
+
+*** Main                                                         :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:END:
+
+Composition holds. We just pass two different behaviours.
+
+#+BEAMER: \pause
+
+*** Before                                                       :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+#+begin_src scala
+  def patheticAttack[A <: Introducible with CanAttack](creature: A): Unit
+#+end_src
+
+*** After                                                        :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+#+begin_src scala
+  def patheticAttack[A : Introducible : CanAttack](creature: A): Unit
+  def patheticAttack[A](creature: A)
+                    (implicit introducibleImpl: Introducible[A],
+                     implicit canAttackImpl: CanAttack[A]): Unit
+#+end_src
+
+#+BEAMER: \pause
+
+*** Main                                                         :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:END:
+
+But with type classes we don't care about the order.
+
+** Type classes: extensibility
+
+Extensibility holds with some gains:
+
+1. Consistency - we treat our own type the same way we treat external types.
+2. Usability - no wrappers, no interchangeability problem.
+
+** Type classes: final thoughts
+
+1. Simple idea giving us good properties.
+2. Found a good use for controversial implicits feature.
+3. Literal separation of data and values.
+4. Good for overloading.
+5. As with any abstraction, not so good for performance.
 
 * Semigroup
 
@@ -546,7 +930,7 @@ $\forall a, b \in S : a \cdot b \in S$.
     //   1. $\forall a, b, c \in A: (a \cdot b) \cdot c = a \cdot (b \cdot c)$
     //
     trait Semigroup[A] {
-      def append(x: A, y: A): A
+      def combine(x: A, y: A): A
     }
 
     object Semigroup {
@@ -577,7 +961,7 @@ $\forall a, b \in S : a \cdot b \in S$.
 #+begin_src scala
   package object implicits {
     implicit val stringSemigroup: Semigroup[String] = new Semigroup[String] {
-      override def append(x: String, y: String): String = x + y
+      override def combine(x: String, y: String): String = x + y
     }
   }
 #+end_src
@@ -587,17 +971,17 @@ $\forall a, b \in S : a \cdot b \in S$.
 #+begin_src scala
   package object implicits {
     implicit val stringSemigroup: Semigroup[String] = new Semigroup[String] {
-      override def append(x: String, y: String): String = x + y
+      override def combine(x: String, y: String): String = x + y
     }
   }
 
   /*
-  append(a, append(b, c))
-    = append(a, b + c)
+  combine(a, combine(b, c))
+    = combine(a, b + c)
     = a + (b + c)
     = (associativity of +)
-    = (a + b) + c = append(a + b, c)
-    = append(append(a, b), c)
+    = (a + b) + c = combine(a + b, c)
+    = combine(combine(a, b), c)
   */
 #+end_src
 
@@ -618,7 +1002,7 @@ $\forall a, b \in S : a \cdot b \in S$.
      new Properties(s"Semigroup[${tag.toString}]") {
        // $\forall a, b, c \in A: (a \cdot b) \cdot c = a \cdot (b \cdot c)$
        property("associativity") = forAll { (a: A, b: A, c: A) =>
-         sg.combine(sg.append(a, b), c) =? sg.append(a, sg.append(b, c))
+         sg.combine(sg.combine(a, b), c) =? sg.combine(a, sg.combine(b, c))
        }
      }
   }
@@ -868,7 +1252,7 @@ As they say, truth is somewhere in the logarithm.
 
 ** What Monoid gives us
 
-- Combining function is symmetrical (=append : A -> A -> A=).
+- Combining function is symmetrical (=combine : A -> A -> A=).
 - Monoid provides identity element of type =A= (=empty=).
 - So we can define a special =fold=
   - =def foldMonoid[A: Monoid](xs: Seq[A]): A=
@@ -1310,7 +1694,7 @@ same level, which means that we can evaluate them in parallel.
   - =mapReduce=
 - Monoids are everywhere. They act like a plague, once something forms a monoid,
   something else also begins to form a monoid.
-- We want some rest after a long session of workshop.
+- We want some rest after a long session of forkshop.
 
 ** Questions?
 
