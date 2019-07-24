@@ -6,15 +6,18 @@ import cats.effect.IO
 import cats.syntax.monoid._
 import cats.kernel.Monoid
 
-object Logging extends App {
+/*
 
-  type Logger = String => IO[Unit]
+Your task is to:
 
-  implicit val monoidUnit: Monoid[Unit] = ???
+1. Implement Monoid[Unit] instance.
+2. Implement Monoid[IO[A]] instance.
+3. Make LoggingSpec green.
 
-  implicit def monoidFunction[A, B : Monoid]: Monoid[A => B] = ???
+ */
 
-  implicit def monoidIo[A: Monoid]: Monoid[IO[A]] = IO.ioMonoid
+object Main extends App {
+  import Logging._
 
   def consoleLogger: IO[Logger] = IO { input =>
     IO {
@@ -23,21 +26,34 @@ object Logging extends App {
   }
 
   def fileLogger(filePath: String): IO[Logger] = IO {
-    println("Debug: create file handler")
     val stream = new FileOutputStream(filePath)
-    input => IO(stream.write(input.getBytes))
+    input => {
+      IO {
+        stream.write(input.getBytes)
+      }
+    }
   }
-
-  def someApp(logger: Logger): IO[Unit] = for {
-    input <- IO(scala.io.StdIn.readLine)
-    _     <- logger(s"User input: $input\n")
-    _     <- someApp(logger)
-  } yield ()
 
   val program: IO[Unit] = for {
     logger <- consoleLogger |+| fileLogger("logging.log")
-    _      <- someApp(logger)
+    _      <- logger("Map Reduce\n")
+    _      <- logger("Reduces Maps\n")
+    _      <- logger("Map Reduce\n")
+    _      <- logger("Map Reduce\n")
+    _      <- logger("\n")
+    _      <- logger("In parallel\n")
+    _      <- logger("And not\n")
   } yield ()
 
   program.unsafeRunSync()
+}
+
+object Logging {
+  type Logger = String => IO[Unit]
+
+  implicit val monoidUnit: Monoid[Unit] = ???
+
+  implicit def monoidFunction[A, B : Monoid]: Monoid[A => B] = ???
+  
+  implicit def monoidIo[A: Monoid]: Monoid[IO[A]] = IO.ioMonoid
 }
