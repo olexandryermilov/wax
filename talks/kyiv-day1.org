@@ -1818,21 +1818,19 @@ Can function be monoid?
 - <2-> Can it be a monoid?
 - <3-> Well, generally speaking, not! Because we know nothing about the type =A=.
 - <4-> But what if =A= is a monoid?
+- <5-> Hell, yeah!
+  #+begin_src scala
+    case class Wrapper[A](value: A)
 
-#+BEAMER: \pause
+    object Wrapper {
+      implicit def wrapperMonoid[A: Monoid]: Monoid[Wrapper[A]] = new Monoid[Wrapper[A]] {
+        override def empty: Wrapper[A] = Wrapper(Monoid[A].empty)
 
-#+begin_src scala
-  case class Wrapper[A](value: A)
-
-  object Wrapper {
-    implicit def wrapperMonoid[A: Monoid]: Monoid[Wrapper[A]] = new Monoid[Wrapper[A]] {
-      override def empty: Wrapper[A] = Wrapper(Monoid[A].empty)
-
-      override def combine(x: Wrapper[A], y: Wrapper[A]): Wrapper[A] =
-        Wrapper(Monoid[A].combine(x.value, y.value))
+        override def combine(x: Wrapper[A], y: Wrapper[A]): Wrapper[A] =
+          Wrapper(Monoid[A].combine(x.value, y.value))
+      }
     }
-  }
-#+end_src
+  #+end_src
 
 ** Wrappers of monoids are monoids
 
@@ -1906,9 +1904,9 @@ Can function be monoid?
 
 ** Outcome
 
-- <1-> If you have a monoid, it's easy to form new monoid (of a higher rank).
-- <2-> Functions can also be monoid. This is really cool by itself.
-- <3-> Some of you probably gonna write a new =colog= lib (but for Scala).
+- <1-> If you have a monoid, it's easy to form a new monoid (of a higher rank).
+- <2-> Function can also be monoid. This is really cool by itself.
+- <3-> Some of you probably gonna write new =colog= lib (but for Scala).
 
 * Recap
 
