@@ -1767,15 +1767,11 @@ same level, which means that we can evaluate them in parallel.
 
 ** MapReduce
 
-- Sometimes we have a collection of elements that don't form Monoid.
-#+BEAMER: \pause
-- But we can transform (e.g. =map=) them into something that is a Monoid
-#+BEAMER: \pause
-- There is a strange accent, where people pronounce 'fold' as 'reduce'.
-#+BEAMER: \pause
-- This is how we get the =mapReduce=.
-#+BEAMER: \pause
-- Just think about it, =mapReduce= is possible thanks to =Monoid= and its
+- <1-> Sometimes we have a collection of elements that don't form Monoid.
+- <2-> But we can transform (e.g. =map=) them into something that is a Monoid
+- <3-> There is a strange accent, where people pronounce 'fold' as 'reduce'.
+- <4-> This is how we get the =mapReduce=.
+- <5-> Just think about it, =mapReduce= is possible thanks to =Monoid= and its
   /laws/.
 
 ** Coding time
@@ -1794,6 +1790,34 @@ same level, which means that we can evaluate them in parallel.
   - =authorBooks= to get the list of books (files) by author (e.g.
     =authorBooks("boris")=).
   - =allBooks= to get the list of all book among all available authors.
+
+** Benchmarks
+
+#+begin_example
+  Par
+  duration = 65633 ms
+  result   = List(..., (people,37798), ...)
+
+  Seq
+  duration = 396530 ms
+  result   = List(..., (people,37798), ...)
+#+end_example
+
+** Outcome
+
+- <1-> Thanks to /associative/ and /identity/ laws it's possible to implement a
+  parallel fold.
+- <2-> This is what makes =mapReduce= to exist.
+- <3-> Many applications: inverted index, document clustering, machine learning.
+- <4-> Google used it to regenerate index of World Wide Web.
+
+** Homework
+
+=mapReduce= is really interesting!
+
+#+BEAMER: \pause
+
+So play with it after the forkshop.
 
 * Logger
 
