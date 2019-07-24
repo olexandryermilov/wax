@@ -4,9 +4,8 @@ package wax.typeclass.semigroup.manual
 
 Task:
 
-1. Create Semigroup typeclass.
-2. Fill missing instances in manual.instances.
-3. Make manual.SemigroupSpec tests green.
+1. Fill missing instances in manual.instances.
+2. Make manual.SemigroupSpec tests green.
 
  */
 
@@ -18,7 +17,7 @@ package object typeclass {
   //   2. (a ⊕ b) ⊕ c = a ⊕ (b ⊕ c)
   //
   trait Semigroup[A] {
-    ???
+    def combine(x: A, y: A): A
   }
 
   object Semigroup {
