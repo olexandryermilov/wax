@@ -10,33 +10,41 @@ import wax.utils._
 import scala.concurrent.ExecutionContext
 import scala.io.Source
 
-object Main extends App {
+/*
 
-  import MapReduce._
+Your task is to:
 
-  def job(strategy: Strategy): Result[Int] = mapReduce(strategy)(???) {
-    ???
-  }
+1. Impement Monoid instance for Result[A]
+2. Make MapReduceSpec green
+3. Implement job (so it returns the Map of all words amount of usages)
+4. Run Main and see the results.
 
-  println("Par")
-  val resPar = Benchmark(job(Par))
-  println(resPar)
+All books are located in the resources/mapreduce folder.
 
-  println()
+To make it easier, use the following helpers:
 
-  println("Seq")
-  val resSeq = Benchmark(job(Seq))
-  println(resSeq)
-}
+1. readTokens(file) to get the list of words from file
+2. authorBooks("boris") will return two smol books (useful for tests)
+3. authorBooks("asimov) just a next-level literature (only in terms of the size).
+4. allBooks
+
+ */
 
 object MapReduce {
+  //
+  // Result[V] is an alias for Map[String, V].
+  //
+  // In the context of our task we will work with Result[Int], so it's a map where key is word from book and value is
+  // a how many times that word was used.
+  //
   type Result[V] = Map[String, V]
 
-  implicit val monoid: Monoid[Result[Int]] = new Monoid[Result[Int]] {
-    override def empty: Result[Int] = ???
-
-    override def combine(x: Result[Int], y: Result[Int]): Result[Int] = ???
-  }
+  //
+  // TODO: implement Monoid instance for Result[Int]
+  // Run MapReduceSpec to make sure that it's working correctly.
+  //
+  // In general you can provide a monoid instance for Result[A]. But Result[Int] is enough for this task.
+  implicit val monoid: Monoid[Result[Int]] = ???
 
   val numCores: Int = Runtime.getRuntime.availableProcessors
   implicit val cs: ContextShift[IO] = IO.contextShift(ExecutionContext.fromExecutor(Executors.newWorkStealingPool()))
@@ -62,6 +70,34 @@ object MapReduce {
       .map(_.combineAll)
       .unsafeRunSync()
   }
+}
+
+object Main extends App {
+
+  import FileUtils._
+  import MapReduce._
+
+  // TODO: implement job
+  def job(strategy: Strategy): Result[Int] = mapReduce(strategy)(???) {
+    ???
+  }
+
+  // This is just a helper that gets first 10 words of length > 4 (because original result is too huge).
+  def job_(strategy: Strategy): List[(String, Int)] = job(strategy)
+    .toList
+    .filter(_._1.length > 4)
+    .sortBy(_._2)(implicitly[Ordering[Int]].reverse)
+    .take(10)
+
+  println("Par")
+  val resPar = Benchmark(job_(Par))
+  println(resPar)
+
+  println()
+
+  println("Seq")
+  val resSeq = Benchmark(job_(Seq))
+  println(resSeq)
 }
 
 object FileUtils {
