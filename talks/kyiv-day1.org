@@ -830,33 +830,15 @@ We gain literal data and behaviour separation.
 
 ** Type classes: composition
 
-*** Main                                                         :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_opt:             [t]
-:END:
-
 Composition holds. We just pass two different behaviours.
 
 #+BEAMER: \pause
-
-*** Before                                                       :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.5
-:END:
 
 #+begin_src scala
   def patheticAttack[A <: Introducible with CanAttack](creature: A): Unit
 #+end_src
 
-*** After                                                        :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.5
-:END:
+#+BEAMER: \pause
 
 #+begin_src scala
   def patheticAttack[A : Introducible : CanAttack](creature: A): Unit
@@ -866,12 +848,6 @@ Composition holds. We just pass two different behaviours.
 #+end_src
 
 #+BEAMER: \pause
-
-*** Main                                                         :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_opt:             [t]
-:END:
 
 But with type classes we don't care about the order.
 
@@ -890,30 +866,36 @@ Extensibility holds with some gains:
 4. Good for overloading.
 5. As with any abstraction, not so good for performance.
 
+* Transition
+
+** Warning
+
+In the next two parts we are going to talk about:
+
+1. Abstract mathematical objects.
+2. Laws and properties.
+
+#+BEAMER: \pause
+
+Only after that:
+
+1. Practical meaning.
+2. Tasks.
+
+#+BEAMER: \pause
+
+Please keep calm and remember that our focus is practical importance :)
+
 * Semigroup
 
 ** Semigroup
 
-A semigroup is an algebraic structure consisting of a set together with an
-associative binary operation.
-
-#+BEAMER: \pause
-
-A semigroup is a set $S$ with binary operation $\cdot : S \times S \rightarrow
-S$ that satisfies associativity property:
+Semigroup is a set $S$ with binary closed operation $\cdot : S \times S
+\rightarrow S$ that satisfies associativity property:
 
 $$\forall a, b, c \in S : (a \cdot b) \cdot c = a \cdot (b \cdot c)$$
 
-#+BEAMER: \pause
-
-*Important*. Semigroup is a pair of the set and the operation. You can’t say
- that string is a semigroup, you must provide an operation. And in many cases
- there is more than one operation for a set to form a semigroup.
-
-#+BEAMER: \pause
-
-*Note*. We usually omit the requirement that operation must be closed, e.g.
-$\forall a, b \in S : a \cdot b \in S$.
+Operation is closed when $\forall a, b \in S : a \cdot b \in S$.
 
 ** But it’s not that scary
 
@@ -941,6 +923,13 @@ $\forall a, b \in S : a \cdot b \in S$.
   }
 #+end_src
 
+#+BEAMER: \pause
+
+In simple words, semigroup is a set with means of combining elements of that
+set.
+
+#+BEAMER: \pause
+
 *** Image                                                        :B_column:
 :PROPERTIES:
 :BEAMER_env:             column
@@ -950,11 +939,37 @@ $\forall a, b \in S : a \cdot b \in S$.
 #+ATTR_LATEX: :height 7cm
 [[file:images/scary.png]]
 
-** Laws are important
+** Important!
 
-- In most cases type classes should have some associated laws.
-- Laws describe behaviour of the interface, what you can expect.
-- This gives you confidence when you combine pieces of code.
+Semigroup is a pair of the set and the operation.
+
+You can’t say that string is a semigroup, you must provide an operation.
+
+And in many cases there is more than one operation for a set to form a
+semigroup.
+
+** What is law?
+
+- In programming world it's just a contract.
+
+#+BEAMER: \pause
+- Operations in the type classes are very generic.
+  #+begin_src scala
+    def combine(x: A, y: A): A
+  #+end_src
+
+#+BEAMER: \pause
+- So type classes should have some associated laws.
+
+#+BEAMER: \pause
+- Laws describe properties of these operations and connection between operations
+  in one type class.
+
+#+BEAMER: \pause
+- Contract of the interface gives us confidence when we write generic code.
+
+#+BEAMER: \pause
+- And as you will see, we really care about these laws.
 
 ** Instance example
 
@@ -1000,10 +1015,14 @@ $\forall a, b \in S : a \cdot b \in S$.
   trait SemigroupSpecificationSupport {
    def semigroup[A](sg: Semigroup[A])(implicit ar: Arbitrary[A], tag: ClassTag[A]): Properties =
      new Properties(s"Semigroup[${tag.toString}]") {
+
+
        // $\forall a, b, c \in A: (a \cdot b) \cdot c = a \cdot (b \cdot c)$
        property("associativity") = forAll { (a: A, b: A, c: A) =>
          sg.combine(sg.combine(a, b), c) =? sg.combine(a, sg.combine(b, c))
        }
+
+
      }
   }
 
@@ -1013,12 +1032,23 @@ $\forall a, b \in S : a \cdot b \in S$.
   ,*/
 #+end_src
 
+** More than one valid instance
+
+#+begin_src scala
+  package object implicits {
+    implicit val stringSemigroup: Semigroup[String] = new Semigroup[String] {
+      override def combine(x: String, y: String): String = x
+    }
+  }
+#+end_src
+
 ** More examples
 
 - Numbers with $+$, $*$, $min$, $max$
 - Booleans with conjunction, disjunction, implication etc.
 - Square nonnegative matrices with multiplication.
 - Lists, Strings, Maps etc. with concatenation/union
+- We will see even more examples during practical part.
 
 ** Contra-examples
 
@@ -1031,8 +1061,19 @@ $\forall a, b \in S : a \cdot b \in S$.
 ** Lets hack
 
 1. Clone =git@github.com:d12frosted/wax.git=
-2. Add missing definitions in =wax.typeclass.semigroup=
-3. Run tests in =wax.typeclass.semigroup=
+2. Import it as =sbt= project.
+#+BEAMER: \pause
+3. Task 1
+   1. Implement missing =Semigroup= instances in
+      =wax.typeclass.semigroup.cats.implicits=
+   2. Run =wax.typeclass.semigroup.laws.cats.SemigroupSpec=
+#+BEAMER: \pause
+4. Task 2
+   1. Create =Semigroup= typeclass manually in
+      =wax.typeclass.semigroup.manual.typeclass=
+   2. Implement missing =Semigroup= instances in
+      =wax.typeclass.semigroup.manual.implicits=
+   3. Run =wax.typeclass.semigroup.laws.manual.SemigroupSpec=
 
 * Monoid
 

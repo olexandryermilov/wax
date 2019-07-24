@@ -1,15 +1,20 @@
-package wax.typeclass.semigroup
+package wax.typeclass.semigroup.cats
 
-package object catz {
+/*
+
+Task:
+
+1. Fill missing implementation.
+2. Make cats.SemigroupSpec tests green.
+
+ */
+
+package object implicits {
   implicit val intSemigroup: cats.Semigroup[Int] = new cats.Semigroup[Int] {
     override def combine(x: Int, y: Int): Int = ???
   }
 
   implicit val stringSemigroup: cats.Semigroup[String] = new cats.Semigroup[String] {
     override def combine(x: String, y: String): String = ???
-  }
-
-  implicit def listSemigroup[A]: cats.Semigroup[List[A]] = new cats.Semigroup[List[A]] {
-    override def combine(x: List[A], y: List[A]): List[A] = ???
   }
 }
