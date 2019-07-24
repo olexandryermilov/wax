@@ -4,7 +4,7 @@
 #+STARTUP: beamer
 #+LATEX_CLASS: beamer
 #+LATEX_CLASS_OPTIONS: [presentation,aspectratio=169,smaller]
-#+LaTeX_HEADER: \usemintedstyle{tango}
+#+LATEX_HEADER: \usemintedstyle{tango}
 #+LATEX_HEADER: \setminted{fontsize=\scriptsize}
 #+LATEX_HEADER: \setminted{mathescape=true}
 #+LATEX_HEADER: \setbeamertemplate{itemize items}[circle]
@@ -1131,7 +1131,9 @@ here):
 
 ** The most important question
 
-#+ATTR_LATEX: :height 7cm
+#+BEAMER: \pause
+
+#+ATTR_LATEX: :height 5cm
 [[file:images/whyyy.png]]
 
 Why did we learn this?
@@ -1140,8 +1142,12 @@ Why did we learn this?
 
 ** The Fibonacci numbers
 
+#+BEAMER: \pause
+
 On the interview we ask people to write a function that returns the nth
 Fibonacci number.
+
+#+BEAMER: \pause
 
 #+begin_export latex
 \begin{align*}
@@ -1173,7 +1179,7 @@ Fibonacci number.
   }
 #+end_src
 
-
+#+BEAMER: \pause
 
 *** Ideal solution                                               :B_column:
 :PROPERTIES:
@@ -1202,27 +1208,13 @@ Fibonacci number.
 :END:
 
 As they say, truth is somewhere in the logarithm.
+
 ** Two folds
 
 - =def foldl[A, B](xs: Seq[A])(z: B)(op: B => A => B): B=
   - Folds the structure from left to right
-- =def foldr[A, B](xs: Seq[A])(z: B)(op: A => B => B): B=
-  - Folds the structure from right to left
-- Since combining function is asymmetrical in its types:
-  - It’s impossible to place parentheses in the arbitrary fashion or even just
-    change the direction of the =fold=
-  - It’s impossible to implement a total =fold= without default value of type =B=
 
-** Example
-
-*** foldl                                                        :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.5
-:END:
-
-**** foldl
+#+BEAMER: \pause
 
 #+begin_src dot :file .dot/foldl-1.png :cmdline -Kdot -Tpng -Gdpi=180
   digraph {
@@ -1247,18 +1239,17 @@ As they say, truth is somewhere in the logarithm.
   }
 #+end_src
 
-#+ATTR_LATEX: :height 6cm
+#+ATTR_LATEX: :height 5cm
 #+RESULTS:
 [[file:.dot/foldl-1.png]]
 
-*** foldr                                                        :B_column:
-:PROPERTIES:
-:BEAMER_env:             column
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.5
-:END:
+** Two folds
 
-**** foldr
+- =def foldl[A, B](xs: Seq[A])(z: B)(op: B => A => B): B=
+- =def foldr[A, B](xs: Seq[A])(z: B)(op: A => B => B): B=
+  - Folds the structure from right to left
+
+#+BEAMER: \pause
 
 #+begin_src dot :file .dot/foldr-1.png :cmdline -Kdot -Tpng -Gdpi=180
   digraph {
@@ -1284,6 +1275,43 @@ As they say, truth is somewhere in the logarithm.
   }
 #+end_src
 
+#+ATTR_LATEX: :height 5cm
+#+RESULTS:
+[[file:.dot/foldr-1.png]]
+
+** Two folds
+
+- =def foldl[A, B](xs: Seq[A])(z: B)(op: B => A => B): B=
+- =def foldr[A, B](xs: Seq[A])(z: B)(op: A => B => B): B=
+- Since combining function is asymmetrical in its types:
+  - It’s impossible to place parentheses in the arbitrary fashion or even just
+    change the direction of the =fold=
+  - It’s impossible to implement a total =fold= without default value of type =B=
+
+** Two folds
+
+*** foldl                                                        :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+**** foldl
+
+#+ATTR_LATEX: :height 6cm
+#+RESULTS:
+[[file:.dot/foldl-1.png]]
+
+*** foldr                                                        :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+**** foldr
+
 #+ATTR_LATEX: :height 6cm
 #+RESULTS:
 [[file:.dot/foldr-1.png]]
@@ -1291,16 +1319,15 @@ As they say, truth is somewhere in the logarithm.
 ** What Monoid gives us
 
 - Combining function is symmetrical (=combine : A -> A -> A=).
-- Monoid provides identity element of type =A= (=empty=).
+#+BEAMER: \pause
+- Identity element of type =A= (=empty=).
+#+BEAMER: \pause
 - So we can define a special =fold=
   - =def foldMonoid[A: Monoid](xs: Seq[A]): A=
+#+BEAMER: \pause
 - Associativity law says that we can put parentheses in an arbitrary fashion.
-- Identity law says that we can place identity element anywhere - on the far
-  left, on the far right or even in the middle.
-- Laws that we checked are giving us means to abstract implementation.
-- When we ask consumer of our API to provide us a Monoid we don't want only a
-  behaviour but behaviour that follows the *laws*. We want these *properties* as
-  much as we want the functions.
+#+BEAMER: \pause
+- Identity law says that we can place identity element anywhere.
 
 ** Power in terms of Monoid
 
@@ -1471,10 +1498,10 @@ n$ operations.
 
 ** Power in terms of Monoid
 
-All this means that we can define a function =power=:
+All this means that we can define a function =exp=:
 
 #+begin_src scala
-  def power[A: Monoid](a: A, n: Int): A = {
+  def exp[A: Monoid](a: A, n: Int): A = {
     ???
   }
 #+end_src
@@ -1498,29 +1525,139 @@ Fibonacci number can be defined in a different way.
 
 #+BEAMER: \pause
 
+#+begin_export latex
+\begin{equation*}
+  \begin{pmatrix}
+    F_4 & F_3 \\
+    F_3 & F_2
+  \end{pmatrix} =
+  \begin{pmatrix}
+    1 & 1 \\
+    1 & 0
+  \end{pmatrix} ^ 3 =
+  \begin{pmatrix}
+    2 & 1 \\
+    1 & 1
+  \end{pmatrix} \cdot
+  \begin{pmatrix}
+    1 & 1 \\
+    1 & 0
+  \end{pmatrix} =
+  \begin{pmatrix}
+    3 & 2 \\
+    2 & 1
+  \end{pmatrix}
+\end{equation*}
+#+end_export
+
+** Back to Fibonacci
+
+#+begin_export latex
+\begin{equation*}
+  \begin{pmatrix}
+    F_{n+1} & F_n \\
+    F_n & F_{n-1}
+  \end{pmatrix} =
+  \begin{pmatrix}
+    1 & 1 \\
+    1 & 0
+  \end{pmatrix} ^ n
+\end{equation*}
+#+end_export
+
+#+BEAMER: \pause
+
 - The Fibonacci number can be calculated using square nonnegative matrix
   multiplication.
 - Square nonnegative matrices form Monoid with multiplication.
 - So we can put parentheses in a way we like it.
 
-** Time for work
+** Coding time
 
-- Open =wax.exercise.fibonacci= module.
-- Task is to implement monoid for =Matrix2x2=.
-- Run =MatrixMonoidSpecification= to test your instance.
-- Run =Main= object and compare benchmarking results of tail recursive and
-  matrix-based implementations.
+- Open =wax.exercise.fibonacci.Main= object.
+  - =Main= runs two implementations and profiles them.
+  - =Fib= contains implementation of tailrec and matrix approaches.
+  - =ExpUtils= implements generic =exp= function.
+- Task is to implement monoid for =Matrix2x2= in the =Fib= object.
+- Run =MatrixSpec= to test your instance.
+- Run =FibSpec= to test implementation of =Fib=.
+- Run =Main= to see performance differences by yourself.
+
+#+BEAMER: \pause
+
+*** Left                                                         :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+#+begin_export latex
+\vspace*{0px}
+#+end_export
+
+#+begin_export latex
+\begin{equation*}
+  \begin{pmatrix}
+    a_{11} & a_{12} \\
+    a_{21} & a_{22}
+  \end{pmatrix} \cdot
+  \begin{pmatrix}
+    b_{11} & b_{12} \\
+    b_{21} & b_{22}
+  \end{pmatrix} = \\
+  \begin{pmatrix}
+    a_{11} \cdot b_{11} + a_{12} \cdot b_{21} & a_{11} \cdot b_{12} + a_{12} \cdot b_{22} \\
+    a_{21} \cdot b_{11} + a_{22} \cdot b_{21} & a_{21} \cdot b_{12} + a_{22} \cdot b_{22}
+  \end{pmatrix}
+\end{equation*}
+#+end_export
+
+*** Right                                                        :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+#+ATTR_LATEX: :height 3cm
+[[file:images/matrix-mult.png]]
+
+** Profiling results
+
+|        N | Matrix | Tailrec |
+|----------+--------+---------|
+|       10 |     60 |       0 |
+|      100 |      0 |       0 |
+|     1000 |      1 |       1 |
+|    10000 |      5 |       6 |
+|   100000 |     46 |     168 |
+|  1000000 |    888 |   15211 |
+| 10000000 |  11266 |       - |
 
 ** Outcome
 
-- Just think about it.
-  - Giving any monoid we have a helper that allows us to efficiently calculate
-    $a^n$.
-  - This is not only because of the operations, but the laws (or so-called
-    properties) that come with these operations.
-  - Monoids are everywhere around us. We deal with them every day, without even
-    noticing it.
-- You might forget how matrix multiplication works, but now you remember, right?
+Just think about it.
+
+#+BEAMER: \pause
+Giving any monoid we have a helper function that efficiently calculates $a^n$.
+
+#+BEAMER: \pause
+This is only possible because of the *laws* that come with operations.
+
+#+BEAMER: \pause
+~combine~ by itself is not interesting, it's too generic.
+
+#+BEAMER: \pause
+Laws give us *properties*. Which we use to get a solution that works for
+everything that is ~Monoid~.
+
+#+BEAMER: \pause
+Monoids are everywhere around us. We deal with them every day, without even
+noticing it. Did you expect us to solve Fibonacci using ~Monoid~?
+
+#+BEAMER: \pause
+You might forget how matrix multiplication works, but now you remember, right?
 
 * Books
 

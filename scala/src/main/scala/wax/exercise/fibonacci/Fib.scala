@@ -27,11 +27,7 @@ object Fib {
 
   case class Matrix2x2(a11: BigInt, a12: BigInt, a21: BigInt, a22: BigInt)
 
-  implicit val matrixMonoid: Monoid[Matrix2x2] = new Monoid[Matrix2x2] {
-    override def empty: Matrix2x2 = ???
-
-    override def combine(x: Matrix2x2, y: Matrix2x2): Matrix2x2 = ???
-  }
+  implicit val matrixMonoid: Monoid[Matrix2x2] = ???
 
   def fibOtEn(en: BigInt): BigInt = exp(
     Matrix2x2(
