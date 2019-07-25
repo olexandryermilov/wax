@@ -63,17 +63,6 @@ why.
 
 * Type classes
 
-** Type classes
-
-- <1-> Problem:
-  - Application design
-  - Data and logic separation
-- <2-> Plan:
-  - Write a simple application
-  - Evolve it
-  - Check different approaches
-  - Introduce type classes
-
 ** Application definition
 
 - We are writing a game.
@@ -167,73 +156,6 @@ Issues with this code:
 2. Noise
 3. Refactoring (all these ~introduce~ are not related to each other).
 
-** Be DRY, leap for disaster
-
-*** Old code                                                     :B_column:
-:PROPERTIES:
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.46
-:BEAMER_env:             column
-:END:
-
-#+begin_src scala
-  object Game extends App {
-    val player = Hero("Valik", "Black Mage", 20)
-    val orc = Orc("Garrosh", 105)
-    val ooze = Ooze(2)
-
-    // Introduce player
-    someRealShitSounds()
-    drawBubble(player.introduce())
-    someRealShitAnimations()
-
-    // Introduce orc
-    someRealShitSounds()
-    drawBubble(orc.introduce())
-    someRealShitAnimations()
-
-    // Introduce ooze
-    someRealShitSounds()
-    drawBubble(ooze.introduce())
-    someRealShitAnimations()
-  }
-#+end_src
-
-#+BEAMER: \pause
-
-*** New code                                                     :B_column:
-:PROPERTIES:
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.46
-:BEAMER_env:             column
-:END:
-
-  #+begin_src scala
-    def introduce(phrase: String): Unit = {
-      someRealShitSounds()
-      drawBubble(phrase)
-      someRealShitAnimations()
-    }
-  #+end_src
-
-#+BEAMER: \pause
-
-#+begin_src scala
-  object Game extends App {
-    val player = Hero("Valik", "Black Mage", 20)
-    val orc = Orc("Garrosh", 105)
-    val ooze = Ooze(2)
-
-    introduce(player.introduce())
-    introduce(orc.introduce())
-    introduce(ooze.introduce())
-  }
-#+end_src
-
-#+BEAMER: \pause
-
-Cool, but can we ~introduce(player)~?
-
 ** Introducing abstractions
 
 *** Old code                                                     :B_column:
@@ -285,56 +207,6 @@ Cool, but can we ~introduce(player)~?
 
   case class Ooze(...) extends Introducible {
     override def introduce(): String = s"..."
-  }
-#+end_src
-
-** Game with =trait=
-
-*** Old code                                                     :B_column:
-:PROPERTIES:
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.5
-:BEAMER_env:             column
-:END:
-
-#+begin_src scala
-  def introduce(phrase: String): Unit = {
-    someRealShitSounds()
-    drawBubble(phrase)
-    someRealShitAnimations()
-  }
-
-  object Game extends App {
-    /* ... */
-
-    introduce(player.introduce())
-    introduce(orc.introduce())
-    introduce(ooze.introduce())
-  }
-#+end_src
-
-#+BEAMER: \pause
-
-*** New code                                                     :B_column:
-:PROPERTIES:
-:BEAMER_opt:             [t]
-:BEAMER_col:             0.5
-:BEAMER_env:             column
-:END:
-
-#+begin_src scala
-  def introduce(creature: Introducible): Unit = {
-    someRealShitSounds()
-    drawBubble(creature.introduce())
-    someRealShitAnimations()
-  }
-
-  object Game extends App {
-    /* ... */
-
-    introduce(player)
-    introduce(orc)
-    introduce(ooze)
   }
 #+end_src
 
@@ -507,8 +379,9 @@ Extensibility holds, but with several caveats:
 
 1. No consistency - we wrap only types we don't own.
 2. Wrappers don't compose very well. You might even wrap your wrappers.
-3. Bad usability - you can’t interchangeably use wrapper and the underlying
+3. Bad usability 1 - you can’t interchangeably use wrapper and the underlying
    value.
+4. Bad usability 2 - you can't plug-in different behaviour implementations
 
 ** You know where it’s going to, right?
 
@@ -860,34 +733,60 @@ Extensibility holds with some gains:
 
 1. Simple idea giving us good properties.
 2. Found a good use for controversial implicits feature.
-3. Literal separation of data and values.
+3. Literal separation of data and behaviour.
 4. Good for overloading.
 5. As with any abstraction, not so good for performance.
-
-* Transition
-
-** Warning
-
-In the next two parts we are going to talk about:
-
-1. Abstract mathematical objects.
-2. Laws and properties.
-
-#+BEAMER: \pause
-
-Only after that:
-
-1. Practical meaning.
-2. Tasks.
-
-#+BEAMER: \pause
-
-Please keep calm and remember that our focus is practical importance :)
 
 * Semigroup
 
 ** Semigroup
 
+*** Commonalities
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+What is common between:
+1. Int
+2. String
+3. List
+4. PartialFunction
+5. HttpMapping
+
+#+BEAMER: \pause
+
+*** Combinability
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_opt:             [t]
+:BEAMER_col:             0.5
+:END:
+
+They can be combined!
+1. Int + Int = Int
+2. String + String = String
+3. List ::: List = List
+4. PartialFunction orElse PartialFunction = PartialFunction
+5. HttpMapping + HttpMapping = HttpMapping
+
+** Assiciativity
+
+One does not simply combine stuff. Combination MUST be associative
+1. Int + Int + Int = Int + (Int + Int) = (Int + Int) + Int
+2. String + String + String = String + (String + String) = (String + String) + String
+3. List ::: List ::: List = List ::: (List ::: List) = (List ::: List) ::: List
+4. PartialFunction orElse PartialFunction orElse PartialFunction =
+   PartialFunction orElse (PartialFunction orElse PartialFunction) =
+   (PartialFunction orElse PartialFunction) orElse PartialFunction
+5. HttpMapping + HttpMapping + HttpMapping =
+   HttpMapping + (HttpMapping + HttpMapping) =
+   (HttpMapping + HttpMapping) + HttpMapping
+
+** Semigroup
+
+Lets use fancy math name and fancy math notation to describe this simple concept
 Semigroup is a set $S$ with binary closed operation $\cdot : S \times S
 \rightarrow S$ that satisfies associativity property:
 
