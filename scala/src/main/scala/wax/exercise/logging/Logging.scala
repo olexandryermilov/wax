@@ -11,7 +11,7 @@ import cats.kernel.Monoid
 Your task is to:
 
 1. Implement Monoid[Unit] instance.
-2. Implement Monoid[IO[A]] instance.
+2. Implement Monoid[A => B] instance.
 3. Make LoggingSpec green.
 
  */
