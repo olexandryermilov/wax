@@ -378,9 +378,9 @@ Extensibility holds, but with several caveats:
 
 1. No consistency - we wrap only types we don't own.
 2. Wrappers don't compose very well. You might even wrap your wrappers.
-3. Bad usability 1 - you can’t interchangeably use wrapper and the underlying
-   value.
-4. Bad usability 2 - you can't plug in different behaviour implementations.
+3. Bad usability:
+   1. You can’t interchangeably use wrapper and the underlying value.
+   2. You can't plug in different behaviour implementations.
 
 ** You know where it’s going to, right?
 
@@ -773,8 +773,9 @@ They can be composed!
 ** Associativity
 
 One does not simply compose stuff. Composition MUST be associative
-1. Int + Int + Int = Int + (Int + Int) = (Int + Int) + Int
-2. String + String + String = String + (String + String) = (String + String) + String
+
+1. $Int + Int + Int = Int + (Int + Int) = (Int + Int) + Int$
+2. $String + String + String = String + (String + String) = (String + String) + String$
 3. etc...
 
 ** Semigroup
@@ -957,16 +958,17 @@ semigroup.
 
 ** Monoid
 
-Sometimes you want to compose n elements where n >= 0.
-Semigroup works only for n > 0.
-We need a default element to use if n = 0.
+- Sometimes you want to compose $n$ elements where $n \geq 0$.
+- Semigroup works only for $n > 0$.
+- We need a default element to use if $n = 0$.
 
 ** Monoid
 
 One does not simply become a default element:
-Int + 0 = 0 + Int = Int
-String + "" = "" + String = String
-Etc...
+
+- $Int + 0 = 0 + Int = Int$
+- $String + "" = "" + String = String$
+- etc...
 
 ** Monoid
 
