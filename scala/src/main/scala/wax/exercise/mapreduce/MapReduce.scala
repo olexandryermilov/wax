@@ -14,7 +14,7 @@ import scala.io.Source
 
 Your task is to:
 
-1. Impement Monoid instance for Result[A]
+1. Implement Monoid instance for Result[A]
 2. Make MapReduceSpec green
 3. Implement job (so it returns the Map of all words amount of usages)
 4. Run Main and see the results.
