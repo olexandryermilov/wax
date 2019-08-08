@@ -15,7 +15,7 @@
 
 * Intro
 
-** About us
+** About us                                                  :noexport:
 
 *** Valik
 Server guild manager in Kyiv. Formerly forced people to use functional
@@ -1111,7 +1111,7 @@ $$+ : B \rightarrow A \rightarrow B$$
 $$(((z + x1) + x2) + x3) + x4$$
 
 #+ATTR_LATEX: :height 5cm
-[[file:diag/foldl-tree.png]]
+[[file:diag/out/foldl-tree.png]]
 
 ** Two folds
 
@@ -1124,7 +1124,7 @@ $$+ : A \rightarrow B \rightarrow B$$
 $$x1 + (x2 + (x3 + (x4 + z)))$$
 
 #+ATTR_LATEX: :height 5cm
-[[file:diag/foldr-tree.png]]
+[[file:diag/out/foldr-tree.png]]
 
 ** Two folds
 
@@ -1150,7 +1150,7 @@ $$+ : B \rightarrow A \rightarrow B$$
 $$(((z + x1) + x2) + x3) + x4$$
 
 #+ATTR_LATEX: :height 5cm
-[[file:diag/foldl-tree.png]]
+[[file:diag/out/foldl-tree.png]]
 
 *** foldr                                                        :B_column:
 :PROPERTIES:
@@ -1165,7 +1165,7 @@ $$+ : A \rightarrow B \rightarrow B$$
 $$x1 + (x2 + (x3 + (x4 + z)))$$
 
 #+ATTR_LATEX: :height 5cm
-[[file:diag/foldr-tree.png]]
+[[file:diag/out/foldr-tree.png]]
 
 ** What Monoid gives us
 

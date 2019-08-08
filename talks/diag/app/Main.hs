@@ -2,15 +2,23 @@
 {-# LANGUAGE FlexibleContexts          #-}
 {-# LANGUAGE TypeFamilies              #-}
 
+--------------------------------------------------------------------------------
+
 module Main where
 
+--------------------------------------------------------------------------------
+
 import Data.Tree
+import Diagrams.Backend.Rasterific
 import Diagrams.Backend.Rasterific.CmdLine
 import Diagrams.Prelude
 import Diagrams.TwoD.Layout.Tree
+import Diagrams.TwoD.Size
 
-tfoldl :: Tree String
-tfoldl = Node "+"
+--------------------------------------------------------------------------------
+
+tFoldl :: Tree String
+tFoldl = Node "+"
      [ Node "+"
        [ Node "+"
          [ Node "+"
@@ -24,8 +32,8 @@ tfoldl = Node "+"
      , Node "x4" []
      ]
 
-tfoldr :: Tree String
-tfoldr = Node "+"
+tFoldr :: Tree String
+tFoldr = Node "+"
      [ Node "x1" []
      , Node "+"
        [ Node "x2" []
@@ -39,13 +47,21 @@ tfoldr = Node "+"
        ]
      ]
 
-exampleSymmTree :: Diagram B
-exampleSymmTree = vcat
+--------------------------------------------------------------------------------
+
+symmTree :: Tree String -> Diagram B
+symmTree t = vcat
   [ renderTree ((<> circle 1.2 # fc white) . text)
     (~~)
-    (symmLayout' (with & slHSep .~ 4 & slVSep .~ 4) tfoldr)
+    (symmLayout' (with & slHSep .~ 4 & slVSep .~ 4) t)
     # centerXY # pad 1.2
   ]
 
+--------------------------------------------------------------------------------
+
 main :: IO ()
-main = mainWith exampleSymmTree
+main = do
+  renderRasterific "out/foldl-tree.png" (mkWidth 500) $ symmTree tFoldl
+  renderRasterific "out/foldr-tree.png" (mkWidth 500) $ symmTree tFoldr
+
+--------------------------------------------------------------------------------
