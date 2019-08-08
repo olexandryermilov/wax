@@ -39,7 +39,6 @@ why.
   4. Readers.
   5. Comonads.
 - Theory and practice. Make sure that you are ready to write the code.
-- Target audience is Scala developers learning FP.
 - Forkshop is duplicated in Haskell.
 
 ** Whys
@@ -211,17 +210,6 @@ Issues with this code:
 
 ** Game with trait
 
-*** Outcome                                                      :B_column:
-:PROPERTIES:
-:BEAMER_opt:             [t]
-:BEAMER_env:             column
-:END:
-
-- No more ~introduce(_.introduce())~.
-- We are adaptive. Less code needs to be changed if we need something new in the
-  ~introduce~ function (e.g. sound name) - just add new 'method' to the trait.
-- Refactoring becomes easier.
-
 *** Old code                                                     :B_column:
 :PROPERTIES:
 :BEAMER_opt:             [t]
@@ -267,6 +255,19 @@ Issues with this code:
     introduce(ooze)
   }
 #+end_src
+
+*** Outcome                                                      :B_column:
+:PROPERTIES:
+:BEAMER_opt:             [t]
+:BEAMER_env:             column
+:END:
+
+#+BEAMER: \pause
+
+- No more ~introduce(_.introduce())~.
+- We are adaptive. Less code needs to be changed if we need something new in the
+  ~introduce~ function (e.g. sound name) - just add new 'method' to the trait.
+- Refactoring becomes easier.
 
 ** Here comes the cockatrice
 
@@ -772,15 +773,11 @@ They can be composed!
 
 ** Associativity
 
-One does not simply compose stuff. Composition MUST be associative
-
 1. $Int + Int + Int = Int + (Int + Int) = (Int + Int) + Int$
 2. $String + String + String = String + (String + String) = (String + String) + String$
 3. etc...
 
 ** Semigroup
-
-Lets use fancy math name and fancy math notation to describe this simple concept.
 
 *Semigroup* is a set $S$ with binary closed operation $\cdot : S \times S
 \rightarrow S$ that satisfies associativity property:
@@ -1104,75 +1101,30 @@ Fibonacci number.
 
 As they say, truth is somewhere in the logarithm.
 
-** Two folds
+** Two folds (mod)
 
 - =def foldl[A, B](xs: Seq[A])(z: B)(op: B => A => B): B=
-  - Folds the structure from left to right
 
 #+BEAMER: \pause
 
-#+begin_src dot :file .dot/foldl-1.png :cmdline -Kdot -Tpng -Gdpi=180
-  digraph {
-    label="(((z + x1) + x2) + x3) + x4"
-
-    o1[label="+"]
-    o2[label="+"]
-    o3[label="+"]
-    o4[label="+", xlabel="+ :: B -> A -> B"]
-
-    o1 -> z;
-    o1 -> x1;
-
-    o2 -> o1;
-    o2 -> x2;
-
-    o3 -> o2;
-    o3 -> x3;
-
-    o4 -> o3;
-    o4 -> x4;
-  }
-#+end_src
+$$+ : B \rightarrow A \rightarrow B$$
+$$(((z + x1) + x2) + x3) + x4$$
 
 #+ATTR_LATEX: :height 5cm
-#+RESULTS:
-[[file:.dot/foldl-1.png]]
+[[file:diag/foldl-tree.png]]
 
 ** Two folds
 
 - =def foldl[A, B](xs: Seq[A])(z: B)(op: B => A => B): B=
 - =def foldr[A, B](xs: Seq[A])(z: B)(op: A => B => B): B=
-  - Folds the structure from right to left
 
 #+BEAMER: \pause
 
-#+begin_src dot :file .dot/foldr-1.png :cmdline -Kdot -Tpng -Gdpi=180
-  digraph {
-    forcelabels=true;
-    label="x1 + (x2 + (x3 + (x4 + z)))"
-
-    o1[label="+"]
-    o2[label="+"]
-    o3[label="+"]
-    o4[label="+", xlabel="+ :: A -> B -> B"]
-
-    o1 -> x4;
-    o1 -> z;
-
-    o2 -> x3;
-    o2 -> o1;
-
-    o3 -> x2;
-    o3 -> o2;
-
-    o4 -> x1;
-    o4 -> o3;
-  }
-#+end_src
+$$+ : A \rightarrow B \rightarrow B$$
+$$x1 + (x2 + (x3 + (x4 + z)))$$
 
 #+ATTR_LATEX: :height 5cm
-#+RESULTS:
-[[file:.dot/foldr-1.png]]
+[[file:diag/foldr-tree.png]]
 
 ** Two folds
 
@@ -1194,9 +1146,11 @@ As they say, truth is somewhere in the logarithm.
 
 **** foldl
 
-#+ATTR_LATEX: :height 6cm
-#+RESULTS:
-[[file:.dot/foldl-1.png]]
+$$+ : B \rightarrow A \rightarrow B$$
+$$(((z + x1) + x2) + x3) + x4$$
+
+#+ATTR_LATEX: :height 5cm
+[[file:diag/foldl-tree.png]]
 
 *** foldr                                                        :B_column:
 :PROPERTIES:
@@ -1207,9 +1161,11 @@ As they say, truth is somewhere in the logarithm.
 
 **** foldr
 
-#+ATTR_LATEX: :height 6cm
-#+RESULTS:
-[[file:.dot/foldr-1.png]]
+$$+ : A \rightarrow B \rightarrow B$$
+$$x1 + (x2 + (x3 + (x4 + z)))$$
+
+#+ATTR_LATEX: :height 5cm
+[[file:diag/foldr-tree.png]]
 
 ** What Monoid gives us
 
@@ -1217,8 +1173,8 @@ As they say, truth is somewhere in the logarithm.
 - <2-> Identity element of type =A= (=empty=).
 - <3-> So we can define a special =fold=
   - =def foldMonoid[A: Monoid](xs: Seq[A]): A=
-- <4-> Associativity law says that we can put parentheses in an arbitrary fashion.
-- <5-> Identity law says that we can place identity element anywhere.
+- <4-> Identity law says that we can place identity element anywhere.
+- <5-> Associativity law says that we can put parentheses in an arbitrary fashion.
 
 ** Power in terms of Monoid
 
@@ -1668,7 +1624,7 @@ same level, which means that we can evaluate them in parallel.
 - <4-> =Main= object runs (not yet defined) =job= and profiles it (par vs seq).
 - <5-> =Result[Int]= is a map with words and their usage counter.
 - <6-> Your goal is to:
-  1. Implement monoid instance for =MapReduce.Result[A]=.
+  1. Implement monoid instance for =MapReduce.Result[Int]=.
   2. Implement the =job= function to find the most used word.
 - <7-> Use helpers from =FileUtils=:
   - =readTokens= to get the list of words from the file.
@@ -1692,7 +1648,7 @@ same level, which means that we can evaluate them in parallel.
 
 - <1-> Thanks to /associative/ and /identity/ laws it's possible to implement a
   parallel fold.
-- <2-> This is what makes =mapReduce= possible to exist.
+- <2-> This is what makes =mapReduce= possible.
 - <3-> Many applications: inverted index, document clustering, machine learning.
 - <4-> Google used it to regenerate index of World Wide Web.
 
@@ -1836,7 +1792,7 @@ Can function be monoid?
 ** Questions?
 
 #+begin_export latex
-\centerline{\huge $\epsilon \rho \omega \tau \eta \sigma \eta$?}
+\centerline{\huge $\epsilon \rho \omega \tau \eta \sigma \eta \varsigma$?}
 #+end_export
 
 ** Thank you very much!
