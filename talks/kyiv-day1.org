@@ -422,10 +422,10 @@ Extensibility holds, but with several caveats:
     def introduce(): String
   }
 
-  def introduce(creatute: Introducible): Unit = {
+  def introduce(creature: Introducible): Unit = {
 
     /* ... */
-    drawBubble(creatute.introduce())
+    drawBubble(creature.introduce())
     /* ... */
   }
 #+end_src
