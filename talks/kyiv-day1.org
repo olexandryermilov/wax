@@ -271,6 +271,12 @@ Issues with this code:
 
 ** Here comes the cockatrice
 
+*** Code                                                         :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_col:             0.55
+:END:
+
 #+begin_src scala
   import io.proprietary.monsters.cockatrice._
 
@@ -279,12 +285,24 @@ Issues with this code:
   object Game extends App {
     /* ... */
 
-    val cockatrice = Cockatrice(level = 666, element = Element.Fire)
+    val cockatrice = Cockatrice(
+      level = 666,
+      element = Element.Fire
+    )
 
     introduce(cockatrice) // ???
                           // ain't gonna work
   }
 #+end_src
+
+*** Image                                                        :B_column:
+:PROPERTIES:
+:BEAMER_env:             column
+:BEAMER_col:             0.45
+:END:
+
+#+ATTR_LATEX: :height 5cm
+[[file:images/cockatrice.jpg]]
 
 ** Shawarma to the rescue
 
